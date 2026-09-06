@@ -21,6 +21,20 @@
   </aside>
 
   <main class="project-page">
+    <header class="project-workspace-header">
+      <div class="project-workspace-brand">
+        <img src="[[logo]]" alt="[[nombre]]" onerror="this.src='[[foto]]';">
+        <div>
+          <strong>Cuaderno de Trabajo</strong>
+          <small>Innovación y proyectos profesionales</small>
+        </div>
+      </div>
+
+      <div class="project-workspace-search">⌕ <span>Buscar proyectos, solicitudes, tareas...</span></div>
+
+      <div class="project-workspace-user"><span>♧</span><strong>Perfil</strong><b>⌄</b></div>
+    </header>
+
     <header class="project-topbar">
       <div class="project-breadcrumb">
         <a href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">Proyectos</a>
@@ -167,6 +181,17 @@
 .project-nav{min-height:70px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:12px;color:#fff;text-align:center;text-decoration:none}
 .project-nav span{font-size:23px}.project-nav b{font-size:12px}.project-nav:hover,.project-nav.is-active{background:rgba(255,255,255,.14)}.project-menu-bottom{margin-top:auto}
 .project-page{min-width:0;padding:0 28px 34px}
+.project-workspace-header{min-height:64px;margin:0 -28px; padding:10px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#fff;border-bottom:1px solid #dce6f5}
+.project-workspace-brand{display:flex;align-items:center;gap:12px;min-width:250px;color:var(--project-navy)}
+.project-workspace-brand img{width:42px;height:42px;object-fit:contain;border-radius:8px}
+.project-workspace-brand strong,.project-workspace-brand small{display:block}
+.project-workspace-brand strong{font-size:17px;line-height:1.1}
+.project-workspace-brand small{margin-top:3px;color:var(--project-muted);font-size:12px}
+.project-workspace-search{flex:1;max-width:420px;padding:10px 14px;border:1px solid #d8e1ef;border-radius:9px;color:#71809b;font-size:13px;background:#f8faff}
+.project-workspace-search span{margin-left:7px}
+.project-workspace-user{display:flex;align-items:center;gap:10px;color:var(--project-navy);font-size:13px}
+.project-workspace-user span{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--project-navy);color:#fff;font-size:18px}
+.project-workspace-user b{font-size:17px}
 .project-topbar{min-height:74px;margin:0 -28px 22px;padding:14px 34px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border-bottom:1px solid #dce6f5}
 .project-breadcrumb{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-weight:800;color:var(--project-muted)}.project-breadcrumb a{color:var(--project-blue-dark);text-decoration:none}
 .project-btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border:1px solid #b8c8e8;border-radius:9px;font-weight:900;text-decoration:none}.project-btn-light{background:#fff;color:var(--project-blue-dark)}
@@ -373,7 +398,8 @@
 .project-quick-actions{display:flex;flex-direction:column}.project-quick-actions h3{margin-bottom:7px}.project-quick-actions a{padding:12px 0;border-bottom:1px solid #e2e8f2;color:var(--project-blue-dark);font-size:13px;font-weight:900;text-decoration:none}.project-quick-actions a:last-child{border-bottom:0}
 @media(max-width:1200px){.project-hero{grid-template-columns:140px minmax(0,1fr)}.project-hero-brand{display:none}.project-layout{grid-template-columns:1fr}.project-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project-side-card{margin-bottom:0}}
 @media(max-width:850px){.project-app{grid-template-columns:1fr}.project-menu{position:static;height:auto;flex-direction:row;overflow:auto}.project-menu-logo{min-width:110px;min-height:70px;margin:0}.project-menu-bottom{margin:0;display:flex}.project-page{padding:0 14px 24px}.project-topbar{margin:0 -14px 18px;padding:13px 18px}.project-stats,.project-student-panel,.project-sidebar{grid-template-columns:1fr}}
-@media(max-width:650px){.project-hero{grid-template-columns:1fr}.project-hero-logo{width:110px;height:110px}.project-hero h1{font-size:29px}.project-card-title{flex-wrap:wrap}.project-section-link{margin-left:52px}}
+@media(max-width:850px){.project-workspace-header{margin:0 -14px;padding:10px 18px}.project-workspace-search{display:none}.project-workspace-brand{min-width:0}.project-workspace-user strong{display:none}}
+@media(max-width:650px){.project-hero{grid-template-columns:1fr}.project-hero-logo{width:110px;height:110px}.project-hero h1{font-size:29px}.project-card-title{flex-wrap:wrap}.project-section-link{margin-left:52px}.project-workspace-header{gap:12px}.project-workspace-brand strong{font-size:14px}.project-workspace-brand small{font-size:10px}}
 </style>
 <!-- /wp:html --></div>
 <!-- /wp:uagb/container -->
