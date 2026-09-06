@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true, Position = 0)]
-    [ValidateSet("export", "status", "deploy")]
+    [ValidateSet("add", "export", "status", "deploy")]
     [string]$Command,
 
     [Parameter(Mandatory = $true, Position = 1)]
@@ -67,6 +67,111 @@ function Test-RequiredCommand {
     }
 }
 
+function Normalize-ContentFile {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$File
+    )
+
+    $text = [System.IO.File]::ReadAllText($File)
+    $text = $text.Replace("`r`n", "`n").Replace("`r", "`n")
+    $text = $text.Trim("`r", "`n")
+
+    [System.IO.File]::WriteAllText(
+        $File,
+        $text + "`n",
+        [System.Text.UTF8Encoding]::new($false)
+    )
+}
+
+function Add-CuadernoPage {
+
+    if (Test-Path $PageDir) {
+        Stop-Cuaderno "Ya existe la carpeta: $PageDir"
+    }
+
+    Write-Info "Buscando pagina WordPress con slug exacto '$PageName'..."
+
+    $remoteJson = Invoke-SSH "wp post list --post_type=page --name='$PageName' --fields=ID,post_title,post_name,post_type,post_status --format=json --path='$WordPressPath' --allow-root"
+
+    try {
+        $matches = (($remoteJson -join "`n") | ConvertFrom-Json)
+    }
+    catch {
+        Stop-Cuaderno "No se ha podido interpretar la respuesta de WordPress."
+    }
+
+    if ($null -eq $matches) {
+        $matches = @()
+    }
+    elseif ($matches -isnot [System.Array]) {
+        $matches = @($matches)
+    }
+
+    $matches = @($matches | Where-Object {
+        $_.post_type -eq "page" -and $_.post_name -ceq $PageName
+    })
+
+    if ($matches.Count -eq 0) {
+        Stop-Cuaderno "No existe una pagina WordPress con el slug exacto '$PageName'."
+    }
+
+    if ($matches.Count -gt 1) {
+        Stop-Cuaderno "Hay varias paginas WordPress con el slug exacto '$PageName'; se aborta sin crear archivos."
+    }
+
+    $remote = $matches[0]
+    $RemoteTemp = "/tmp/cuaderno-add-$($remote.ID)-$PID.html"
+
+    try {
+        New-Item -ItemType Directory -Path $PageDir -Force:$false | Out-Null
+
+        $pageInfo = [ordered]@{
+            ID          = [int]$remote.ID
+            post_title  = [string]$remote.post_title
+            post_name   = [string]$remote.post_name
+            post_type   = [string]$remote.post_type
+            post_status = [string]$remote.post_status
+        }
+
+        $pageInfo | ConvertTo-Json -Depth 4 | Set-Content -Path $JsonFile -Encoding UTF8
+
+        Invoke-SSH "wp post get $($remote.ID) --path='$WordPressPath' --field=post_content --allow-root > '$RemoteTemp'" | Out-Null
+
+        & scp "${Server}:$RemoteTemp" "$ContentFile"
+
+        if ($LASTEXITCODE -ne 0) {
+            Stop-Cuaderno "No se ha podido copiar el contenido desde el servidor."
+        }
+
+        if (-not (Test-Path $ContentFile)) {
+            Stop-Cuaderno "No se ha creado content.html."
+        }
+
+        Normalize-ContentFile $ContentFile
+
+        Write-Host ""
+        Write-Host "ALTA LOCAL CORRECTA" -ForegroundColor Green
+        Write-Host "ID       : $($pageInfo.ID)"
+        Write-Host "Slug     : $($pageInfo.post_name)"
+        Write-Host "Titulo   : $($pageInfo.post_title)"
+        Write-Host "Estado   : $($pageInfo.post_status)"
+        Write-Host "Archivos :"
+        Write-Host "  $JsonFile"
+        Write-Host "  $ContentFile"
+    }
+    catch {
+        if (Test-Path $PageDir) {
+            Remove-Item $PageDir -Recurse -Force
+        }
+
+        throw
+    }
+    finally {
+        Invoke-SSH "rm -f '$RemoteTemp'" | Out-Null
+    }
+}
+
 
 # ============================================================
 # COMPROBACIONES LOCALES
@@ -74,6 +179,11 @@ function Test-RequiredCommand {
 
 Test-RequiredCommand "ssh"
 Test-RequiredCommand "scp"
+
+if ($Command -eq "add") {
+    Add-CuadernoPage
+    exit 0
+}
 
 if (-not (Test-Path $PageDir)) {
     Stop-Cuaderno "No existe la carpeta: $PageDir"
@@ -173,16 +283,7 @@ function Export-CuadernoPage {
             Stop-Cuaderno "No se ha creado content.html."
         }
 
-# Normalizar contenido
-$text = [System.IO.File]::ReadAllText($ContentFile)
-$text = $text.Replace("`r`n", "`n").Replace("`r", "`n")
-$text = $text.Trim("`r", "`n")
-
-[System.IO.File]::WriteAllText(
-    $ContentFile,
-    $text + "`n",
-    [System.Text.UTF8Encoding]::new($false)
-)
+        Normalize-ContentFile $ContentFile
 
         Write-Host ""
         Write-Host "EXPORTACION CORRECTA" -ForegroundColor Green
@@ -348,7 +449,7 @@ function Deploy-CuadernoPage {
 
         Write-Info "Actualizando exclusivamente post_content..."
 
-        $updateOutput = Invoke-SSH "wp post update $PostId --path='$WordPressPath' --post_content=`"`$(cat '$RemoteTemp')`" --allow-root"
+        $updateOutput = Invoke-SSH "wp post update $PostId '$RemoteTemp' --path='$WordPressPath' --allow-root"
 
         Write-Host ($updateOutput -join "`n")
 
