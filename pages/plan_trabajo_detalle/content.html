@@ -1,0 +1,64 @@
+<!-- wp:uagb/container {"block_id":"plan-trabajo-detalle-cuaderno","innerContentWidth":"alignfull"} -->
+<div class="wp-block-uagb-container alignfull"><!-- wp:html -->
+[[OPTIONS filtro="no" pie="no"]]
+[[VIEW tarjetas]]
+
+<header class="ptd-global-header">
+	<div class="ptd-brand"><img src="/wp-content/fotos/infoaza.png" alt="Infoaza"></div>
+	<div class="ptd-title"><strong>Cuaderno de Trabajo</strong><small>Infoaza</small></div>
+	<div class="ptd-search">⌕ <span>Buscar planes de trabajo...</span></div>
+	<div class="ptd-user"><span>♧</span><strong>Plan de trabajo</strong></div>
+</header>
+
+<div class="ptd-app">
+	<aside class="ptd-menu">
+		<a class="ptd-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>⌂</span><b>Inicio</b></a>
+		<a class="ptd-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>📁</span><b>Proyectos</b></a>
+		<a class="ptd-nav" href="/tabla/?tabla=solicitud_cliente" onclick="event.stopPropagation();"><span>✉</span><b>Solicitudes</b></a>
+		<a class="ptd-nav is-active" href="/tabla/?tabla=plan_trabajo" onclick="event.stopPropagation();"><span>📋</span><b>Planes</b></a>
+		<a class="ptd-nav" href="/tabla/?tabla=alumno_plan_trabajo" onclick="event.stopPropagation();"><span>👥</span><b>Alumnado</b></a>
+		<div class="ptd-menu-bottom"><a class="ptd-nav" href="/ayuda" onclick="event.stopPropagation();"><span>❔</span><b>Ayuda</b></a><a class="ptd-nav" href="/wp-login.php?action=logout" onclick="event.stopPropagation();"><span>↪</span><b>Salir</b></a></div>
+	</aside>
+
+	<main class="ptd-page">
+		<div class="ptd-topbar"><div class="ptd-breadcrumb"><a href="/tabla/?tabla=plan_trabajo" onclick="event.stopPropagation();">Planes de trabajo</a><span>›</span><strong>[[codigo]]</strong></div></div>
+
+		<section class="ptd-hero">
+			<div class="ptd-hero-mark">[[orden]]</div>
+			<div class="ptd-hero-copy">
+				<span class="ptd-eyebrow">Plan de trabajo · [[codigo]]</span>
+				<h1>[[titulo]]</h1>
+				<p>[[descripcion]]</p>
+				<div class="ptd-status"><span class="ptd-status-dot"></span>[[IF activo='1']]Activo[[ENDIF]][[IF activo='0']]Inactivo[[ENDIF]]</div>
+			</div>
+			<a class="ptd-back" href="/tabla/?tabla=plan_trabajo" onclick="event.stopPropagation();">← Volver a planes</a>
+		</section>
+
+		<div class="ptd-layout">
+			<div class="ptd-main">
+				<section class="ptd-card ptd-content-card"><div class="ptd-card-heading"><span>01</span><h2>Descripción del plan</h2></div><p>[[descripcion]]</p></section>
+				<section class="ptd-card ptd-content-card"><div class="ptd-card-heading"><span>02</span><h2>Instrucciones de trabajo</h2></div><p>[[instrucciones]]</p></section>
+				<section class="ptd-card ptd-result-card"><div class="ptd-card-heading"><span>03</span><h2>Resultado esperado</h2></div><p>[[resultado_esperado]]</p></section>
+			</div>
+
+			<aside class="ptd-side">
+				<section class="ptd-card ptd-data-card"><h2>Ficha del plan</h2><dl>
+					<div><dt>Código</dt><dd>[[codigo]]</dd></div>
+					<div><dt>Orden</dt><dd>[[orden]]</dd></div>
+					<div><dt>Tiempo estimado</dt><dd>[[tiempo_estimado]]</dd></div>
+					<div><dt>Experiencia máxima</dt><dd class="ptd-xp">[[xp_max]] XP</dd></div>
+					<div><dt>Inicio previsto</dt><dd>[[fecha_inicio_prevista]]</dd></div>
+					<div><dt>Fin previsto</dt><dd>[[fecha_fin_prevista]]</dd></div>
+				</dl></section>
+				<section class="ptd-card ptd-related-card"><h2>Acciones</h2><a href="/tabla/?tabla=plan_trabajo" onclick="event.stopPropagation();">📋 Ver todos los planes <b>›</b></a><a href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_plan_trabajo=[[id_plan_trabajo]]" onclick="event.stopPropagation();">👥 Ver alumnado asignado <b>›</b></a><a href="/detalle/?tabla=solicitud_cliente&amp;id=[[id_solicitud_cliente]]" onclick="event.stopPropagation();">✉ Ver solicitud relacionada <b>›</b></a></section>
+			</aside>
+		</div>
+	</main>
+</div>
+[[ENDVIEW]]
+
+<style>
+:root{--ptd-navy:#102b52;--ptd-blue:#1559b7;--ptd-bright:#1677e8;--ptd-red:#e30613;--ptd-border:#d5e2f2;--ptd-muted:#607594;--ptd-bg:#f6f9fe}*{box-sizing:border-box}.ptd-global-header{min-height:60px;display:grid;grid-template-columns:196px minmax(220px,1fr) minmax(260px,420px) auto;align-items:center;background:#fff;border-bottom:1px solid var(--ptd-border);color:var(--ptd-navy)}.ptd-brand{height:60px;display:flex;align-items:center;justify-content:center;border-right:1px solid #e1e8f2}.ptd-brand img{width:100%;height:100%;padding:7px 14px;object-fit:contain}.ptd-title{padding:0 20px}.ptd-title strong,.ptd-title small{display:block}.ptd-title small{margin-top:3px;color:var(--ptd-muted);font-size:12px}.ptd-search{margin:0 22px;padding:10px 14px;border:1px solid var(--ptd-border);border-radius:9px;background:#f8faff;color:#71809b;font-size:13px}.ptd-search span{margin-left:7px}.ptd-user{display:flex;align-items:center;gap:10px;padding:0 22px;font-size:13px}.ptd-user span{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--ptd-navy);color:#fff;font-size:18px}.ptd-app{min-height:calc(100vh - 60px);display:grid;grid-template-columns:148px minmax(0,1fr);background:var(--ptd-bg);color:var(--ptd-navy)}.ptd-menu{height:calc(100vh - 60px);position:sticky;top:0;padding:18px 10px;display:flex;flex-direction:column;gap:8px;background:linear-gradient(180deg,#102b52,#173f78)}.ptd-nav{min-height:62px;padding:9px 5px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:9px;color:#fff;text-decoration:none;text-align:center}.ptd-nav span{font-size:22px}.ptd-nav b{font-size:11px}.ptd-nav:hover,.ptd-nav.is-active{background:var(--ptd-bright)}.ptd-menu-bottom{margin-top:auto}.ptd-page{min-width:0;padding:0 24px 40px}.ptd-topbar{min-height:72px;display:flex;align-items:center;margin:0 -24px 22px;padding:0 32px;background:#fff;border-bottom:1px solid var(--ptd-border)}.ptd-breadcrumb{display:flex;gap:14px;align-items:center;font-size:14px;font-weight:800}.ptd-breadcrumb a{color:var(--ptd-blue);text-decoration:none}.ptd-breadcrumb span{color:#8aa0bc}.ptd-hero{position:relative;display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:20px;align-items:center;margin-bottom:22px;padding:28px;border:1px solid var(--ptd-border);border-radius:10px;background:linear-gradient(115deg,#fff 0%,#fff 72%,#eef4ff 100%);box-shadow:0 5px 18px rgba(20,45,95,.08)}.ptd-hero-mark{width:68px;height:68px;display:flex;align-items:center;justify-content:center;border-radius:12px;background:var(--ptd-red);color:#fff;font-size:28px;font-weight:900}.ptd-eyebrow{color:var(--ptd-red);font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}.ptd-hero h1{margin:7px 0 8px;color:var(--ptd-navy);font-size:32px;line-height:1.1}.ptd-hero p{max-width:760px;margin:0;color:var(--ptd-muted);line-height:1.55}.ptd-status{display:inline-flex;align-items:center;gap:7px;margin-top:16px;padding:7px 11px;border-radius:7px;background:#dcfce7;color:#166534;font-size:12px;font-weight:900}.ptd-status-dot{width:8px;height:8px;border-radius:50%;background:#16a34a}.ptd-back{align-self:start;color:var(--ptd-blue);font-size:13px;font-weight:900;text-decoration:none;white-space:nowrap}.ptd-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:22px}.ptd-card{border:1px solid var(--ptd-border);border-radius:9px;background:#fff;box-shadow:0 4px 14px rgba(20,45,95,.05)}.ptd-content-card,.ptd-result-card{padding:22px;margin-bottom:16px}.ptd-card-heading{display:flex;align-items:center;gap:10px;padding-bottom:13px;border-bottom:1px solid #e2e9f3}.ptd-card-heading span{color:var(--ptd-red);font-size:12px;font-weight:900}.ptd-card h2{margin:0;color:var(--ptd-blue);font-size:17px}.ptd-content-card p,.ptd-result-card p{margin:17px 0 0;color:#30496d;line-height:1.7;white-space:pre-line}.ptd-result-card{background:#fff9df;border-color:#f2d36b}.ptd-result-card .ptd-card-heading h2{color:#9a6700}.ptd-data-card,.ptd-related-card{padding:20px;margin-bottom:16px}.ptd-data-card h2,.ptd-related-card h2{margin:0 0 14px;color:var(--ptd-blue);font-size:16px}.ptd-data-card dl{margin:0}.ptd-data-card dl div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #e2e9f3}.ptd-data-card dl div:last-child{border-bottom:0}.ptd-data-card dt{color:var(--ptd-muted);font-size:12px}.ptd-data-card dd{margin:0;color:var(--ptd-navy);font-size:13px;font-weight:900;text-align:right}.ptd-data-card .ptd-xp{color:var(--ptd-red)}.ptd-related-card a{display:flex;justify-content:space-between;gap:8px;padding:12px 0;border-top:1px solid #e2e9f3;color:var(--ptd-blue);font-size:13px;font-weight:800;text-decoration:none}.ptd-related-card b{font-size:18px;line-height:12px}@media(max-width:900px){.ptd-layout{grid-template-columns:1fr}.ptd-hero{grid-template-columns:66px 1fr}.ptd-back{grid-column:2}.ptd-global-header{grid-template-columns:94px 1fr auto}.ptd-title{padding:0 12px}.ptd-title strong{font-size:14px}.ptd-title small{font-size:10px}.ptd-search{display:none}.ptd-user{padding:0 12px}.ptd-user strong{display:none}}@media(max-width:650px){.ptd-app{grid-template-columns:1fr}.ptd-menu{position:static;height:auto;flex-direction:row;overflow:auto;padding:10px}.ptd-menu-bottom{display:flex;margin:0}.ptd-nav{min-width:72px}.ptd-page{padding:0 14px 28px}.ptd-topbar{margin:0 -14px 16px;padding:0 18px}.ptd-hero{grid-template-columns:1fr;padding:20px}.ptd-hero-mark{width:54px;height:54px}.ptd-hero h1{font-size:26px}.ptd-back{grid-column:auto}.ptd-data-card dl div{align-items:flex-start;flex-direction:column;gap:4px}.ptd-data-card dd{text-align:left}}
+</style>
+<!-- /wp:html --></div>
+<!-- /wp:uagb/container -->
