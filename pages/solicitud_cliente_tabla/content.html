@@ -405,12 +405,16 @@
 
 .ps-sc-title-row h1{
   margin:0 0 5px;
-  font-size:29px;
+  font-size:clamp(28px,3vw,36px);
+  line-height:1.1;
+  color:#fff;
 }
 
 .ps-sc-title-row p{
   margin:0;
-  color:#d7e5ff;
+  color:#dbeafe;
+  font-size:14px;
+  line-height:1.45;
 }
 
 .ps-sc-carousel-wrap{
@@ -452,16 +456,16 @@
 
 .ps-sc-thumb{
   flex:0 0 175px;
-  min-height:220px;
-  padding:13px;
+  min-height:216px;
+  padding:14px;
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  gap:12px;
+  gap:10px;
   border:1px solid rgba(103,168,255,.55);
-  border-radius:10px;
+  border-radius:12px;
   background:linear-gradient(180deg,rgba(11,51,128,.92),rgba(5,31,87,.96));
-  color:#fff;
+  color:#f8fbff;
   text-align:left;
   cursor:pointer;
   transition:.16s ease;
