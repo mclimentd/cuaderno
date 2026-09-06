@@ -3,14 +3,24 @@
 [[OPTIONS filtro="no" pie="no"]]
 [[VIEW tarjetas]]
 
+<header class="projects-global-header">
+  <div class="projects-global-brand"><img src="/wp-content/fotos/infoaza.png" alt="Azavis"></div>
+  <div class="projects-global-title">
+    <strong>Cuaderno de Trabajo</strong>
+    <small>Innovación y proyectos profesionales</small>
+  </div>
+  <div class="projects-global-search">⌕ <span>Buscar proyectos, solicitudes, tareas...</span></div>
+  <div class="projects-global-user"><span>♧</span><strong>Perfil</strong><b>⌄</b></div>
+</header>
+
 <div class="projects-app">
 
   <aside class="projects-menu">
     <div class="projects-brand">
-      <div class="projects-brand-mark">MR</div>
+      <div class="projects-brand-mark"><img src="/wp-content/fotos/infoaza.png" alt="Azavis"></div>
       <div>
-        <strong>MoveRent</strong>
-        <small>Mobility Solutions</small>
+        <strong>Innovatech</strong>
+        <small>Soluciones educativas</small>
       </div>
     </div>
 
@@ -206,6 +216,13 @@
   font-family:Arial,Helvetica,sans-serif;
 }
 
+.projects-global-header{min-height:60px;display:grid;grid-template-columns:216px minmax(220px,1fr) minmax(260px,420px) auto;align-items:center;background:#fff;border-bottom:1px solid #dce5f4;color:#10234f}
+.projects-global-brand{height:60px;display:flex;align-items:center;justify-content:center;background:#e30613;color:#fff;font-size:25px;font-weight:900;letter-spacing:.04em;font-style:italic}
+.projects-global-brand img{width:100%;height:100%;padding:8px 18px;object-fit:contain}
+.projects-global-title{padding:0 22px}.projects-global-title strong,.projects-global-title small{display:block}.projects-global-title strong{font-size:17px;line-height:1.1}.projects-global-title small{margin-top:3px;color:#64748b;font-size:12px}
+.projects-global-search{margin:0 24px;padding:10px 14px;border:1px solid #d8e1ef;border-radius:9px;background:#f8faff;color:#71809b;font-size:13px}.projects-global-search span{margin-left:7px}
+.projects-global-user{display:flex;align-items:center;gap:10px;padding:0 24px;font-size:13px}.projects-global-user span{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#10234f;color:#fff;font-size:18px}.projects-global-user b{font-size:17px}
+
 .projects-menu{
   position:sticky;
   top:0;
@@ -217,6 +234,10 @@
   background:linear-gradient(180deg,var(--projects-navy),var(--projects-navy-2));
   color:#fff;
 }
+
+.projects-app{grid-template-columns:177px minmax(0,1fr)}
+.projects-menu{height:calc(100vh - 60px);padding-top:20px;background:linear-gradient(180deg,#10254b,#173d75)}
+.projects-nav{min-height:62px}.projects-nav:hover,.projects-nav.is-active{background:#e30613}
 
 .projects-brand{
   min-height:90px;
@@ -243,6 +264,8 @@
   font-weight:900;
   font-style:italic;
 }
+
+.projects-brand-mark img{width:100%;height:100%;object-fit:contain;border-radius:7px}
 
 .projects-brand strong,
 .projects-brand small{
@@ -292,13 +315,13 @@
 
 .projects-page{
   min-width:0;
-  padding:0 30px 34px;
+  padding:0 22px 34px;
 }
 
 .projects-topbar{
   min-height:74px;
-  margin:0 -30px 22px;
-  padding:14px 36px;
+  margin:0 -22px 18px;
+  padding:14px 24px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -331,7 +354,7 @@
 }
 
 .projects-btn-primary{
-  background:var(--projects-navy-2);
+  background:#e30613;
   color:#fff;
 }
 
@@ -386,6 +409,8 @@
   box-shadow:0 5px 18px rgba(17,45,95,.045);
 }
 
+.projects-summary{min-height:96px;margin-bottom:18px;padding:15px 20px;border-radius:10px}
+
 .projects-summary-icon{
   width:56px;
   height:56px;
@@ -425,7 +450,7 @@
 .projects-grid{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:22px;
+  gap:14px;
 }
 
 .project-card{
@@ -433,7 +458,7 @@
   overflow:hidden;
   border:1px solid var(--projects-border);
   border-left:4px solid var(--project-color,#3156c8);
-  border-radius:14px;
+  border-radius:10px;
   background:#fff;
   box-shadow:0 7px 22px rgba(17,45,95,.075);
   transition:transform .16s ease, box-shadow .16s ease;
@@ -446,7 +471,7 @@
 
 .project-card-cover{
   position:relative;
-  height:145px;
+  height:106px;
   overflow:hidden;
   display:flex;
   align-items:center;
@@ -474,8 +499,8 @@
 .project-card-logo{
   position:relative;
   z-index:2;
-  width:160px;
-  height:70px;
+  width:142px;
+  height:58px;
   padding:8px 12px;
   display:flex;
   align-items:center;
@@ -505,7 +530,7 @@
 }
 
 .project-card-body{
-  padding:18px;
+  padding:14px;
 }
 
 .project-card-status-row{
@@ -540,9 +565,9 @@
 }
 
 .project-card h2{
-  margin:13px 0 8px;
+  margin:10px 0 7px;
   color:#071733;
-  font-size:21px;
+  font-size:18px;
 }
 
 .project-card-description{
@@ -643,12 +668,14 @@
 }
 
 @media(max-width:1200px){
+  .projects-global-header{grid-template-columns:180px 1fr auto}.projects-global-search{display:none}
   .projects-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
 
 @media(max-width:850px){
+  .projects-global-header{grid-template-columns:94px 1fr auto}.projects-global-title{padding:0 12px}.projects-global-title strong{font-size:14px}.projects-global-title small{font-size:10px}.projects-global-user{padding:0 12px}.projects-global-user strong{display:none}
   .projects-app{
     grid-template-columns:1fr;
   }
@@ -656,6 +683,7 @@
   .projects-menu{
     position:static;
     height:auto;
+    padding-top:10px;
     flex-direction:row;
     overflow:auto;
   }
