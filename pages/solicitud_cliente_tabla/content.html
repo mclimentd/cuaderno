@@ -1,0 +1,1978 @@
+
+<!-- wp:uagb/container {"block_id":"72a2c0cc","innerContentWidth":"alignfull","minHeightDesktop":800,"justifyContentDesktop":"flex-start","backgroundType":"color","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"backgroundColor":"","variationSelected":true,"isBlockRootParent":true} -->
+<div class="wp-block-uagb-container uagb-block-72a2c0cc alignfull uagb-is-root-container"><!-- wp:html -->
+[[OPTIONS filtro="no" pie="no"]]
+[[OPTIONS filtro="no" pie="no"]]
+[[VIEW tarjetas]]
+
+<div class="ps-sc-app">
+
+  <aside class="ps-sc-menu">
+    <div class="ps-sc-brand">
+      <img
+        src="[[PARENT id_proyecto.logo]]"
+        alt="[[PARENT id_proyecto.nombre]]"
+        onerror="this.src='[[PARENT id_proyecto.foto]]';">
+    </div>
+
+    <a class="ps-sc-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">
+      <span>⌂</span><b>Inicio</b>
+    </a>
+
+    <a class="ps-sc-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">
+      <span>📁</span><b>Proyectos</b>
+    </a>
+
+    <a class="ps-sc-nav is-active"
+       href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[PARENT id_proyecto]]"
+       onclick="event.stopPropagation();">
+      <span>✉</span><b>Solicitudes</b>
+    </a>
+
+    <a class="ps-sc-nav" href="/tabla/?tabla=plan_trabajo" onclick="event.stopPropagation();">
+      <span>📋</span><b>Planes</b>
+    </a>
+
+    <a class="ps-sc-nav" href="/tabla/?tabla=alumno_plan_trabajo" onclick="event.stopPropagation();">
+      <span>👥</span><b>Alumnado</b>
+    </a>
+
+    <div class="ps-sc-menu-bottom">
+      <a class="ps-sc-nav" href="/ayuda" onclick="event.stopPropagation();">
+        <span>❔</span><b>Ayuda</b>
+      </a>
+      <a class="ps-sc-nav" href="/wp-login.php?action=logout" onclick="event.stopPropagation();">
+        <span>↪</span><b>Salir</b>
+      </a>
+    </div>
+  </aside>
+
+  <main class="ps-sc-page">
+
+    <header class="ps-sc-topbar">
+      <div class="ps-sc-breadcrumb">
+        <a href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">Inicio</a>
+        <span>›</span>
+        <strong>Solicitudes de cliente</strong>
+      </div>
+
+      <div class="ps-sc-user">
+        <span>🔔</span>
+        <span>🏆</span>
+        <strong>[[PARENT id_proyecto.nombre]]</strong>
+      </div>
+    </header>
+
+    <section class="ps-sc-shell">
+
+      <div class="ps-sc-title-row">
+        <div class="ps-sc-title-icon">✉</div>
+        <div>
+          <h1>Solicitudes de cliente</h1>
+          <p>Selecciona una solicitud para ver su ficha ampliada.</p>
+        </div>
+      </div>
+
+      <div class="ps-sc-carousel-wrap">
+        <button type="button" class="ps-sc-arrow ps-sc-arrow-left" aria-label="Anterior">‹</button>
+
+        <div class="ps-sc-carousel" tabindex="0">
+
+          [[FOREACH]]
+
+          <button type="button"
+                  class="ps-sc-thumb"
+                  data-id="[[id_solicitud_cliente]]"
+                  data-code="[[codigo]]"
+                  data-title="[[titulo]]"
+                  data-photo="[[foto]]"
+                  data-date="[[fecha]]"
+                  data-unit-code="[[unidad_codigo]]"
+                  data-unit-title="[[unidad_titulo]]"
+                  data-department="[[departamento_solicitante]]"
+                  data-responsible="[[responsable_cliente]]"
+                  data-priority="[[prioridad]]"
+                  data-current="[[situacion_actual]]"
+                  data-need="[[necesidad_detectada]]"
+                  data-work="[[trabajo_solicitado]]"
+                  data-objective="[[objetivo]]"
+                  data-scope="[[alcance]]"
+                  data-restrictions="[[restricciones]]"
+                  data-resources="[[recursos_disponibles]]"
+                  data-deliverables="[[entregables]]"
+                  data-criteria="[[criterios_aceptacion]]"
+                  data-reference="[[documentacion_referencia]]"
+                  data-observations="[[observaciones]]"
+                  data-order="[[orden]]"
+                  data-active="[[activo]]">
+
+            <span class="ps-sc-thumb-code">[[codigo]]</span>
+
+            <span class="ps-sc-thumb-image">
+              <img
+                src="[[foto]]"
+                alt="[[titulo]]"
+                onerror="this.style.display='none';this.parentNode.innerHTML='✉';">
+            </span>
+
+            <strong>[[titulo]]</strong>
+
+            <span class="ps-sc-thumb-progress">
+              <i></i>
+            </span>
+
+          </button>
+
+          [[ENDFOREACH]]
+
+        </div>
+
+        <button type="button" class="ps-sc-arrow ps-sc-arrow-right" aria-label="Siguiente">›</button>
+      </div>
+
+      <section class="ps-sc-detail">
+
+        <div class="ps-sc-detail-image">
+          <img class="js-sc-photo" src="" alt="">
+          <span class="js-sc-photo-fallback">✉</span>
+        </div>
+
+        <div class="ps-sc-detail-main">
+
+          <span class="ps-sc-detail-code js-sc-code"></span>
+
+          <h2 class="js-sc-title"></h2>
+
+          <p class="ps-sc-detail-description js-sc-current"></p>
+
+          <div class="ps-sc-chip-row">
+            <span class="ps-chip ps-chip-blue js-sc-unit"></span>
+            <span class="ps-chip ps-chip-yellow js-sc-priority"></span>
+            <span class="ps-chip ps-chip-muted js-sc-date"></span>
+          </div>
+
+          <div class="ps-sc-detail-stats">
+            <div>
+              <span>Departamento</span>
+              <strong class="js-sc-department"></strong>
+            </div>
+            <div>
+              <span>Responsable</span>
+              <strong class="js-sc-responsible"></strong>
+            </div>
+            <div>
+              <span>Proyecto</span>
+              <strong>[[PARENT id_proyecto.nombre]]</strong>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="ps-sc-detail-side">
+
+          <div>
+            <span>Necesidad detectada</span>
+            <p class="js-sc-need"></p>
+          </div>
+
+          <div>
+            <span>Trabajo solicitado</span>
+            <p class="js-sc-work"></p>
+          </div>
+
+        </aside>
+
+      </section>
+
+      <section class="ps-sc-detail-extra">
+
+        <div class="ps-sc-extra-card">
+          <h3>Objetivo</h3>
+          <p class="js-sc-objective"></p>
+        </div>
+
+        <div class="ps-sc-extra-card">
+          <h3>Alcance</h3>
+          <p class="js-sc-scope"></p>
+        </div>
+
+        <div class="ps-sc-extra-card">
+          <h3>Restricciones</h3>
+          <p class="js-sc-restrictions"></p>
+        </div>
+
+        <div class="ps-sc-extra-card">
+          <h3>Recursos disponibles</h3>
+          <p class="js-sc-resources"></p>
+        </div>
+
+      </section>
+
+      <section class="ps-sc-trophy-panel">
+
+        <div class="ps-sc-progress-box">
+          <h3>Entregables</h3>
+          <p class="js-sc-deliverables"></p>
+        </div>
+
+        <div class="ps-sc-trophy-box">
+          <h3>Criterios de aceptación</h3>
+          <p class="js-sc-criteria"></p>
+        </div>
+
+        <div class="ps-sc-trophy-box">
+          <h3>Documentación de referencia</h3>
+          <p class="js-sc-reference"></p>
+        </div>
+
+      </section>
+
+      <section class="ps-sc-actions">
+
+        <a class="ps-sc-action js-sc-detail-link" href="#" onclick="event.stopPropagation();">
+          <span>📄</span>
+          <div>
+            <strong>Ver solicitud</strong>
+            <small>Ficha de detalle</small>
+          </div>
+          <b>›</b>
+        </a>
+
+        <a class="ps-sc-action js-sc-plan-link" href="#" onclick="event.stopPropagation();">
+          <span>📋</span>
+          <div>
+            <strong>Ver plan</strong>
+            <small>Plan de trabajo</small>
+          </div>
+          <b>›</b>
+        </a>
+
+        <a class="ps-sc-action js-sc-student-link" href="#" onclick="event.stopPropagation();">
+          <span>👥</span>
+          <div>
+            <strong>Seguimiento alumnado</strong>
+            <small>Progreso y entregas</small>
+          </div>
+          <b>›</b>
+        </a>
+
+        <a class="ps-sc-action js-sc-evidence-link" href="#" onclick="event.stopPropagation();">
+          <span>📁</span>
+          <div>
+            <strong>Evidencias</strong>
+            <small>Documentos y archivos</small>
+          </div>
+          <b>›</b>
+        </a>
+
+      </section>
+
+      <div class="ps-sc-help">
+        🖱 Usa el ratón, la rueda horizontal o las flechas para navegar por las solicitudes.
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+[[ENDVIEW]]
+
+<style>
+:root{
+  --ps-blue:#0c2d78;
+  --ps-blue-2:#0b4dc9;
+  --ps-blue-3:#17bfff;
+  --ps-navy:#06163f;
+  --ps-line:#1f64c7;
+  --ps-soft:#0b317d;
+}
+
+*{box-sizing:border-box}
+
+.ps-sc-app{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:132px minmax(0,1fr);
+  background:linear-gradient(135deg,#06245f,#0d4ab4 62%,#0d68df);
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+.ps-sc-menu{
+  position:sticky;
+  top:0;
+  height:100vh;
+  padding:18px 12px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  background:linear-gradient(180deg,#06163f,#0b255f);
+}
+
+.ps-sc-brand{
+  min-height:88px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ps-sc-brand img{
+  max-width:100%;
+  max-height:78px;
+  object-fit:contain;
+}
+
+.ps-sc-nav{
+  min-height:68px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  border-radius:12px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.ps-sc-nav span{font-size:23px}
+.ps-sc-nav b{font-size:12px}
+
+.ps-sc-nav:hover,
+.ps-sc-nav.is-active{
+  background:rgba(58,112,230,.30);
+}
+
+.ps-sc-menu-bottom{
+  margin-top:auto;
+}
+
+.ps-sc-page{
+  min-width:0;
+}
+
+.ps-sc-topbar{
+  min-height:72px;
+  padding:14px 28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  background:#fff;
+  color:#071733;
+}
+
+.ps-sc-breadcrumb,
+.ps-sc-user{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.ps-sc-breadcrumb a{
+  color:#173b8f;
+  text-decoration:none;
+  font-weight:800;
+}
+
+.ps-sc-user{
+  font-size:14px;
+}
+
+.ps-sc-shell{
+  padding:22px 28px 28px;
+}
+
+.ps-sc-title-row{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.ps-sc-title-icon{
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  background:linear-gradient(135deg,#316be4,#183e9f);
+  font-size:30px;
+}
+
+.ps-sc-title-row h1{
+  margin:0 0 5px;
+  font-size:29px;
+}
+
+.ps-sc-title-row p{
+  margin:0;
+  color:#d7e5ff;
+}
+
+.ps-sc-carousel-wrap{
+  position:relative;
+  margin-bottom:20px;
+  padding:0 44px;
+}
+
+.ps-sc-carousel{
+  display:flex;
+  gap:16px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  scrollbar-width:none;
+  padding:6px 2px 14px;
+}
+
+.ps-sc-carousel::-webkit-scrollbar{
+  display:none;
+}
+
+.ps-sc-arrow{
+  position:absolute;
+  top:50%;
+  z-index:5;
+  width:38px;
+  height:70px;
+  transform:translateY(-50%);
+  border:0;
+  background:transparent;
+  color:#fff;
+  font-size:58px;
+  line-height:1;
+  cursor:pointer;
+}
+
+.ps-sc-arrow-left{left:0}
+.ps-sc-arrow-right{right:0}
+
+.ps-sc-thumb{
+  flex:0 0 175px;
+  min-height:220px;
+  padding:13px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  border:1px solid rgba(103,168,255,.55);
+  border-radius:10px;
+  background:linear-gradient(180deg,rgba(11,51,128,.92),rgba(5,31,87,.96));
+  color:#fff;
+  text-align:left;
+  cursor:pointer;
+  transition:.16s ease;
+}
+
+.ps-sc-thumb:hover{
+  transform:translateY(-3px);
+  border-color:#61d9ff;
+}
+
+.ps-sc-thumb.is-selected{
+  transform:translateY(-3px) scale(1.02);
+  border:2px solid #6fe7ff;
+  box-shadow:
+    0 0 0 2px rgba(58,158,255,.42),
+    0 0 22px rgba(41,198,255,.72);
+}
+
+.ps-sc-thumb-code{
+  padding:5px 8px;
+  border-radius:6px;
+  background:#243ca0;
+  font-size:12px;
+  font-weight:900;
+}
+
+.ps-sc-thumb-image{
+  width:100%;
+  height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:8px;
+  background:linear-gradient(135deg,#0b2d78,#0d6cd9);
+  font-size:42px;
+}
+
+.ps-sc-thumb-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.ps-sc-thumb strong{
+  min-height:48px;
+  line-height:1.3;
+  font-size:14px;
+}
+
+.ps-sc-thumb-progress{
+  width:100%;
+  height:5px;
+  margin-top:auto;
+  overflow:hidden;
+  border-radius:999px;
+  background:#143b87;
+}
+
+.ps-sc-thumb-progress i{
+  display:block;
+  width:55%;
+  height:100%;
+  border-radius:999px;
+  background:linear-gradient(90deg,#19aaff,#67efff);
+}
+
+.ps-sc-detail{
+  display:grid;
+  grid-template-columns:340px minmax(0,1fr) 370px;
+  gap:24px;
+  min-height:300px;
+  margin-bottom:16px;
+  padding:20px;
+  border:1px solid rgba(93,158,255,.45);
+  border-radius:12px;
+  background:linear-gradient(135deg,rgba(6,30,84,.92),rgba(7,57,145,.92));
+  box-shadow:inset 0 0 26px rgba(31,122,255,.08);
+}
+
+.ps-sc-detail-image{
+  position:relative;
+  min-height:260px;
+  overflow:hidden;
+  border-radius:10px;
+  background:linear-gradient(135deg,#04183f,#0b4da7);
+}
+
+.ps-sc-detail-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:none;
+}
+
+.ps-sc-photo-fallback{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:92px;
+  color:#38c7ff;
+  text-shadow:0 0 20px rgba(0,203,255,.7);
+}
+
+.ps-sc-detail-main{
+  min-width:0;
+}
+
+.ps-sc-detail-code{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:6px;
+  background:#2258bb;
+  font-weight:900;
+}
+
+.ps-sc-detail-main h2{
+  margin:14px 0 10px;
+  font-size:29px;
+  line-height:1.15;
+}
+
+.ps-sc-detail-description{
+  margin:0 0 15px;
+  color:#dbe8ff;
+  line-height:1.55;
+}
+
+.ps-sc-chip-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+}
+
+.ps-chip{
+  padding:6px 10px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:900;
+}
+
+.ps-chip-blue{background:#1d58c5}
+.ps-chip-yellow{background:#e6a91a}
+.ps-chip-muted{background:#173b85}
+
+.ps-sc-detail-stats{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  padding-top:16px;
+  border-top:1px solid rgba(105,163,255,.35);
+}
+
+.ps-sc-detail-stats span,
+.ps-sc-detail-stats strong{
+  display:block;
+}
+
+.ps-sc-detail-stats span{
+  color:#afc9f8;
+  font-size:11px;
+}
+
+.ps-sc-detail-stats strong{
+  margin-top:5px;
+  line-height:1.35;
+}
+
+.ps-sc-detail-side{
+  padding-left:20px;
+  border-left:1px solid rgba(105,163,255,.35);
+}
+
+.ps-sc-detail-side > div{
+  margin-bottom:17px;
+}
+
+.ps-sc-detail-side span{
+  display:block;
+  margin-bottom:6px;
+  color:#a7c5fa;
+  font-size:12px;
+  font-weight:900;
+  text-transform:uppercase;
+}
+
+.ps-sc-detail-side p{
+  margin:0;
+  color:#e1ebff;
+  font-size:13px;
+  line-height:1.5;
+  white-space:pre-line;
+}
+
+.ps-sc-detail-extra{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:16px;
+}
+
+.ps-sc-extra-card,
+.ps-sc-progress-box,
+.ps-sc-trophy-box{
+  padding:16px;
+  border:1px solid rgba(93,158,255,.38);
+  border-radius:10px;
+  background:rgba(5,38,104,.72);
+}
+
+.ps-sc-extra-card h3,
+.ps-sc-progress-box h3,
+.ps-sc-trophy-box h3{
+  margin:0 0 8px;
+  font-size:14px;
+}
+
+.ps-sc-extra-card p,
+.ps-sc-progress-box p,
+.ps-sc-trophy-box p{
+  margin:0;
+  color:#cfddf9;
+  font-size:13px;
+  line-height:1.48;
+  white-space:pre-line;
+}
+
+.ps-sc-trophy-panel{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:12px;
+  margin-bottom:16px;
+}
+
+.ps-sc-actions{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+}
+
+.ps-sc-action{
+  min-height:76px;
+  padding:13px 14px;
+  display:grid;
+  grid-template-columns:34px 1fr 18px;
+  gap:10px;
+  align-items:center;
+  border:1px solid rgba(83,145,239,.45);
+  border-radius:9px;
+  background:rgba(5,37,101,.78);
+  color:#fff;
+  text-decoration:none;
+}
+
+.ps-sc-action:hover{
+  background:rgba(15,67,155,.92);
+}
+
+.ps-sc-action > span{
+  font-size:24px;
+}
+
+.ps-sc-action strong,
+.ps-sc-action small{
+  display:block;
+}
+
+.ps-sc-action small{
+  margin-top:3px;
+  color:#b8cdf4;
+}
+
+.ps-sc-action b{
+  font-size:24px;
+}
+
+.ps-sc-help{
+  margin-top:16px;
+  text-align:center;
+  color:#c2d4f5;
+  font-size:12px;
+}
+
+@media(max-width:1250px){
+  .ps-sc-detail{
+    grid-template-columns:280px minmax(0,1fr);
+  }
+
+  .ps-sc-detail-side{
+    grid-column:1 / -1;
+    padding:16px 0 0;
+    border-left:0;
+    border-top:1px solid rgba(105,163,255,.35);
+  }
+
+  .ps-sc-detail-extra,
+  .ps-sc-actions{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .ps-sc-trophy-panel{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:850px){
+  .ps-sc-app{
+    grid-template-columns:1fr;
+  }
+
+  .ps-sc-menu{
+    position:static;
+    height:auto;
+    flex-direction:row;
+    overflow:auto;
+  }
+
+  .ps-sc-brand{
+    min-width:110px;
+    min-height:68px;
+  }
+
+  .ps-sc-menu-bottom{
+    margin:0;
+    display:flex;
+  }
+
+  .ps-sc-shell{
+    padding:18px 14px 24px;
+  }
+
+  .ps-sc-detail{
+    grid-template-columns:1fr;
+  }
+
+  .ps-sc-detail-image{
+    min-height:220px;
+  }
+}
+
+@media(max-width:620px){
+  .ps-sc-detail-extra,
+  .ps-sc-actions{
+    grid-template-columns:1fr;
+  }
+
+  .ps-sc-detail-stats{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<script>
+(function(){
+  function text(el, value){
+    if(el) el.textContent = value || "";
+  }
+
+  function value(button, name){
+    return button.getAttribute("data-" + name) || "";
+  }
+
+  function setLink(selector, href){
+    document.querySelectorAll(selector).forEach(function(el){
+      el.setAttribute("href", href);
+    });
+  }
+
+  function selectCard(button){
+    if(!button) return;
+
+    document.querySelectorAll(".ps-sc-thumb").forEach(function(el){
+      el.classList.remove("is-selected");
+    });
+
+    button.classList.add("is-selected");
+    button.scrollIntoView({behavior:"smooth", block:"nearest", inline:"center"});
+
+    var id = value(button,"id");
+    var photo = value(button,"photo");
+
+    text(document.querySelector(".js-sc-code"), value(button,"code"));
+    text(document.querySelector(".js-sc-title"), value(button,"title"));
+    text(document.querySelector(".js-sc-current"), value(button,"current"));
+    text(document.querySelector(".js-sc-unit"), value(button,"unit-code") + " · " + value(button,"unit-title"));
+    text(document.querySelector(".js-sc-priority"), value(button,"priority"));
+    text(document.querySelector(".js-sc-date"), value(button,"date"));
+    text(document.querySelector(".js-sc-department"), value(button,"department"));
+    text(document.querySelector(".js-sc-responsible"), value(button,"responsible"));
+    text(document.querySelector(".js-sc-need"), value(button,"need"));
+    text(document.querySelector(".js-sc-work"), value(button,"work"));
+    text(document.querySelector(".js-sc-objective"), value(button,"objective"));
+    text(document.querySelector(".js-sc-scope"), value(button,"scope"));
+    text(document.querySelector(".js-sc-restrictions"), value(button,"restrictions"));
+    text(document.querySelector(".js-sc-resources"), value(button,"resources"));
+    text(document.querySelector(".js-sc-deliverables"), value(button,"deliverables"));
+    text(document.querySelector(".js-sc-criteria"), value(button,"criteria"));
+    text(document.querySelector(".js-sc-reference"), value(button,"reference"));
+
+    var img = document.querySelector(".js-sc-photo");
+    var fallback = document.querySelector(".js-sc-photo-fallback");
+
+    if(img){
+      img.style.display = photo ? "block" : "none";
+      img.src = photo || "";
+      img.alt = value(button,"title");
+      img.onerror = function(){
+        img.style.display = "none";
+        if(fallback) fallback.style.display = "flex";
+      };
+    }
+
+    if(fallback){
+      fallback.style.display = photo ? "none" : "flex";
+    }
+
+    setLink(".js-sc-detail-link", "/detalle/?tabla=solicitud_cliente&id=" + encodeURIComponent(id));
+    setLink(".js-sc-plan-link", "/tabla/?tabla=plan_trabajo&f_id_solicitud_cliente=" + encodeURIComponent(id));
+    setLink(".js-sc-student-link", "/tabla/?tabla=alumno_plan_trabajo&f_id_solicitud_cliente=" + encodeURIComponent(id));
+    setLink(".js-sc-evidence-link", "/tabla/?tabla=evidencia&f_id_solicitud_cliente=" + encodeURIComponent(id));
+  }
+
+  function move(direction){
+    var cards = Array.prototype.slice.call(document.querySelectorAll(".ps-sc-thumb"));
+    if(!cards.length) return;
+
+    var current = document.querySelector(".ps-sc-thumb.is-selected");
+    var index = Math.max(0, cards.indexOf(current));
+    var next = Math.max(0, Math.min(cards.length - 1, index + direction));
+    selectCard(cards[next]);
+  }
+
+  function init(){
+    var carousel = document.querySelector(".ps-sc-carousel");
+    var cards = document.querySelectorAll(".ps-sc-thumb");
+
+    cards.forEach(function(card){
+      card.addEventListener("click", function(){
+        selectCard(card);
+      });
+    });
+
+    var left = document.querySelector(".ps-sc-arrow-left");
+    var right = document.querySelector(".ps-sc-arrow-right");
+
+    if(left) left.addEventListener("click", function(){ move(-1); });
+    if(right) right.addEventListener("click", function(){ move(1); });
+
+    if(carousel){
+      carousel.addEventListener("wheel", function(e){
+        if(Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+          carousel.scrollLeft += e.deltaY;
+          e.preventDefault();
+        }
+      }, {passive:false});
+
+      carousel.addEventListener("keydown", function(e){
+        if(e.key === "ArrowLeft"){
+          e.preventDefault();
+          move(-1);
+        }
+        if(e.key === "ArrowRight"){
+          e.preventDefault();
+          move(1);
+        }
+      });
+    }
+
+    if(cards.length) selectCard(cards[0]);
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", init);
+  }else{
+    init();
+  }
+
+  setTimeout(init,300);
+})();
+</script>
+<!-- /wp:html --></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"e8f967f6","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-e8f967f6 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="mtm-chat-page">
+
+  <div class="mtm-chat-header">
+    <h2>Seguimiento de contacto</h2>
+    <button type="button" class="mtm-add-chat-btn" onclick="mtmOpenConversationModal()">
+      Añadir conversación
+    </button>
+  </div>
+
+  <div class="mtm-chat-container">
+
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <div class="message-row left email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">M</div>
+          <div>
+            <div class="sender">📧 Empresa</div>
+            <div class="contact">María Pérez García · Responsable RRHH</div>
+          </div>
+        </div>
+        Hemos recibido correctamente el Anexo II firmado por el alumno.
+        <span class="time">09:12</span>
+      </div>
+    </div>
+
+    <div class="message-row right email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">C</div>
+          <div>
+            <div class="sender">📧 Centro educativo</div>
+            <div class="contact">Manuel Climent Donaire · Tutor FCT</div>
+          </div>
+        </div>
+        Gracias. Quedamos pendientes del informe semanal.
+        <span class="time">09:24 ✓✓</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <div class="message-row center video">
+      <div class="message-bubble system">
+        <div class="sender">🎥 Videoconferencia</div>
+        <div class="contact">Empresa · Centro educativo · Alumno</div>
+        Reunión de seguimiento de prácticas.
+        <span class="time">10:00</span>
+      </div>
+    </div>
+
+    <div class="message-row left call">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">J</div>
+          <div>
+            <div class="sender">📞 Empresa</div>
+            <div class="contact">Javier Ruiz · Tutor de empresa</div>
+          </div>
+        </div>
+        El alumno llegará hoy 30 minutos más tarde.
+        <span class="time">12:45</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <div class="message-row center visit">
+      <div class="message-bubble system">
+        <div class="sender">🏢 Visita presencial</div>
+        <div class="contact">Seguimiento en empresa</div>
+        Revisión de actividades y entrevista con el tutor laboral.
+        <span class="time">11:15</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- POP-UP -->
+<div id="mtmConversationModal" class="mtm-modal-overlay" onclick="mtmCloseConversationModal()">
+
+  <div class="mtm-modal-box" onclick="event.stopPropagation()">
+
+    <div class="mtm-modal-header">
+      <h2>Añadir conversación</h2>
+      <button type="button" class="mtm-close-btn" onclick="mtmCloseConversationModal()">×</button>
+    </div>
+
+    <form id="mtmConversationForm" class="mtm-conversation-form">
+
+      <input type="hidden" name="id_contacto" value="25">
+
+      <label>Tipo</label>
+      <select name="tipo_movimiento" required>
+        <option value="">Selecciona</option>
+        <option value="correo">📧 Correo electrónico</option>
+        <option value="llamada">📞 Llamada telefónica</option>
+        <option value="videoconferencia">🎥 Videoconferencia</option>
+        <option value="visita">🏢 Visita presencial</option>
+        <option value="mensaje_empresa">🏭 Mensaje empresa</option>
+        <option value="mensaje_centro">🎓 Mensaje centro educativo</option>
+        <option value="documento">📄 Documento</option>
+        <option value="incidencia">⚠️ Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select name="origen" required>
+        <option value="">Selecciona</option>
+        <option value="empresa">Empresa</option>
+        <option value="centro">Centro educativo</option>
+        <option value="ambos">Ambos / reunión</option>
+      </select>
+
+      <label>Posición</label>
+      <select name="posicion" required>
+        <option value="left">Izquierda</option>
+        <option value="right">Derecha</option>
+        <option value="center">Centro</option>
+      </select>
+
+      <div class="mtm-form-grid">
+        <div>
+          <label>Fecha</label>
+          <input type="date" name="fecha" required>
+        </div>
+
+        <div>
+          <label>Hora</label>
+          <input type="time" name="hora">
+        </div>
+      </div>
+
+      <label>Persona de contacto</label>
+      <input type="text" name="persona_contacto" placeholder="Ej. María Pérez">
+
+      <label>Cargo</label>
+      <input type="text" name="cargo" placeholder="Ej. Tutor empresa">
+
+      <label>Comentario</label>
+      <textarea name="comentario" placeholder="Puede quedar vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" name="email" placeholder="correo@empresa.com">
+
+      <div class="mtm-form-actions">
+        <button type="button" class="mtm-cancel-btn" onclick="mtmCloseConversationModal()">Cancelar</button>
+        <button type="submit" class="mtm-save-btn">Guardar</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<style>
+.mtm-chat-page{
+  max-width:1000px;
+  margin:auto;
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.mtm-chat-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.mtm-chat-header h2{
+  margin:0;
+  color:#111827;
+}
+
+.mtm-add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.mtm-add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.mtm-chat-container{
+  padding:20px;
+  min-height:500px;
+}
+
+.chat-date{
+  width:fit-content;
+  margin:25px auto;
+  padding:6px 14px;
+  background:#202c33;
+  color:#d1d7db;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.message-row{
+  display:flex;
+  margin-bottom:14px;
+}
+
+.message-row.left{ justify-content:flex-start; }
+.message-row.right{ justify-content:flex-end; }
+.message-row.center{ justify-content:center; }
+
+.message-bubble{
+  max-width:70%;
+  padding:12px;
+  border-radius:12px;
+  color:#ffffff;
+  line-height:1.5;
+  box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+  background:#202c33;
+}
+
+.right .message-bubble{
+  background:#005c4b;
+}
+
+.center .message-bubble{
+  background:#1f2c34;
+  text-align:center;
+  max-width:60%;
+}
+
+.sender-wrapper{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+
+.avatar{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#54656f;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  color:white;
+  font-size:15px;
+  flex-shrink:0;
+}
+
+.sender{
+  font-weight:700;
+  font-size:14px;
+}
+
+.contact{
+  font-size:12px;
+  color:#c7d1d6;
+  margin-top:2px;
+}
+
+.time{
+  display:block;
+  text-align:right;
+  margin-top:8px;
+  color:#b9c0c4;
+  font-size:11px;
+}
+
+.system .time{
+  text-align:center;
+}
+
+.email .sender{ color:#66cfff; }
+.call .sender{ color:#ffd54f; }
+.video .sender{ color:#81c784; }
+.visit .sender{ color:#ffb74d; }
+.company .sender{ color:#ce93d8; }
+.school .sender{ color:#64b5f6; }
+.document .sender{ color:#90caf9; }
+.incident .sender{ color:#ff8a80; }
+
+/* POP-UP */
+.mtm-modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  z-index:99999;
+  justify-content:center;
+  align-items:center;
+}
+
+.mtm-modal-box{
+  width:420px;
+  max-width:92vw;
+  background:#ffffff;
+  border-radius:16px;
+  padding:0;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+  overflow:hidden;
+  animation:mtmPopupIn .18s ease-out;
+}
+
+@keyframes mtmPopupIn{
+  from{
+    transform:scale(.94);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.mtm-modal-header{
+  padding:16px 18px;
+  background:#5468e7;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.mtm-modal-header h2{
+  margin:0;
+  font-size:18px;
+  color:white;
+}
+
+.mtm-close-btn{
+  border:none;
+  background:transparent;
+  color:white;
+  font-size:26px;
+  cursor:pointer;
+}
+
+.mtm-conversation-form{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+
+.mtm-conversation-form label{
+  font-size:12px;
+  font-weight:600;
+  color:#374151;
+}
+
+.mtm-conversation-form input,
+.mtm-conversation-form select,
+.mtm-conversation-form textarea{
+  width:100%;
+  padding:9px 10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+  box-sizing:border-box;
+}
+
+.mtm-conversation-form textarea{
+  min-height:75px;
+  resize:vertical;
+}
+
+.mtm-form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.mtm-form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:12px;
+}
+
+.mtm-cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:9px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:9px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn:hover{
+  background:#4056d6;
+}
+
+@media(max-width:600px){
+  .mtm-chat-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .message-bubble,
+  .center .message-bubble{
+    max-width:90%;
+  }
+
+  .mtm-form-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<script>
+function mtmOpenConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "flex";
+}
+
+function mtmCloseConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "none";
+}
+
+document.getElementById("mtmConversationForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const datos = Object.fromEntries(formData);
+
+  console.log(datos);
+
+  alert("Conversación preparada. Más adelante se guardará en la base de datos.");
+
+  mtmCloseConversationModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"3a87e0d8","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-3a87e0d8 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="chat-demo">
+
+    <!-- FECHA -->
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <!-- CORREO EMPRESA -->
+    <div class="message-row left email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Empresa
+                    </div>
+
+                    <div class="contact">
+                        María Pérez García · Responsable RRHH
+                    </div>
+                </div>
+
+            </div>
+
+            Hemos recibido correctamente el Anexo II firmado por el alumno.
+
+            <span class="time">09:12</span>
+
+        </div>
+    </div>
+
+    <!-- CORREO CENTRO -->
+    <div class="message-row right email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Gracias. Quedamos pendientes del informe semanal.
+
+            <span class="time">09:24 ✓✓</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <!-- VIDEOCONFERENCIA -->
+    <div class="message-row center video">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🎥 Videoconferencia
+            </div>
+
+            <div class="contact">
+                Empresa · Centro educativo · Alumno
+            </div>
+
+            Reunión de seguimiento de prácticas.
+
+            <span class="time">10:00</span>
+
+        </div>
+    </div>
+
+    <!-- LLAMADA -->
+    <div class="message-row left call">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">J</div>
+
+                <div>
+                    <div class="sender">
+                        📞 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Javier Ruiz · Tutor de empresa
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno llegará hoy 30 minutos más tarde.
+
+            <span class="time">12:45</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <!-- VISITA -->
+    <div class="message-row center visit">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🏢 Visita presencial
+            </div>
+
+            <div class="contact">
+                Seguimiento en empresa
+            </div>
+
+            Revisión de actividades y entrevista con el tutor laboral.
+
+            <span class="time">11:15</span>
+
+        </div>
+    </div>
+
+    <!-- MENSAJE EMPRESA -->
+    <div class="message-row left company">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">L</div>
+
+                <div>
+                    <div class="sender">
+                        🏭 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Laura Gómez · Responsable de formación
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno ha completado correctamente las tareas asignadas esta semana.
+
+            <span class="time">13:10</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Viernes, 7 de junio de 2026</div>
+
+    <!-- MENSAJE CENTRO -->
+    <div class="message-row right school">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        🎓 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Se validan las horas realizadas y el seguimiento semanal.
+
+            <span class="time">08:55 ✓✓</span>
+
+        </div>
+    </div>
+
+    <!-- DOCUMENTO -->
+    <div class="message-row center document">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                📄 Documento adjunto
+            </div>
+
+            <div class="contact">
+                Anexo III
+            </div>
+
+            Documento firmado por todas las partes.
+
+            <span class="time">09:20</span>
+
+        </div>
+    </div>
+
+    <!-- INCIDENCIA -->
+    <div class="message-row center incident">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                ⚠️ Incidencia
+            </div>
+
+            <div class="contact">
+                Ausencia justificada
+            </div>
+
+            Falta registrada y validada.
+
+            <span class="time">11:40</span>
+
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+
+.chat-demo{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.chat-date{
+    width:fit-content;
+    margin:25px auto;
+    padding:6px 14px;
+    background:#202c33;
+    color:#d1d7db;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.message-row{
+    display:flex;
+    margin-bottom:14px;
+}
+
+.message-row.left{
+    justify-content:flex-start;
+}
+
+.message-row.right{
+    justify-content:flex-end;
+}
+
+.message-row.center{
+    justify-content:center;
+}
+
+.message-bubble{
+    max-width:70%;
+    padding:12px;
+    border-radius:12px;
+    color:#ffffff;
+    line-height:1.5;
+    box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+    background:#202c33;
+}
+
+.right .message-bubble{
+    background:#005c4b;
+}
+
+.center .message-bubble{
+    background:#1f2c34;
+    text-align:center;
+    max-width:60%;
+}
+
+.sender-wrapper{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#54656f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:white;
+    font-size:15px;
+    flex-shrink:0;
+}
+
+.sender{
+    font-weight:700;
+    font-size:14px;
+}
+
+.contact{
+    font-size:12px;
+    color:#c7d1d6;
+    margin-top:2px;
+}
+
+.time{
+    display:block;
+    text-align:right;
+    margin-top:8px;
+    color:#b9c0c4;
+    font-size:11px;
+}
+
+.system .time{
+    text-align:center;
+}
+
+/* Tipos */
+
+.email .sender{
+    color:#66cfff;
+}
+
+.call .sender{
+    color:#ffd54f;
+}
+
+.video .sender{
+    color:#81c784;
+}
+
+.visit .sender{
+    color:#ffb74d;
+}
+
+.company .sender{
+    color:#ce93d8;
+}
+
+.school .sender{
+    color:#64b5f6;
+}
+
+.document .sender{
+    color:#90caf9;
+}
+
+.incident .sender{
+    color:#ff8a80;
+}
+
+</style>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"ab878742","variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-ab878742 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<button class="add-chat-btn" onclick="openModal()">Añadir conversación</button>
+
+<div id="conversationModal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Añadir conversación</h2>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+
+    <form class="conversation-form">
+
+      <label>Tipo de movimiento</label>
+      <select>
+        <option>Correo electrónico</option>
+        <option>Llamada telefónica</option>
+        <option>Videoconferencia</option>
+        <option>Visita presencial</option>
+        <option>Mensaje empresa</option>
+        <option>Mensaje centro educativo</option>
+        <option>Documento</option>
+        <option>Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select>
+        <option>Empresa</option>
+        <option>Centro educativo</option>
+        <option>Ambos / reunión</option>
+      </select>
+
+      <label>Posición en el chat</label>
+      <select>
+        <option>Izquierda</option>
+        <option>Derecha</option>
+        <option>Centro</option>
+      </select>
+
+      <label>Fecha</label>
+      <input type="date">
+
+      <label>Hora</label>
+      <input type="time">
+
+      <label>Persona de contacto</label>
+      <input type="text" placeholder="Ej. María Pérez García">
+
+      <label>Cargo</label>
+      <input type="text" placeholder="Ej. Responsable RRHH">
+
+      <label>Comentario</label>
+      <textarea placeholder="Escribe el texto de la conversación o déjalo vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" placeholder="correo@empresa.com">
+
+      <div class="form-actions">
+        <button type="button" class="cancel-btn" onclick="closeModal()">Cancelar</button>
+        <button type="submit" class="save-btn">Guardar</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<style>
+.add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-box{
+  width:90%;
+  max-width:520px;
+  background:#ffffff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.modal-header h2{
+  margin:0;
+  font-size:22px;
+  color:#111827;
+}
+
+.close-btn{
+  border:none;
+  background:none;
+  font-size:28px;
+  cursor:pointer;
+  color:#6b7280;
+}
+
+.conversation-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.conversation-form label{
+  font-size:13px;
+  font-weight:600;
+  color:#374151;
+}
+
+.conversation-form input,
+.conversation-form select,
+.conversation-form textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+}
+
+.conversation-form textarea{
+  min-height:90px;
+  resize:vertical;
+}
+
+.form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:16px;
+}
+
+.cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn:hover{
+  background:#4056d6;
+}
+</style>
+
+<script>
+function openModal(){
+  document.getElementById("conversationModal").style.display = "flex";
+}
+
+function closeModal(){
+  document.getElementById("conversationModal").style.display = "none";
+}
+
+document.querySelector(".conversation-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  alert("Aquí se grabará más adelante en la base de datos.");
+
+  closeModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
