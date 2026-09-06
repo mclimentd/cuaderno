@@ -1,0 +1,4371 @@
+
+<!-- wp:uagb/container {"block_id":"72a2c0cc","innerContentWidth":"alignfull","minHeightDesktop":800,"justifyContentDesktop":"flex-start","backgroundType":"color","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"backgroundColor":"","variationSelected":true,"isBlockRootParent":true} -->
+<div class="wp-block-uagb-container uagb-block-72a2c0cc alignfull uagb-is-root-container"><!-- wp:html -->
+[[VIEW tarjetas]]
+
+<!--
+PLANTILLA ACTUALIZADA AL NUEVO MODELO SINGULAR id_tabla PARA:
+  /tabla/?tabla=alumno_plan_trabajo&f_id_alumno=1&f_id_solicitud_cliente=1
+
+Incluye dos vistas:
+  1) Lista / dashboard actual
+  2) Línea de tiempo tipo cronograma
+
+El selector de vista está dentro de la propia plantilla.
+-->
+
+<div class="work-app">
+
+  <aside class="work-menu">
+    <div class="work-menu-logo">
+      <img
+        src="[[PARENT id_solicitud_cliente.id_proyecto.logo]]"
+        alt="[[PARENT id_solicitud_cliente.id_proyecto.nombre]]"
+        onerror="this.src='[[PARENT id_solicitud_cliente.id_proyecto.foto]]';">
+    </div>
+
+    <a class="mtm-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">⌂<span>Inicio</span></a>
+    <a class="mtm-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">📁<span>Proyectos</span></a>
+    <a class="mtm-nav" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_alumno=[[PARENT id_alumno]]&amp;f_id_solicitud_cliente=[[PARENT id_solicitud_cliente]]" onclick="event.stopPropagation();">📅<span>Plan</span></a>
+    <a class="mtm-nav" href="/tabla/?tabla=evidencia" onclick="event.stopPropagation();">▤<span>Evidencias</span></a>
+    <a class="mtm-nav" href="/detalle/?tabla=alumno&amp;id=[[PARENT id_alumno]]" onclick="event.stopPropagation();">👤<span>Perfil</span></a>
+
+    <div class="work-menu-bottom">
+      <a class="mtm-nav" href="/ayuda" onclick="event.stopPropagation();">❔<span>Ayuda</span></a>
+      <a class="mtm-nav" href="/wp-login.php?action=logout" onclick="event.stopPropagation();">↪<span>Salir</span></a>
+    </div>
+  </aside>
+
+  <main class="work-page">
+
+    <div class="work-topbar">
+
+      <div class="work-breadcrumb">
+        <a class="mtm-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">Proyectos</a>
+        <span>›</span>
+        <span>[[PARENT id_solicitud_cliente.unidad_titulo]]</span>
+        <span>›</span>
+        <strong>[[PARENT id_solicitud_cliente.codigo]]</strong>
+      </div>
+
+      <div class="work-user">
+        <span class="work-user-bell">🔔<em>3</em></span>
+        <span class="work-user-icon">👤</span>
+        <div>
+          <strong>[[PARENT id_alumno]]</strong>
+          <small>Alumno</small>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="work-layout">
+
+      <section class="work-main">
+
+        <div class="work-hero">
+
+          <div class="work-hero-icon">
+            <img
+              src="[[PARENT id_solicitud_cliente.foto]]"
+              alt="Solicitud"
+              onerror="this.style.display='none';this.parentNode.innerHTML='✉️';">
+          </div>
+
+          <div>
+            <div class="work-code">[[PARENT id_solicitud_cliente.codigo]]</div>
+
+            <h1>[[PARENT id_solicitud_cliente.titulo]]</h1>
+
+            <div class="work-meta-line">
+              <span>📁 Proyecto: <strong>[[PARENT id_solicitud_cliente.id_proyecto.nombre]]</strong></span>
+              <span>🎯 Hito: <strong>[[PARENT id_solicitud_cliente.unidad_titulo]]</strong></span>
+              <span>👤 Alumno: <strong>[[PARENT id_alumno]]</strong></span>
+            </div>
+          </div>
+
+        </div>
+
+        <section class="work-plan-card">
+
+          <input class="mtm-view-radio" type="radio" name="mtm-plan-view" id="mtm-plan-lista" checked>
+          <input class="mtm-view-radio" type="radio" name="mtm-plan-view" id="mtm-plan-timeline">
+
+          <div class="work-section-title">
+            <h2>Plan de trabajo</h2>
+
+            <div class="view-switch view-switch-top">
+              <label class="view-btn view-btn-lista" for="mtm-plan-lista">☷ Lista</label>
+              <label class="view-btn view-btn-timeline" for="mtm-plan-timeline">⇄ Línea de tiempo</label>
+            </div>
+          </div>
+
+          <!-- VISTA 1: LISTA / DASHBOARD ANTERIOR -->
+          <div class="work-view work-view-lista is-visible">
+
+            <div class="work-task-list">
+
+              [[FOREACH]]
+
+              <article class="work-task [[IF id_estado.nombre='Validada']]is-verde[[ENDIF]][[IF id_estado.nombre='Completada']]is-verde[[ENDIF]][[IF id_estado.nombre='Finalizada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrado']]is-verde[[ENDIF]][[IF id_estado.nombre='En curso']]is-azul[[ENDIF]][[IF id_estado.nombre='Pendiente']]is-gris[[ENDIF]][[IF id_estado.nombre='Atrasada']]is-rojo[[ENDIF]]"
+                       data-estado="[[id_estado.nombre]]" data-estado-id="[[id_estado]]" data-record-id="[[id_alumno_plan_trabajo]]" data-solicitud="[[id_solicitud_cliente]]"
+                       data-progress="[[porcentaje_completado]]" data-xp="[[id_plan_trabajo.xp_max]]">
+
+                <div class="work-task-number">[[id_plan_trabajo.orden]]</div>
+
+                <div class="work-task-status-dot"></div>
+
+                <div class="work-task-main">
+                  <h3>
+                    <a class="mtm-nav"
+                       href="/detalle/?tabla=plan_trabajo&amp;id=[[id_plan_trabajo]]"
+                       onclick="event.stopPropagation();">
+                      [[id_plan_trabajo.titulo]]
+                    </a>
+                  </h3>
+
+                  <p>[[id_plan_trabajo.descripcion]]</p>
+                </div>
+
+                <div class="work-task-links">
+                  <a class="mtm-nav"
+                     href="/detalle/?tabla=solicitud_cliente&amp;id=[[id_solicitud_cliente]]"
+                     onclick="event.stopPropagation();">
+                    📄 Solicitud del cliente
+                  </a>
+
+                  <a class="mtm-nav"
+                     href="/tabla/?tabla=evidencia&amp;f_id_alumno_plan_trabajo=[[id_alumno_plan_trabajo]]"
+                     onclick="event.stopPropagation();">
+                    📘 Cuaderno profesional
+                  </a>
+
+                  <a class="mtm-nav"
+                     href="/tabla/?tabla=integracion_moodle&amp;f_id_plan_trabajo=[[id_plan_trabajo]]"
+                     onclick="event.stopPropagation();">
+                    🎓 [[id_plan_trabajo.codigo]] · Moodle
+                  </a>
+                </div>
+
+                <div class="work-task-state">
+                  <span class="work-badge">[[id_estado.nombre]]</span>
+
+                  <small>
+                    Progreso<br>
+                    <strong>[[porcentaje_completado]]%</strong>
+                  </small>
+                </div>
+
+                <div class="work-task-xp">+[[id_plan_trabajo.xp_max]] XP</div>
+
+                <div class="work-task-progress">
+                  <div class="work-circle"
+                       style="--p:[[porcentaje_completado]]%;
+                              [[IF id_estado.nombre='Validada']]--c:#16a34a;[[ENDIF]]
+                              [[IF id_estado.nombre='Completada']]--c:#16a34a;[[ENDIF]]
+                              [[IF id_estado.nombre='Finalizada']]--c:#16a34a;[[ENDIF]]
+                              [[IF id_estado.nombre='Cerrada']]--c:#16a34a;[[ENDIF]]
+                              [[IF id_estado.nombre='Cerrado']]--c:#16a34a;[[ENDIF]]
+                              [[IF id_estado.nombre='En curso']]--c:#2563eb;[[ENDIF]]
+                              [[IF id_estado.nombre='Pendiente']]--c:#cbd5e1;[[ENDIF]]
+                              [[IF id_estado.nombre='Atrasada']]--c:#dc2626;[[ENDIF]]">
+                    <span>[[porcentaje_completado]]%</span>
+                  </div>
+                </div>
+
+                <a class="work-task-arrow mtm-nav"
+                   href="/detalle/?tabla=plan_trabajo&amp;id=[[id_plan_trabajo]]"
+                   onclick="event.stopPropagation();">›</a>
+
+              </article>
+
+              [[ENDFOREACH]]
+
+            </div>
+
+          </div>
+
+          <!-- VISTA 2: LÍNEA DE TIEMPO -->
+          <div class="work-view work-view-timeline">
+<div class="timeline-board">
+
+              <div class="timeline-head">
+                <div class="timeline-head-task">Tarea</div>
+                <div class="timeline-month">
+                  <div class="timeline-month-title">septiembre 2026</div>
+                  <div class="timeline-days">
+                    <span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span><span>21</span><span>22</span><span>23</span><span>24</span><span>25</span><span>26</span><span>27</span><span>28</span><span>29</span><span>30</span>
+                  </div>
+                </div>
+                <div class="timeline-month">
+                  <div class="timeline-month-title">octubre 2026</div>
+                  <div class="timeline-days">
+                    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span>
+                  </div>
+                </div>
+              </div>
+
+              [[FOREACH]]
+
+              <article class="timeline-row [[IF id_estado.nombre='Validada']]is-verde[[ENDIF]][[IF id_estado.nombre='Completada']]is-verde[[ENDIF]][[IF id_estado.nombre='Finalizada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrado']]is-verde[[ENDIF]][[IF id_estado.nombre='En curso']]is-azul[[ENDIF]][[IF id_estado.nombre='Pendiente']]is-gris[[ENDIF]][[IF id_estado.nombre='Atrasada']]is-rojo[[ENDIF]]"
+                       data-estado="[[id_estado.nombre]]" data-estado-id="[[id_estado]]" data-record-id="[[id_alumno_plan_trabajo]]" data-solicitud="[[id_solicitud_cliente]]"
+                       data-progress="[[porcentaje_completado]]"
+                       data-orden="[[id_plan_trabajo.orden]]"
+                       data-fecha-inicio-prevista="[[id_plan_trabajo.fecha_inicio_prevista]]"
+                       data-fecha-fin-prevista="[[id_plan_trabajo.fecha_fin_prevista]]"
+                       data-fecha-inicio-real="[[fecha_inicio_real]]"
+                       data-fecha-fin-real="[[fecha_fin_real]]">
+
+                <div class="timeline-task-cell">
+                  <div class="timeline-task-number">[[id_plan_trabajo.orden]]</div>
+                  <div>
+                    <h3>[[id_plan_trabajo.titulo]]</h3>
+                    <p><strong>[[porcentaje_completado]]%</strong> · [[id_estado.nombre]]</p>
+                  </div>
+                </div>
+
+                <div class="timeline-grid-cell">
+                  <div class="timeline-bar">
+                    <span class="timeline-bar-progress" style="width:[[porcentaje_completado]]%;"></span>
+                    <b></b>
+                  </div>
+                </div>
+
+              </article>
+
+              [[ENDFOREACH]]
+
+              <div class="timeline-legend">
+                <span><i class="legend-dot green"></i> Validada</span>
+                <span><i class="legend-dot blue"></i> En curso</span>
+                <span><i class="legend-dot gray"></i> Pendiente</span>
+                <span><i class="legend-dot red"></i> Atrasada</span>
+                <span><i class="legend-diamond"></i> Hito</span>
+              </div>
+
+            </div>
+
+            <div class="work-info-note timeline-note">
+              ℹ️ La línea de tiempo muestra la planificación de las tareas del plan de trabajo.
+              <br>
+              Puedes arrastrar las tareas para ajustar las fechas si tienes permisos.
+            </div>
+
+          </div>
+
+        </section>
+
+        <div class="work-info-note">
+          ℹ️ Haz clic en una tarea para ver los detalles, entregar tu trabajo y revisar la evaluación.
+        </div>
+
+      </section>
+
+      <aside class="work-sidebar">
+
+        <section class="side-card side-summary">
+          <h3>Resumen del alumno</h3>
+          <div class="side-stats">
+            <div><strong>0</strong><span>Tareas</span></div>
+            <div><strong>0 XP</strong><span>Experiencia</span></div>
+            <div><strong>Pendiente</strong><span>Estado actual</span></div>
+          </div>
+        </section>
+
+        <section class="side-card">
+          <h3>Progreso global</h3>
+
+          <div class="progress-row js-global-progress">
+            <div class="progress-bar">
+              <span style="width:0%"></span>
+            </div>
+            <strong>0%</strong>
+          </div>
+
+          <div class="side-progress-icons progress-stats">
+            <div><b>✓</b><strong>1</strong><span>Completadas</span></div>
+            <div><b>▷</b><strong>1</strong><span>En curso</span></div>
+            <div><b>◷</b><strong>0</strong><span>Atrasadas</span></div>
+            <div><b>▣</b><strong>4</strong><span>Pendientes</span></div>
+          </div>
+        </section>
+
+        <section class="side-card">
+          <h3>Próximas tareas</h3>
+
+          <div class="next-tasks">
+
+            [[FOREACH]]
+
+            <a data-xp="[[id_plan_trabajo.xp_max]]" class="next-task mtm-nav [[IF id_estado.nombre='Validada']]is-verde[[ENDIF]][[IF id_estado.nombre='Completada']]is-verde[[ENDIF]][[IF id_estado.nombre='Finalizada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrada']]is-verde[[ENDIF]][[IF id_estado.nombre='Cerrado']]is-verde[[ENDIF]][[IF id_estado.nombre='En curso']]is-azul[[ENDIF]][[IF id_estado.nombre='Pendiente']]is-gris[[ENDIF]][[IF id_estado.nombre='Atrasada']]is-rojo[[ENDIF]]"
+               href="/detalle/?tabla=plan_trabajo&amp;id=[[id_plan_trabajo]]"
+               onclick="event.stopPropagation();">
+              <span class="next-task-number">[[id_plan_trabajo.orden]]</span>
+              <span>
+                <strong>[[id_plan_trabajo.titulo]]</strong>
+                <small>Progreso: [[porcentaje_completado]]%</small>
+              </span>
+              <em>[[id_estado.nombre]]</em>
+            </a>
+
+            [[ENDFOREACH]]
+
+          </div>
+
+          <a class="see-all mtm-nav"
+             href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_alumno=[[PARENT id_alumno]]&amp;f_id_solicitud_cliente=[[PARENT id_solicitud_cliente]]"
+             onclick="event.stopPropagation();">
+            Ver todas las tareas ›
+          </a>
+        </section>
+
+        <section class="side-card priority-card">
+          <h3>Prioridad del hito</h3>
+          <strong>[[PARENT id_solicitud_cliente.prioridad]]</strong>
+          <p>📅 Fecha de solicitud: [[PARENT id_solicitud_cliente.fecha]]</p>
+          <div class="priority-progress"><span></span></div>
+          <small>Tiempo restante estimado</small>
+        </section>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+</div>
+
+[[ENDVIEW]]
+
+<style>
+.work-app{
+  display:grid;
+  grid-template-columns:132px minmax(0,1fr);
+  min-height:100vh;
+  background:#f8fbff;
+  font-family:Arial,sans-serif;
+  color:#071733;
+}
+
+.work-menu{
+  background:linear-gradient(180deg,#061a38,#003b72);
+  color:white;
+  padding:20px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  position:sticky;
+  top:0;
+  height:100vh;
+  box-sizing:border-box;
+}
+
+.work-menu-logo{
+  margin-bottom:18px;
+}
+
+.work-menu-logo img{
+  width:100%;
+  max-height:76px;
+  object-fit:contain;
+  display:block;
+}
+
+.work-menu a{
+  color:white;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:6px;
+  padding:12px 6px;
+  border-radius:12px;
+  font-weight:700;
+  font-size:13px;
+  transition:.15s;
+}
+
+.work-menu a:hover,
+.work-menu a:nth-child(4){
+  background:rgba(255,255,255,.12);
+}
+
+.work-menu-bottom{
+  margin-top:auto;
+}
+
+.work-page{
+  padding:0 26px 26px;
+  min-width:0;
+}
+
+.work-topbar{
+  height:74px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:white;
+  border-bottom:1px solid #d8e3f4;
+  margin:0 -26px 24px;
+  padding:0 34px;
+  box-sizing:border-box;
+}
+
+.work-breadcrumb{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  font-weight:800;
+  color:#003da5;
+  flex-wrap:wrap;
+}
+
+.work-breadcrumb a{
+  color:#003da5;
+  text-decoration:none;
+}
+
+.work-breadcrumb span{
+  color:#64748b;
+}
+
+.work-user{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.work-user-bell{
+  position:relative;
+  font-size:22px;
+  margin-right:8px;
+}
+
+.work-user-bell em{
+  position:absolute;
+  top:-8px;
+  right:-10px;
+  background:#ef4444;
+  color:white;
+  border-radius:50%;
+  font-size:11px;
+  font-style:normal;
+  width:18px;
+  height:18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.work-user-icon{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#2563eb;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.work-user small{
+  display:block;
+  color:#64748b;
+}
+
+.work-layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 390px;
+  gap:24px;
+}
+
+.work-hero{
+  display:grid;
+  grid-template-columns:92px minmax(0,1fr);
+  gap:20px;
+  align-items:center;
+  padding-bottom:24px;
+  border-bottom:1px solid #d8e3f4;
+  margin-bottom:20px;
+}
+
+.work-hero-icon{
+  width:72px;
+  height:72px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#dbeafe,#93c5fd);
+  border:1px solid #a9c1ee;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:36px;
+  box-shadow:0 6px 16px rgba(37,99,235,.16);
+  overflow:hidden;
+}
+
+.work-hero-icon img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+
+.work-code{
+  color:#003db8;
+  font-weight:900;
+  font-size:26px;
+}
+
+.work-hero h1{
+  margin:4px 0 18px;
+  font-size:30px;
+  line-height:1.15;
+  color:#071733;
+}
+
+.work-meta-line{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  font-size:14px;
+  color:#0f2c5c;
+}
+
+.work-plan-card,
+.side-card,
+.work-info-note{
+  background:white;
+  border:1px solid #cbdcf5;
+  border-radius:10px;
+  box-shadow:0 4px 16px rgba(15,23,42,.06);
+}
+
+.work-section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 20px;
+  border-bottom:1px solid #d8e3f4;
+}
+
+.work-section-title h2{
+  margin:0;
+  color:#003da5;
+  font-size:18px;
+  text-transform:uppercase;
+}
+
+.view-switch{
+  display:flex;
+  gap:8px;
+}
+
+.view-btn,
+.timeline-tool{
+  border:1px solid #b9ccef;
+  background:white;
+  color:#003da5;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:800;
+  cursor:pointer;
+  text-decoration:none;
+  font-family:inherit;
+}
+
+.view-btn.is-active,
+.timeline-tool.is-active{
+  background:#eaf1ff;
+  box-shadow:inset 0 0 0 1px #2563eb;
+}
+
+.work-view{
+  display:none;
+}
+
+.work-view.is-visible{
+  display:block;
+}
+
+/* LISTA */
+.work-task{
+  display:grid;
+  grid-template-columns:58px 34px minmax(0,1fr) 200px 138px 82px 70px 22px;
+  gap:18px;
+  align-items:center;
+  padding:18px 20px;
+  border-bottom:1px solid #e1e8f5;
+}
+
+.work-task:last-child{
+  border-bottom:none;
+}
+
+.work-task-number,
+.timeline-task-number,
+.next-task-number{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#94a3b8;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  font-size:20px;
+}
+
+.work-task-status-dot{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  border:3px solid #94a3b8;
+  box-sizing:border-box;
+}
+
+.work-task-main h3{
+  margin:0 0 8px;
+  font-size:17px;
+}
+
+.work-task-main h3 a{
+  color:#071733;
+  text-decoration:none;
+}
+
+.work-task-main p{
+  margin:0;
+  font-size:14px;
+  line-height:1.4;
+}
+
+.work-task-links{
+  border-left:1px solid #d8e3f4;
+  padding-left:20px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:14px;
+}
+
+.work-task-links a{
+  color:#003da5;
+  text-decoration:none;
+}
+
+.work-badge{
+  display:inline-block;
+  padding:7px 14px;
+  border-radius:8px;
+  font-weight:800;
+  background:#eef2f7;
+  color:#0f172a;
+}
+
+.work-task-state small{
+  display:block;
+  margin-top:8px;
+}
+
+.work-task-xp{
+  color:#7c3aed;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+.work-circle{
+  --progress:0;
+  --circle-color:#94a3b8;
+  width:54px;
+  height:54px;
+  border-radius:50%;
+  background:conic-gradient(var(--circle-color) calc(var(--progress) * 1%), #e5e7eb 0);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  position:relative;
+}
+
+.work-circle:before{
+  content:"";
+  position:absolute;
+  inset:6px;
+  background:white;
+  border-radius:50%;
+}
+
+.work-circle span{
+  position:relative;
+  z-index:1;
+  font-size:13px;
+}
+
+.work-task-arrow{
+  color:#003da5;
+  text-decoration:none;
+  font-size:28px;
+}
+
+/* COLORES ESTADO */
+.is-verde .work-task-number,
+.is-verde .timeline-task-number,
+.next-task.is-verde .next-task-number{ background:#16a34a; }
+.is-azul .work-task-number,
+.is-azul .timeline-task-number,
+.next-task.is-azul .next-task-number{ background:#2563eb; }
+.is-gris .work-task-number,
+.is-gris .timeline-task-number,
+.next-task.is-gris .next-task-number{ background:#64748b; }
+.is-rojo .work-task-number,
+.is-rojo .timeline-task-number,
+.next-task.is-rojo .next-task-number{ background:#dc2626; }
+.is-naranja .work-task-number,
+.is-naranja .timeline-task-number,
+.next-task.is-naranja .next-task-number{ background:#f97316; }
+.is-morado .work-task-number,
+.is-morado .timeline-task-number,
+.next-task.is-morado .next-task-number{ background:#7c3aed; }
+
+.is-verde .work-badge{ background:#dcfce7;color:#166534; }
+.is-azul .work-badge{ background:#dbeafe;color:#1d4ed8; }
+.is-gris .work-badge{ background:#eef2f7;color:#0f172a; }
+.is-rojo .work-badge{ background:#fee2e2;color:#991b1b; }
+.is-naranja .work-badge{ background:#ffedd5;color:#9a3412; }
+.is-morado .work-badge{ background:#ede9fe;color:#5b21b6; }
+
+.is-verde .work-circle{ --circle-color:#16a34a; }
+.is-azul .work-circle{ --circle-color:#2563eb; }
+.is-gris .work-circle{ --circle-color:#cbd5e1; }
+.is-rojo .work-circle{ --circle-color:#dc2626; }
+.is-naranja .work-circle{ --circle-color:#f97316; }
+.is-morado .work-circle{ --circle-color:#7c3aed; }
+
+/* TIMELINE */
+.timeline-toolbar{
+  display:none !important;
+}
+
+.timeline-board{
+  overflow:auto;
+}
+
+.timeline-head{
+  display:grid;
+  grid-template-columns:220px 1fr 420px;
+  border-bottom:1px solid #e1e8f5;
+  min-width:900px;
+}
+
+.timeline-head-task{
+  padding:18px;
+  font-weight:900;
+  color:#0f2c5c;
+  text-transform:uppercase;
+  border-right:1px solid #e1e8f5;
+}
+
+.timeline-month{
+  border-right:1px solid #e1e8f5;
+}
+
+.timeline-month-title{
+  text-align:center;
+  padding:10px;
+  font-weight:900;
+  color:#0f2c5c;
+}
+
+.timeline-days{
+  display:grid;
+  grid-template-columns:repeat(16,1fr);
+}
+
+.timeline-month:nth-child(3) .timeline-days{
+  grid-template-columns:repeat(7,1fr);
+}
+
+.timeline-days span,
+.timeline-days strong{
+  text-align:center;
+  padding:8px 0;
+  border-left:1px solid #edf2fb;
+  font-size:13px;
+}
+
+.timeline-days strong{
+  background:#2563eb;
+  color:white;
+  border-radius:50%;
+  margin:auto;
+  width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.timeline-row{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  min-height:68px;
+  min-width:900px;
+  border-bottom:1px solid #e1e8f5;
+}
+
+.timeline-task-cell{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  padding:12px 16px;
+  border-right:1px solid #e1e8f5;
+}
+
+.timeline-task-cell h3{
+  margin:0 0 4px;
+  font-size:14px;
+}
+
+.timeline-task-cell p{
+  margin:0;
+  color:#334155;
+  font-size:13px;
+}
+
+.timeline-grid-cell{
+  position:relative;
+  background:
+    repeating-linear-gradient(90deg,#edf2fb 0,#edf2fb 1px,transparent 1px,transparent 40px);
+  display:flex;
+  align-items:center;
+}
+
+.timeline-bar{
+  --start:1;
+  --span:4;
+  --progress:0;
+  --bar-color:#cbd5e1;
+  height:22px;
+  border-radius:999px;
+  background:#cbd5e1;
+  margin-left:calc(var(--start) * 40px);
+  width:calc(var(--span) * 40px);
+  position:relative;
+  box-shadow:0 4px 10px rgba(15,23,42,.14);
+}
+
+.timeline-bar-progress{
+  display:block;
+  height:100%;
+  width:calc(var(--progress) * 1%);
+  background:var(--bar-color);
+  border-radius:999px;
+}
+
+.timeline-bar b{
+  position:absolute;
+  right:-48px;
+  top:2px;
+  color:#0f2c5c;
+  font-size:13px;
+}
+
+.timeline-row.is-verde .timeline-bar{ --bar-color:#16a34a;background:#bbf7d0; }
+.timeline-row.is-azul .timeline-bar{ --bar-color:#2563eb;background:#dbeafe; }
+.timeline-row.is-gris .timeline-bar{ --bar-color:#cbd5e1;background:#cbd5e1; }
+.timeline-row.is-rojo .timeline-bar{ --bar-color:#dc2626;background:#fecaca; }
+.timeline-row.is-naranja .timeline-bar{ --bar-color:#f97316;background:#fed7aa; }
+.timeline-row.is-morado .timeline-bar{ --bar-color:#7c3aed;background:#ede9fe; }
+
+.timeline-legend{
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  padding:16px 20px;
+  font-size:13px;
+}
+
+.legend-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:8px;
+}
+
+.legend-dot.green{background:#16a34a;}
+.legend-dot.blue{background:#2563eb;}
+.legend-dot.gray{background:#94a3b8;}
+.legend-dot.red{background:#dc2626;}
+
+.legend-diamond{
+  width:12px;
+  height:12px;
+  background:#0f2c5c;
+  display:inline-block;
+  transform:rotate(45deg);
+  margin-right:8px;
+}
+
+/* SIDEBAR */
+.work-info-note{
+  margin-top:18px;
+  padding:14px 18px;
+  color:#003da5;
+}
+
+.side-card{
+  padding:18px;
+  margin-bottom:16px;
+}
+
+.side-card h3{
+  margin:0 0 16px;
+  color:#003da5;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+.side-stats,
+.side-progress-icons{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  text-align:center;
+}
+
+.side-progress-icons{
+  grid-template-columns:repeat(4,1fr);
+  margin-top:20px;
+  border:1px solid #e1e8f5;
+  border-radius:10px;
+  padding:14px 8px;
+}
+
+.side-stats strong,
+.side-progress-icons strong{
+  display:block;
+  color:#003da5;
+  font-size:18px;
+}
+
+.side-stats span,
+.side-progress-icons span{
+  font-size:12px;
+}
+
+.progress-row{
+  display:grid;
+  grid-template-columns:1fr 64px;
+  gap:14px;
+  align-items:center;
+}
+
+.progress-row strong{
+  color:#003da5;
+  font-size:30px;
+  text-align:right;
+}
+
+.progress-bar{
+  height:11px;
+  border-radius:999px;
+  background:#e5edf9;
+  overflow:hidden;
+}
+
+.progress-bar span{
+  display:block;
+  height:100%;
+  background:#2563eb;
+  border-radius:999px;
+}
+
+.next-task{
+  display:grid;
+  grid-template-columns:40px 1fr auto;
+  gap:12px;
+  align-items:center;
+  padding:12px 0;
+  border-bottom:1px solid #e1e8f5;
+  text-decoration:none;
+  color:#071733;
+}
+
+.next-task strong{
+  display:block;
+  font-size:14px;
+}
+
+.next-task small{
+  display:block;
+  color:#64748b;
+}
+
+.next-task em{
+  background:#eef2f7;
+  border-radius:8px;
+  padding:6px 10px;
+  font-style:normal;
+  font-size:12px;
+  color:#334155;
+}
+
+.see-all{
+  display:block;
+  margin-top:12px;
+  color:#003da5;
+  text-decoration:none;
+  font-weight:800;
+}
+
+.priority-card{
+  background:#fff8df;
+  border-color:#facc15;
+}
+
+.priority-card h3{
+  color:#a16207;
+}
+
+.priority-card strong{
+  color:#dc2626;
+  font-size:22px;
+}
+
+.priority-progress{
+  margin:14px 0 8px;
+  height:8px;
+  background:#fde68a;
+  border-radius:999px;
+  overflow:hidden;
+}
+
+.priority-progress span{
+  display:block;
+  height:100%;
+  width:70%;
+  background:#f59e0b;
+}
+
+@media(max-width:1300px){
+  .work-layout{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:900px){
+  .work-app{
+    grid-template-columns:1fr;
+  }
+
+  .work-menu{
+    position:static;
+    height:auto;
+    flex-direction:row;
+    overflow:auto;
+  }
+
+  .work-menu-logo{
+    min-width:110px;
+    margin-bottom:0;
+  }
+
+  .work-menu-bottom{
+    margin-top:0;
+    display:flex;
+  }
+
+  .work-task{
+    grid-template-columns:50px 1fr;
+  }
+
+  .work-task-status-dot,
+  .work-task-links,
+  .work-task-state,
+  .work-task-progress{
+    grid-column:2;
+  }
+
+  .work-task-xp,
+  .work-task-arrow{
+    display:none;
+  }
+}
+
+/* ===== CORRECCIONES V2 ===== */
+
+/* Selector visible: permite elegir Lista o Línea de tiempo */
+.view-switch-top{
+  display:flex !important;
+}
+
+/* Círculos perfectamente redondos en la línea de tiempo */
+.timeline-task-number,
+.work-task-number,
+.next-task-number{
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  min-height:40px !important;
+  max-width:40px !important;
+  max-height:40px !important;
+  aspect-ratio:1 / 1 !important;
+  border-radius:50% !important;
+  flex:0 0 40px !important;
+  box-sizing:border-box !important;
+  line-height:1 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+/* Colores también por atributo, por si el JS tarda o el plugin limita clases */
+.work-task[data-estado*="Validada"] .work-task-number,
+.timeline-row[data-estado*="Validada"] .timeline-task-number,
+.next-task[data-estado*="Validada"] .next-task-number,
+.work-task[data-estado*="Finalizada"] .work-task-number,
+.timeline-row[data-estado*="Finalizada"] .timeline-task-number,
+.next-task[data-estado*="Finalizada"] .next-task-number,
+.work-task[data-estado*="Completada"] .work-task-number,
+.timeline-row[data-estado*="Completada"] .timeline-task-number,
+.next-task[data-estado*="Completada"] .next-task-number{
+  background:#16a34a !important;
+}
+
+.work-task[data-estado*="Validada"] .work-task-status-dot,
+.work-task[data-estado*="Finalizada"] .work-task-status-dot,
+.work-task[data-estado*="Completada"] .work-task-status-dot{
+  border-color:#16a34a !important;
+  background:#ecfdf5 !important;
+}
+
+.work-task[data-estado*="Validada"] .work-badge,
+.work-task[data-estado*="Finalizada"] .work-badge,
+.work-task[data-estado*="Completada"] .work-badge{
+  background:#dcfce7 !important;
+  color:#166534 !important;
+}
+
+.work-task[data-estado*="En curso"] .work-task-number,
+.timeline-row[data-estado*="En curso"] .timeline-task-number,
+.next-task[data-estado*="En curso"] .next-task-number,
+.work-task[data-estado*="Proceso"] .work-task-number,
+.timeline-row[data-estado*="Proceso"] .timeline-task-number,
+.next-task[data-estado*="Proceso"] .next-task-number{
+  background:#2563eb !important;
+}
+
+.work-task[data-estado*="En curso"] .work-task-status-dot,
+.work-task[data-estado*="Proceso"] .work-task-status-dot{
+  border-color:#2563eb !important;
+  border-style:dashed !important;
+}
+
+.work-task[data-estado*="En curso"] .work-badge,
+.work-task[data-estado*="Proceso"] .work-badge{
+  background:#dbeafe !important;
+  color:#1d4ed8 !important;
+}
+
+.work-task[data-estado*="Pendiente"] .work-task-number,
+.timeline-row[data-estado*="Pendiente"] .timeline-task-number,
+.next-task[data-estado*="Pendiente"] .next-task-number{
+  background:#64748b !important;
+}
+
+.work-task[data-estado*="Pendiente"] .work-task-status-dot{
+  border-color:#94a3b8 !important;
+}
+
+.work-task[data-estado*="Pendiente"] .work-badge{
+  background:#eef2f7 !important;
+  color:#0f172a !important;
+}
+
+/* Colores de barras del cronograma por estado */
+.timeline-row[data-estado*="Validada"] .timeline-bar,
+.timeline-row[data-estado*="Finalizada"] .timeline-bar,
+.timeline-row[data-estado*="Completada"] .timeline-bar{
+  --bar-color:#16a34a !important;
+  background:#bbf7d0 !important;
+}
+
+.timeline-row[data-estado*="En curso"] .timeline-bar,
+.timeline-row[data-estado*="Proceso"] .timeline-bar{
+  --bar-color:#2563eb !important;
+  background:#dbeafe !important;
+}
+
+.timeline-row[data-estado*="Pendiente"] .timeline-bar{
+  --bar-color:#cbd5e1 !important;
+  background:#cbd5e1 !important;
+}
+
+/* Porcentaje del cronograma más compacto para no romper barras */
+.timeline-bar b{
+  white-space:nowrap;
+}
+
+/* Evita que el texto de las tareas fuerce deformaciones */
+.timeline-task-cell{
+  min-width:0;
+}
+
+.timeline-task-cell > div:last-child{
+  min-width:0;
+}
+
+.timeline-task-cell h3,
+.timeline-task-cell p{
+  overflow-wrap:anywhere;
+}
+
+
+/* ===== CORRECCIÓN FINAL: VISTAS Y COLORES ===== */
+
+/* Vista lista / timeline */
+.work-view{
+  display:none;
+}
+
+.work-view.is-visible{
+  display:block;
+}
+
+.view-switch,
+.view-switch-top{
+  display:flex !important;
+  gap:8px;
+}
+
+.view-btn{
+  border:1px solid #b9ccef;
+  background:white;
+  color:#003da5;
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:800;
+  cursor:pointer;
+  text-decoration:none;
+  font-family:inherit;
+}
+
+.view-btn.is-active{
+  background:#eaf1ff;
+  box-shadow:inset 0 0 0 1px #2563eb;
+}
+
+/* Ocultamos el segundo menú de la línea de tiempo */
+.timeline-toolbar{
+  display:none !important;
+}
+
+/* Círculos redondos */
+.work-task-number,
+.timeline-task-number,
+.next-task-number{
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  min-height:40px !important;
+  max-width:40px !important;
+  max-height:40px !important;
+  aspect-ratio:1/1 !important;
+  border-radius:50% !important;
+  flex:0 0 40px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  line-height:1 !important;
+  box-sizing:border-box !important;
+}
+
+/* Colores por clases calculadas por JS */
+.work-task.is-verde .work-task-number,
+.timeline-row.is-verde .timeline-task-number,
+.next-task.is-verde .next-task-number{
+  background:#16a34a !important;
+}
+
+.work-task.is-verde .work-task-status-dot{
+  border-color:#16a34a !important;
+  background:#ecfdf5 !important;
+}
+
+.work-task.is-verde .work-badge,
+.next-task.is-verde em{
+  background:#dcfce7 !important;
+  color:#166534 !important;
+}
+
+.timeline-row.is-verde .timeline-bar{
+  --bar-color:#16a34a !important;
+  background:#bbf7d0 !important;
+}
+
+.work-task.is-azul .work-task-number,
+.timeline-row.is-azul .timeline-task-number,
+.next-task.is-azul .next-task-number{
+  background:#2563eb !important;
+}
+
+.work-task.is-azul .work-task-status-dot{
+  border-color:#2563eb !important;
+  border-style:dashed !important;
+}
+
+.work-task.is-azul .work-badge,
+.next-task.is-azul em{
+  background:#dbeafe !important;
+  color:#1d4ed8 !important;
+}
+
+.timeline-row.is-azul .timeline-bar{
+  --bar-color:#2563eb !important;
+  background:#dbeafe !important;
+}
+
+.work-task.is-gris .work-task-number,
+.timeline-row.is-gris .timeline-task-number,
+.next-task.is-gris .next-task-number{
+  background:#64748b !important;
+}
+
+.work-task.is-gris .work-task-status-dot{
+  border-color:#94a3b8 !important;
+}
+
+.work-task.is-gris .work-badge,
+.next-task.is-gris em{
+  background:#eef2f7 !important;
+  color:#0f172a !important;
+}
+
+.timeline-row.is-gris .timeline-bar{
+  --bar-color:#cbd5e1 !important;
+  background:#cbd5e1 !important;
+}
+
+.work-task.is-rojo .work-task-number,
+.timeline-row.is-rojo .timeline-task-number,
+.next-task.is-rojo .next-task-number{
+  background:#dc2626 !important;
+}
+
+.work-task.is-rojo .work-task-status-dot{
+  border-color:#dc2626 !important;
+}
+
+.work-task.is-rojo .work-badge,
+.next-task.is-rojo em{
+  background:#fee2e2 !important;
+  color:#991b1b !important;
+}
+
+.timeline-row.is-rojo .timeline-bar{
+  --bar-color:#dc2626 !important;
+  background:#fecaca !important;
+}
+
+.work-task.is-naranja .work-task-number,
+.timeline-row.is-naranja .timeline-task-number,
+.next-task.is-naranja .next-task-number{
+  background:#f97316 !important;
+}
+
+.work-task.is-naranja .work-badge,
+.next-task.is-naranja em{
+  background:#ffedd5 !important;
+  color:#9a3412 !important;
+}
+
+.timeline-row.is-naranja .timeline-bar{
+  --bar-color:#f97316 !important;
+  background:#fed7aa !important;
+}
+
+.work-task.is-morado .work-task-number,
+.timeline-row.is-morado .timeline-task-number,
+.next-task.is-morado .next-task-number{
+  background:#7c3aed !important;
+}
+
+.work-task.is-morado .work-badge,
+.next-task.is-morado em{
+  background:#ede9fe !important;
+  color:#5b21b6 !important;
+}
+
+.timeline-row.is-morado .timeline-bar{
+  --bar-color:#7c3aed !important;
+  background:#ede9fe !important;
+}
+
+/* Colores por atributo, por si el JS se retrasa */
+.work-task[data-estado*="Validada"] .work-task-number,
+.timeline-row[data-estado*="Validada"] .timeline-task-number,
+.next-task[data-estado*="Validada"] .next-task-number,
+.work-task[data-estado*="Completada"] .work-task-number,
+.timeline-row[data-estado*="Completada"] .timeline-task-number,
+.next-task[data-estado*="Completada"] .next-task-number{
+  background:#16a34a !important;
+}
+
+.work-task[data-estado*="En curso"] .work-task-number,
+.timeline-row[data-estado*="En curso"] .timeline-task-number,
+.next-task[data-estado*="En curso"] .next-task-number{
+  background:#2563eb !important;
+}
+
+.work-task[data-estado*="Pendiente"] .work-task-number,
+.timeline-row[data-estado*="Pendiente"] .timeline-task-number,
+.next-task[data-estado*="Pendiente"] .next-task-number{
+  background:#64748b !important;
+}
+
+
+/* ===== COLOR EN TAREAS: LISTA Y LÍNEA DE TIEMPO ===== */
+
+/* Lista: fondo suave y borde lateral por estado */
+.work-task{
+  border-left:6px solid transparent;
+}
+
+.work-task.is-verde{
+  border-left-color:#16a34a !important;
+  background:linear-gradient(90deg,rgba(22,163,74,.08),#fff 18%) !important;
+}
+
+.work-task.is-azul{
+  border-left-color:#2563eb !important;
+  background:linear-gradient(90deg,rgba(37,99,235,.08),#fff 18%) !important;
+}
+
+.work-task.is-gris{
+  border-left-color:#64748b !important;
+  background:linear-gradient(90deg,rgba(100,116,139,.08),#fff 18%) !important;
+}
+
+.work-task.is-rojo{
+  border-left-color:#dc2626 !important;
+  background:linear-gradient(90deg,rgba(220,38,38,.08),#fff 18%) !important;
+}
+
+.work-task.is-naranja{
+  border-left-color:#f97316 !important;
+  background:linear-gradient(90deg,rgba(249,115,22,.08),#fff 18%) !important;
+}
+
+.work-task.is-morado{
+  border-left-color:#7c3aed !important;
+  background:linear-gradient(90deg,rgba(124,58,237,.08),#fff 18%) !important;
+}
+
+/* Línea de tiempo: fondo suave en columna de tarea y barra coloreada */
+.timeline-row.is-verde .timeline-task-cell{
+  background:rgba(22,163,74,.08) !important;
+}
+
+.timeline-row.is-azul .timeline-task-cell{
+  background:rgba(37,99,235,.08) !important;
+}
+
+.timeline-row.is-gris .timeline-task-cell{
+  background:rgba(100,116,139,.08) !important;
+}
+
+.timeline-row.is-rojo .timeline-task-cell{
+  background:rgba(220,38,38,.08) !important;
+}
+
+.timeline-row.is-naranja .timeline-task-cell{
+  background:rgba(249,115,22,.08) !important;
+}
+
+.timeline-row.is-morado .timeline-task-cell{
+  background:rgba(124,58,237,.08) !important;
+}
+
+/* Asegura que la barra completa tenga color, no solo el progreso */
+.timeline-row.is-verde .timeline-bar{
+  background:#16a34a !important;
+}
+
+.timeline-row.is-azul .timeline-bar{
+  background:#2563eb !important;
+}
+
+.timeline-row.is-gris .timeline-bar{
+  background:#cbd5e1 !important;
+}
+
+.timeline-row.is-rojo .timeline-bar{
+  background:#dc2626 !important;
+}
+
+.timeline-row.is-naranja .timeline-bar{
+  background:#f97316 !important;
+}
+
+.timeline-row.is-morado .timeline-bar{
+  background:#7c3aed !important;
+}
+
+/* El progreso dentro de la barra queda ligeramente más intenso */
+.timeline-row.is-verde .timeline-bar-progress{
+  background:#15803d !important;
+}
+
+.timeline-row.is-azul .timeline-bar-progress{
+  background:#1d4ed8 !important;
+}
+
+.timeline-row.is-gris .timeline-bar-progress{
+  background:#94a3b8 !important;
+}
+
+.timeline-row.is-rojo .timeline-bar-progress{
+  background:#b91c1c !important;
+}
+
+.timeline-row.is-naranja .timeline-bar-progress{
+  background:#c2410c !important;
+}
+
+.timeline-row.is-morado .timeline-bar-progress{
+  background:#6d28d9 !important;
+}
+
+
+/* ===== PARCHE DEFINITIVO DE COLORES POR CLASE DE ESTADO ===== */
+
+/* Lista completa */
+.work-task.is-verde{
+  border-left:6px solid #16a34a !important;
+  background:linear-gradient(90deg,rgba(22,163,74,.10),#fff 20%) !important;
+}
+.work-task.is-azul{
+  border-left:6px solid #2563eb !important;
+  background:linear-gradient(90deg,rgba(37,99,235,.10),#fff 20%) !important;
+}
+.work-task.is-gris{
+  border-left:6px solid #64748b !important;
+  background:linear-gradient(90deg,rgba(100,116,139,.10),#fff 20%) !important;
+}
+.work-task.is-rojo{
+  border-left:6px solid #dc2626 !important;
+  background:linear-gradient(90deg,rgba(220,38,38,.10),#fff 20%) !important;
+}
+
+/* Número y punto */
+.work-task.is-verde .work-task-number,
+.timeline-row.is-verde .timeline-task-number,
+.next-task.is-verde .next-task-number{
+  background:#16a34a !important;
+}
+.work-task.is-azul .work-task-number,
+.timeline-row.is-azul .timeline-task-number,
+.next-task.is-azul .next-task-number{
+  background:#2563eb !important;
+}
+.work-task.is-gris .work-task-number,
+.timeline-row.is-gris .timeline-task-number,
+.next-task.is-gris .next-task-number{
+  background:#64748b !important;
+}
+.work-task.is-rojo .work-task-number,
+.timeline-row.is-rojo .timeline-task-number,
+.next-task.is-rojo .next-task-number{
+  background:#dc2626 !important;
+}
+
+.work-task.is-verde .work-task-status-dot{
+  border-color:#16a34a !important;
+  background:#ecfdf5 !important;
+}
+.work-task.is-azul .work-task-status-dot{
+  border-color:#2563eb !important;
+  border-style:dashed !important;
+}
+.work-task.is-gris .work-task-status-dot{
+  border-color:#94a3b8 !important;
+}
+.work-task.is-rojo .work-task-status-dot{
+  border-color:#dc2626 !important;
+}
+
+/* Etiquetas */
+.work-task.is-verde .work-badge,
+.next-task.is-verde em{
+  background:#dcfce7 !important;
+  color:#166534 !important;
+}
+.work-task.is-azul .work-badge,
+.next-task.is-azul em{
+  background:#dbeafe !important;
+  color:#1d4ed8 !important;
+}
+.work-task.is-gris .work-badge,
+.next-task.is-gris em{
+  background:#eef2f7 !important;
+  color:#0f172a !important;
+}
+.work-task.is-rojo .work-badge,
+.next-task.is-rojo em{
+  background:#fee2e2 !important;
+  color:#991b1b !important;
+}
+
+/* Línea de tiempo: columna izquierda coloreada */
+.timeline-row.is-verde .timeline-task-cell{
+  background:rgba(22,163,74,.10) !important;
+}
+.timeline-row.is-azul .timeline-task-cell{
+  background:rgba(37,99,235,.10) !important;
+}
+.timeline-row.is-gris .timeline-task-cell{
+  background:rgba(100,116,139,.10) !important;
+}
+.timeline-row.is-rojo .timeline-task-cell{
+  background:rgba(220,38,38,.10) !important;
+}
+
+/* Línea de tiempo: barras con color de estado */
+.timeline-row.is-verde .timeline-bar{
+  background:#bbf7d0 !important;
+}
+.timeline-row.is-verde .timeline-bar-progress{
+  background:#16a34a !important;
+}
+
+.timeline-row.is-azul .timeline-bar{
+  background:#dbeafe !important;
+}
+.timeline-row.is-azul .timeline-bar-progress{
+  background:#2563eb !important;
+}
+
+.timeline-row.is-gris .timeline-bar{
+  background:#cbd5e1 !important;
+}
+.timeline-row.is-gris .timeline-bar-progress{
+  background:#94a3b8 !important;
+}
+
+.timeline-row.is-rojo .timeline-bar{
+  background:#fecaca !important;
+}
+.timeline-row.is-rojo .timeline-bar-progress{
+  background:#dc2626 !important;
+}
+
+/* Por si el progreso es 0, que la barra de estado pendiente siga viéndose gris */
+.timeline-row.is-gris .timeline-bar-progress:empty{
+  min-width:0;
+}
+
+
+/* ===== V6: COLOR REAL APLICADO POR JS ===== */
+.work-task-number,
+.timeline-task-number,
+.next-task-number{
+  transition:background .15s ease;
+}
+
+.timeline-bar{
+  background:#cbd5e1 !important; /* tramo pendiente */
+  overflow:hidden;
+}
+
+.timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important; /* tramo avanzado */
+}
+
+
+/* ===== V8: BOTONES DE VISTA Y PORCENTAJES SIN DECIMALES ===== */
+.progress-row strong{
+  white-space:nowrap !important;
+  min-width:96px !important;
+  text-align:right !important;
+  line-height:1 !important;
+  font-size:34px !important;
+}
+
+.view-btn,
+.timeline-tool{
+  color:#003da5 !important;
+  background:#fff !important;
+}
+
+.view-btn.is-active,
+.timeline-tool.is-active{
+  color:#fff !important;
+  background:#2563eb !important;
+  border-color:#2563eb !important;
+}
+
+.view-btn:not(.is-active):hover,
+.timeline-tool:not(.is-active):hover{
+  background:#eaf1ff !important;
+}
+
+
+/* ===== V9: CAJA Y CÍRCULO DE PROGRESO ===== */
+
+.work-task-state{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  gap:8px !important;
+}
+
+.work-task-state .work-badge{
+  min-width:112px !important;
+  text-align:center !important;
+  box-sizing:border-box !important;
+  font-size:17px !important;
+  line-height:1.15 !important;
+}
+
+.work-task-state small{
+  margin-top:0 !important;
+  font-size:14px !important;
+  line-height:1.35 !important;
+}
+
+.work-task-state small strong{
+  display:block !important;
+  margin-top:2px !important;
+  font-size:14px !important;
+}
+
+.work-circle{
+  --progress:0;
+  --circle-color:#64748b;
+  width:62px !important;
+  height:62px !important;
+  min-width:62px !important;
+  min-height:62px !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:conic-gradient(var(--circle-color) calc(var(--progress) * 1%), #e5e7eb 0) !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+}
+
+.work-circle:before{
+  content:"" !important;
+  position:absolute !important;
+  inset:7px !important;
+  background:white !important;
+  border-radius:50% !important;
+  z-index:0 !important;
+}
+
+.work-circle span{
+  position:relative !important;
+  z-index:1 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  color:#071733 !important;
+  white-space:nowrap !important;
+}
+
+.work-task.is-verde .work-circle{ --circle-color:#16a34a !important; }
+.work-task.is-azul .work-circle{ --circle-color:#2563eb !important; }
+.work-task.is-gris .work-circle{ --circle-color:#64748b !important; }
+.work-task.is-rojo .work-circle{ --circle-color:#dc2626 !important; }
+.work-task.is-naranja .work-circle{ --circle-color:#f97316 !important; }
+.work-task.is-morado .work-circle{ --circle-color:#7c3aed !important; }
+
+.view-btn{
+  pointer-events:auto !important;
+  opacity:1 !important;
+  cursor:pointer !important;
+}
+
+.view-btn.is-active{
+  color:white !important;
+  background:#4f63e6 !important;
+}
+
+.view-btn:not(.is-active){
+  color:#003da5 !important;
+  background:white !important;
+}
+
+
+/* ===== V11: CAMBIO DE VISTA SIN JS + PROGRESOS LIMPIOS ===== */
+
+.mtm-view-radio{
+  position:absolute !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
+
+.view-switch-top{
+  display:flex !important;
+  gap:8px !important;
+  align-items:center !important;
+}
+
+.view-switch-top .view-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border:1px solid #b9ccef !important;
+  background:white !important;
+  color:#003da5 !important;
+  padding:8px 14px !important;
+  border-radius:8px !important;
+  font-weight:900 !important;
+  cursor:pointer !important;
+  text-decoration:none !important;
+  font-family:inherit !important;
+  user-select:none !important;
+}
+
+#mtm-plan-lista:checked ~ .work-section-title .view-btn-lista,
+#mtm-plan-timeline:checked ~ .work-section-title .view-btn-timeline{
+  background:#4f63e6 !important;
+  border-color:#4f63e6 !important;
+  color:white !important;
+}
+
+.work-view{
+  display:none !important;
+}
+
+#mtm-plan-lista:checked ~ .work-view-lista{
+  display:block !important;
+}
+
+#mtm-plan-timeline:checked ~ .work-view-timeline{
+  display:block !important;
+}
+
+/* Evita que una clase antigua is-visible fuerce la lista cuando se elige línea de tiempo */
+#mtm-plan-timeline:checked ~ .work-view-lista.is-visible{
+  display:none !important;
+}
+
+/* Progreso global: dentro de la caja y sin romper línea */
+.progress-row{
+  grid-template-columns:minmax(0,1fr) 92px !important;
+  overflow:hidden !important;
+}
+
+.progress-row strong{
+  white-space:nowrap !important;
+  min-width:0 !important;
+  max-width:92px !important;
+  width:92px !important;
+  text-align:right !important;
+  line-height:1 !important;
+  font-size:30px !important;
+  overflow:hidden !important;
+}
+
+/* Caja de progreso */
+.work-task-state{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  justify-content:center !important;
+  gap:8px !important;
+}
+
+.work-task-state .work-badge{
+  min-width:112px !important;
+  text-align:center !important;
+  box-sizing:border-box !important;
+  font-size:17px !important;
+  line-height:1.15 !important;
+}
+
+.work-task-state small{
+  margin-top:0 !important;
+  font-size:14px !important;
+  line-height:1.35 !important;
+}
+
+.work-task-state small strong{
+  display:block !important;
+  margin-top:2px !important;
+  font-size:14px !important;
+}
+
+/* Círculo de progreso: perímetro coloreado */
+.work-circle{
+  --progress-pct:0%;
+  --circle-color:#64748b;
+  width:62px !important;
+  height:62px !important;
+  min-width:62px !important;
+  min-height:62px !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:conic-gradient(var(--circle-color) var(--progress-pct), #e5e7eb 0) !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+}
+
+.work-circle:before{
+  content:"" !important;
+  position:absolute !important;
+  inset:7px !important;
+  background:white !important;
+  border-radius:50% !important;
+  z-index:0 !important;
+}
+
+.work-circle span{
+  position:relative !important;
+  z-index:1 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  color:#071733 !important;
+  white-space:nowrap !important;
+}
+
+/* Timeline: gris pendiente + color en lo avanzado */
+.timeline-bar{
+  background:#cbd5e1 !important;
+  overflow:hidden !important;
+}
+
+.timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+}
+
+
+/* ===== V12: PROGRESO LIMPIO Y CÍRCULO TIPO MOCKUP ===== */
+
+/* Progreso global: porcentaje a la derecha, dentro de la caja */
+.progress-row{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) 82px !important;
+  gap:14px !important;
+  align-items:center !important;
+  overflow:hidden !important;
+}
+
+.progress-row strong{
+  width:82px !important;
+  max-width:82px !important;
+  min-width:82px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-align:right !important;
+  font-size:30px !important;
+  line-height:1 !important;
+  color:#1e3a8a !important;
+}
+
+/* Caja de estado/progreso más parecida al diseño de referencia */
+.work-task-state{
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+  min-width:128px !important;
+}
+
+.work-task-state .work-badge{
+  min-width:116px !important;
+  text-align:center !important;
+  padding:9px 14px !important;
+  border-radius:10px !important;
+  font-size:18px !important;
+  line-height:1.1 !important;
+  font-weight:900 !important;
+}
+
+.work-task-state small{
+  display:block !important;
+  margin:0 !important;
+  font-size:14px !important;
+  line-height:1.35 !important;
+  color:#071733 !important;
+}
+
+.work-task-state small strong{
+  display:block !important;
+  margin-top:2px !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  color:#071733 !important;
+}
+
+/* Círculo de progreso: perímetro coloreado y centro blanco */
+.work-circle{
+  --progress-pct:0%;
+  --circle-color:#64748b;
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  max-width:64px !important;
+  max-height:64px !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:conic-gradient(var(--circle-color) var(--progress-pct), #e5e7eb 0) !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  position:relative !important;
+  box-sizing:border-box !important;
+}
+
+.work-circle:before{
+  content:"" !important;
+  position:absolute !important;
+  inset:7px !important;
+  background:#fff !important;
+  border-radius:50% !important;
+  z-index:0 !important;
+}
+
+.work-circle span{
+  position:relative !important;
+  z-index:1 !important;
+  color:#071733 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  white-space:nowrap !important;
+}
+
+/* Color por estado en el círculo */
+.work-task.is-verde .work-circle{ --circle-color:#16a34a !important; }
+.work-task.is-azul .work-circle{ --circle-color:#2563eb !important; }
+.work-task.is-gris .work-circle{ --circle-color:#cbd5e1 !important; }
+.work-task.is-rojo .work-circle{ --circle-color:#dc2626 !important; }
+.work-task.is-naranja .work-circle{ --circle-color:#f97316 !important; }
+.work-task.is-morado .work-circle{ --circle-color:#7c3aed !important; }
+
+/* XP con color según estado */
+.work-task.is-verde .work-task-xp{ color:#16a34a !important; }
+.work-task.is-azul .work-task-xp{ color:#2563eb !important; }
+.work-task.is-gris .work-task-xp{ color:#7c3aed !important; }
+.work-task.is-rojo .work-task-xp{ color:#dc2626 !important; }
+.work-task.is-naranja .work-task-xp{ color:#f97316 !important; }
+.work-task.is-morado .work-task-xp{ color:#7c3aed !important; }
+
+/* Timeline: barra base gris y avance coloreado */
+.timeline-bar{
+  background:#cbd5e1 !important;
+  overflow:hidden !important;
+}
+
+.timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+}
+
+.timeline-row.is-verde .timeline-bar-progress{ background:#16a34a !important; }
+.timeline-row.is-azul .timeline-bar-progress{ background:#2563eb !important; }
+.timeline-row.is-gris .timeline-bar-progress{ background:#94a3b8 !important; }
+.timeline-row.is-rojo .timeline-bar-progress{ background:#dc2626 !important; }
+.timeline-row.is-naranja .timeline-bar-progress{ background:#f97316 !important; }
+.timeline-row.is-morado .timeline-bar-progress{ background:#7c3aed !important; }
+
+
+/* ===== V13: CÍRCULO SVG Y PROGRESO GLOBAL DEFINITIVO ===== */
+
+.progress-row{
+  display:flex !important;
+  align-items:center !important;
+  gap:18px !important;
+  width:100% !important;
+  overflow:hidden !important;
+}
+
+.progress-row .progress-bar{
+  flex:1 1 auto !important;
+  min-width:0 !important;
+}
+
+.progress-row strong{
+  flex:0 0 74px !important;
+  width:74px !important;
+  min-width:74px !important;
+  max-width:74px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-align:right !important;
+  font-size:30px !important;
+  line-height:1 !important;
+  color:#1e3a8a !important;
+}
+
+/* Círculo de progreso con SVG */
+.work-circle{
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  max-width:64px !important;
+  max-height:64px !important;
+  border:0 !important;
+  background:transparent !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+}
+
+.work-circle:before{
+  display:none !important;
+  content:none !important;
+}
+
+.work-circle svg{
+  position:absolute !important;
+  inset:0 !important;
+  width:64px !important;
+  height:64px !important;
+  transform:rotate(-90deg) !important;
+  overflow:visible !important;
+}
+
+.work-circle-bg,
+.work-circle-fg{
+  fill:none !important;
+  stroke-width:6 !important;
+}
+
+.work-circle-bg{
+  stroke:#e5e7eb !important;
+}
+
+.work-circle-fg{
+  stroke:#64748b !important;
+  stroke-linecap:round !important;
+  stroke-dasharray:169.65 !important;
+  stroke-dashoffset:169.65 !important;
+  transition:stroke-dashoffset .2s ease, stroke .2s ease !important;
+}
+
+.work-circle span{
+  position:relative !important;
+  z-index:2 !important;
+  color:#071733 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  white-space:nowrap !important;
+  line-height:1 !important;
+  text-align:center !important;
+  display:block !important;
+  transform:none !important;
+}
+
+
+/* ===== V14 FINAL: PROGRESO COMO MOCKUP ===== */
+
+.progress-row{
+  display:flex !important;
+  align-items:center !important;
+  gap:18px !important;
+  width:100% !important;
+  overflow:hidden !important;
+}
+
+.progress-row .progress-bar{
+  flex:1 1 auto !important;
+  min-width:0 !important;
+}
+
+.progress-row strong{
+  flex:0 0 76px !important;
+  width:76px !important;
+  min-width:76px !important;
+  max-width:76px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-align:right !important;
+  font-size:30px !important;
+  line-height:1 !important;
+  color:#1e3a8a !important;
+}
+
+/* Círculo SVG definitivo */
+.work-circle{
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  border:0 !important;
+  background:transparent !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.work-circle:before{
+  display:none !important;
+}
+
+.work-circle svg{
+  position:absolute !important;
+  inset:0 !important;
+  width:64px !important;
+  height:64px !important;
+  transform:rotate(-90deg) !important;
+}
+
+.work-circle-bg,
+.work-circle-fg{
+  fill:none !important;
+  stroke-width:6 !important;
+}
+
+.work-circle-bg{
+  stroke:#e5e7eb !important;
+}
+
+.work-circle-fg{
+  stroke-linecap:round !important;
+  stroke-dasharray:169.65 !important;
+  stroke-dashoffset:169.65 !important;
+}
+
+.work-circle span{
+  position:relative !important;
+  z-index:2 !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  color:#071733 !important;
+  white-space:nowrap !important;
+}
+
+/* Timeline: gris = pendiente; color = avance */
+.timeline-bar{
+  background:#cbd5e1 !important;
+  overflow:hidden !important;
+  position:relative !important;
+}
+
+.timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+  width:0%;
+}
+
+/* Colores visuales de filas */
+.timeline-row.is-verde .timeline-task-number,
+.work-task.is-verde .work-task-number,
+.next-task.is-verde .next-task-number{ background:#16a34a !important; }
+
+.timeline-row.is-azul .timeline-task-number,
+.work-task.is-azul .work-task-number,
+.next-task.is-azul .next-task-number{ background:#2563eb !important; }
+
+.timeline-row.is-gris .timeline-task-number,
+.work-task.is-gris .work-task-number,
+.next-task.is-gris .next-task-number{ background:#64748b !important; }
+
+.timeline-row.is-rojo .timeline-task-number,
+.work-task.is-rojo .work-task-number,
+.next-task.is-rojo .next-task-number{ background:#dc2626 !important; }
+
+.timeline-row.is-verde .timeline-task-cell{ background:rgba(22,163,74,.10) !important; }
+.timeline-row.is-azul .timeline-task-cell{ background:rgba(37,99,235,.10) !important; }
+.timeline-row.is-gris .timeline-task-cell{ background:rgba(100,116,139,.10) !important; }
+.timeline-row.is-rojo .timeline-task-cell{ background:rgba(220,38,38,.10) !important; }
+
+/* Botones de vista estables */
+.view-btn,
+.view-switch-top label{
+  cursor:pointer !important;
+  pointer-events:auto !important;
+}
+
+
+/* ===== V15 DEFINITIVA: CÍRCULO SVG + TIMELINE CON AVANCE COLOREADO ===== */
+
+/* Círculo: anulamos cualquier versión anterior */
+.work-task-progress .work-circle{
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  max-width:64px !important;
+  max-height:64px !important;
+  border:none !important;
+  outline:none !important;
+  background:transparent !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+  border-radius:50% !important;
+}
+
+.work-task-progress .work-circle::before,
+.work-task-progress .work-circle:before{
+  display:none !important;
+  content:none !important;
+}
+
+.work-task-progress .work-circle svg{
+  position:absolute !important;
+  inset:0 !important;
+  width:64px !important;
+  height:64px !important;
+  display:block !important;
+  transform:rotate(-90deg) !important;
+  overflow:visible !important;
+}
+
+.work-task-progress .work-circle circle{
+  fill:none !important;
+  stroke-width:6 !important;
+}
+
+.work-task-progress .work-circle .work-circle-bg{
+  stroke:#e5e7eb !important;
+}
+
+.work-task-progress .work-circle .work-circle-fg{
+  stroke:#64748b !important;
+  stroke-linecap:round !important;
+  stroke-dasharray:169.65 !important;
+  stroke-dashoffset:169.65 !important;
+}
+
+.work-task-progress .work-circle span{
+  position:relative !important;
+  z-index:2 !important;
+  display:block !important;
+  color:#071733 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+  text-align:center !important;
+}
+
+/* Timeline: la barra completa es gris, SOLO el avance lleva color */
+.timeline-row .timeline-bar{
+  background:#cbd5e1 !important;
+  background-color:#cbd5e1 !important;
+  overflow:hidden !important;
+  position:relative !important;
+}
+
+.timeline-row .timeline-bar .timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+  width:0%;
+}
+
+/* Progreso global bien dentro */
+.progress-row{
+  display:flex !important;
+  align-items:center !important;
+  gap:18px !important;
+  width:100% !important;
+  max-width:100% !important;
+  overflow:hidden !important;
+}
+
+.progress-row .progress-bar{
+  flex:1 1 auto !important;
+  min-width:0 !important;
+}
+
+.progress-row strong{
+  flex:0 0 76px !important;
+  width:76px !important;
+  min-width:76px !important;
+  max-width:76px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-align:right !important;
+  font-size:30px !important;
+  line-height:1 !important;
+}
+
+
+/* ===== V21: SIN JS PARA CÍRCULOS Y BARRAS ===== */
+
+/* Círculo de progreso: color por variable inline */
+.work-task-progress .work-circle{
+  --p:0%;
+  --c:#cbd5e1;
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  max-width:64px !important;
+  max-height:64px !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:conic-gradient(var(--c) var(--p), #e5e7eb 0) !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+}
+
+.work-task-progress .work-circle:before{
+  content:"" !important;
+  display:block !important;
+  position:absolute !important;
+  inset:7px !important;
+  border-radius:50% !important;
+  background:#fff !important;
+  z-index:0 !important;
+}
+
+.work-task-progress .work-circle span{
+  position:relative !important;
+  z-index:2 !important;
+  color:#071733 !important;
+  font-weight:900 !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+}
+
+/* Línea de tiempo basada en las fechas previstas del SQL:
+   T01 15/09, T02 16-18/09, T03 19-22/09, T04 23-25/09,
+   T05 26-28/09, T06 29-30/09.
+   La barra gris representa lo previsto.
+   La barra coloreada representa el progreso real. */
+.timeline-row[data-orden="1"] .timeline-bar{ --start:1; --span:4; }
+.timeline-row[data-orden="2"] .timeline-bar{ --start:4; --span:7; }
+.timeline-row[data-orden="3"] .timeline-bar{ --start:8; --span:8; }
+.timeline-row[data-orden="4"] .timeline-bar{ --start:12; --span:8; }
+.timeline-row[data-orden="5"] .timeline-bar{ --start:15; --span:8; }
+.timeline-row[data-orden="6"] .timeline-bar{ --start:18; --span:8; }
+
+.timeline-row .timeline-bar{
+  background:#cbd5e1 !important;
+  background-color:#cbd5e1 !important;
+  overflow:hidden !important;
+}
+
+.timeline-row .timeline-bar-progress{
+  display:block !important;
+  height:100% !important;
+  border-radius:999px !important;
+}
+
+.timeline-row.is-verde .timeline-bar-progress{ background:#16a34a !important; }
+.timeline-row.is-azul .timeline-bar-progress{ background:#2563eb !important; }
+.timeline-row.is-gris .timeline-bar-progress{ background:transparent !important; }
+.timeline-row.is-rojo .timeline-bar-progress{ background:#dc2626 !important; }
+.timeline-row.is-naranja .timeline-bar-progress{ background:#f97316 !important; }
+.timeline-row.is-morado .timeline-bar-progress{ background:#7c3aed !important; }
+
+/* Evita que reglas antiguas coloreen toda la barra */
+.timeline-row.is-verde .timeline-bar,
+.timeline-row.is-azul .timeline-bar,
+.timeline-row.is-gris .timeline-bar,
+.timeline-row.is-rojo .timeline-bar,
+.timeline-row.is-naranja .timeline-bar,
+.timeline-row.is-morado .timeline-bar{
+  background:#cbd5e1 !important;
+  background-color:#cbd5e1 !important;
+}
+
+.work-circle span,
+.work-task-state small strong,
+.timeline-task-cell p strong,
+.timeline-bar b,
+.progress-row strong{
+  white-space:nowrap !important;
+}
+
+
+/* ===== V22: DATOS CALCULADOS Y CÍRCULO CORREGIDO ===== */
+
+/* Círculo de progreso: texto centrado y sin romper */
+.work-task-progress .work-circle{
+  width:64px !important;
+  height:64px !important;
+  min-width:64px !important;
+  min-height:64px !important;
+  max-width:64px !important;
+  max-height:64px !important;
+  border:0 !important;
+  border-radius:50% !important;
+  background:conic-gradient(var(--c,#cbd5e1) var(--p,0%), #e5e7eb 0) !important;
+  position:relative !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+}
+
+.work-task-progress .work-circle:before{
+  content:"" !important;
+  position:absolute !important;
+  inset:7px !important;
+  border-radius:50% !important;
+  background:#fff !important;
+  z-index:0 !important;
+}
+
+.work-task-progress .work-circle span{
+  position:absolute !important;
+  inset:0 !important;
+  z-index:2 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  width:100% !important;
+  height:100% !important;
+  color:#071733 !important;
+  font-size:14px !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  text-align:center !important;
+  white-space:nowrap !important;
+  transform:none !important;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+/* Evitar que el porcentaje global se salga de la caja */
+.progress-row{
+  display:flex !important;
+  align-items:center !important;
+  gap:18px !important;
+  width:100% !important;
+  max-width:100% !important;
+  overflow:hidden !important;
+}
+
+.progress-row .progress-bar{
+  flex:1 1 auto !important;
+  min-width:0 !important;
+}
+
+.progress-row strong{
+  flex:0 0 76px !important;
+  width:76px !important;
+  min-width:76px !important;
+  max-width:76px !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-align:right !important;
+  font-size:30px !important;
+  line-height:1 !important;
+}
+
+/* Barra global calculada */
+.progress-bar span,
+.progress-bar i{
+  width:var(--global-progress, 0%) !important;
+}
+
+/* Timeline: barra prevista gris, tramo real coloreado */
+.timeline-row .timeline-bar{
+  background:#cbd5e1 !important;
+  background-color:#cbd5e1 !important;
+  overflow:hidden !important;
+  position:relative !important;
+}
+
+.timeline-row .timeline-bar .timeline-bar-progress{
+  position:absolute !important;
+  top:0 !important;
+  bottom:0 !important;
+  height:100% !important;
+  border-radius:999px !important;
+}
+
+/* Si el navegador aplica reglas viejas, estas ganan */
+.timeline-row.is-verde .timeline-bar{ background:#cbd5e1 !important; }
+.timeline-row.is-azul .timeline-bar{ background:#cbd5e1 !important; }
+.timeline-row.is-gris .timeline-bar{ background:#cbd5e1 !important; }
+.timeline-row.is-rojo .timeline-bar{ background:#cbd5e1 !important; }
+.timeline-row.is-naranja .timeline-bar{ background:#cbd5e1 !important; }
+.timeline-row.is-morado .timeline-bar{ background:#cbd5e1 !important; }
+
+/* Dato dinámico: si el badge queda a 0, no molesta */
+.notif-badge.js-pending-count:empty{
+  display:none !important;
+}
+
+
+
+/* ===== FIX SOLO LÍNEA DE TIEMPO v47 ===== */
+/* No toca la vista lista ni las tarjetas laterales. */
+.timeline-board{
+  --mtm-day:42px;
+  --mtm-days:23;
+  overflow-x:auto !important;
+}
+
+.timeline-head,
+.timeline-row{
+  min-width:calc(220px + (var(--mtm-days) * var(--mtm-day))) !important;
+}
+
+.timeline-head{
+  display:flex !important;
+}
+
+.timeline-head-task{
+  flex:0 0 220px !important;
+  width:220px !important;
+  box-sizing:border-box !important;
+}
+
+.timeline-month{
+  flex:0 0 auto !important;
+}
+
+.timeline-days{
+  display:flex !important;
+}
+
+.timeline-days span{
+  flex:0 0 var(--mtm-day) !important;
+  width:var(--mtm-day) !important;
+  box-sizing:border-box !important;
+}
+
+.timeline-row{
+  display:grid !important;
+  grid-template-columns:220px calc(var(--mtm-days) * var(--mtm-day)) !important;
+}
+
+.timeline-grid-cell{
+  position:relative !important;
+  width:calc(var(--mtm-days) * var(--mtm-day)) !important;
+  min-width:calc(var(--mtm-days) * var(--mtm-day)) !important;
+  overflow:visible !important;
+  display:block !important;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #edf2fb 0,
+      #edf2fb 1px,
+      transparent 1px,
+      transparent var(--mtm-day)
+    ) !important;
+}
+
+/* Restaurar la barra original, que V29 dejaba oculta */
+.timeline-grid-cell > .timeline-bar{
+  display:block !important;
+  position:absolute !important;
+  top:50% !important;
+  height:22px !important;
+  transform:translateY(-50%) !important;
+  margin:0 !important;
+  border-radius:999px !important;
+  background:#cbd5e1 !important;
+  overflow:hidden !important;
+  box-shadow:0 4px 10px rgba(15,23,42,.14) !important;
+}
+
+.timeline-grid-cell > .timeline-bar .timeline-bar-progress{
+  display:block !important;
+  position:absolute !important;
+  left:0 !important;
+  top:0 !important;
+  height:100% !important;
+  border-radius:999px !important;
+}
+
+.timeline-grid-cell > .timeline-bar b{
+  display:none !important;
+}
+
+.timeline-day-today{
+  color:#dc2626 !important;
+  font-weight:900 !important;
+}
+
+.timeline-today-line{
+  position:absolute !important;
+  top:0 !important;
+  bottom:0 !important;
+  width:2px !important;
+  background:#ef4444 !important;
+  opacity:.50 !important;
+  z-index:4 !important;
+}
+
+</style>
+
+<script>
+(function(){
+  function normalizar(txt){
+    return (txt || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g,"")
+      .trim();
+  }
+
+  function numero(txt){
+    var n = parseFloat(String(txt || "").replace(",", ".").replace(/[^0-9.]/g,""));
+    return isNaN(n) ? 0 : n;
+  }
+
+  function pct(txt){
+    var n = numero(txt);
+    if(n < 0) n = 0;
+    if(n > 100) n = 100;
+    return Math.round(n);
+  }
+
+  function setI(el, prop, value){
+    if(el) el.style.setProperty(prop, value, "important");
+  }
+
+  function colorPorEstado(estado){
+    estado = normalizar(estado);
+
+    if(estado.indexOf("valid") !== -1 || estado.indexOf("complet") !== -1 || estado.indexOf("final") !== -1 || estado.indexOf("cerr") !== -1 || estado.indexOf("acept") !== -1){
+      return {clase:"is-verde", color:"#16a34a", suave:"rgba(22,163,74,.10)", fondo:"#dcfce7", texto:"#166534", nombre:"Validada"};
+    }
+    if(estado.indexOf("curso") !== -1 || estado.indexOf("proceso") !== -1 || estado.indexOf("inici") !== -1){
+      return {clase:"is-azul", color:"#2563eb", suave:"rgba(37,99,235,.10)", fondo:"#dbeafe", texto:"#1d4ed8", nombre:"En curso"};
+    }
+    if(estado.indexOf("atras") !== -1 || estado.indexOf("rechaz") !== -1){
+      return {clase:"is-rojo", color:"#dc2626", suave:"rgba(220,38,38,.10)", fondo:"#fee2e2", texto:"#991b1b", nombre:"Atrasada"};
+    }
+    if(estado.indexOf("entreg") !== -1){
+      return {clase:"is-naranja", color:"#f97316", suave:"rgba(249,115,22,.10)", fondo:"#ffedd5", texto:"#9a3412", nombre:"Entregada"};
+    }
+    if(estado.indexOf("correg") !== -1){
+      return {clase:"is-morado", color:"#7c3aed", suave:"rgba(124,58,237,.10)", fondo:"#ede9fe", texto:"#5b21b6", nombre:"En corrección"};
+    }
+    return {clase:"is-gris", color:"#64748b", suave:"rgba(100,116,139,.10)", fondo:"#eef2f7", texto:"#0f172a", nombre:"Pendiente"};
+  }
+
+  function estadoDesde(el){
+    var estado = el.getAttribute("data-estado") || "";
+    var visible = el.querySelector(".work-badge, em");
+
+    if(visible && visible.textContent && visible.textContent.indexOf("[[") === -1){
+      estado = visible.textContent;
+    }
+
+    var texto = normalizar(el.textContent || "");
+    if(texto.indexOf("valid") !== -1) return "Validada";
+    if(texto.indexOf("en curso") !== -1 || texto.indexOf("curso") !== -1) return "En curso";
+    if(texto.indexOf("atras") !== -1) return "Atrasada";
+    if(texto.indexOf("pendiente") !== -1) return "Pendiente";
+
+    return estado;
+  }
+
+  function progresoDesde(el){
+    var p = numero(el.getAttribute("data-progress"));
+    var text = el.textContent || "";
+    var m = text.match(/(\d+(?:[.,]\d+)?)\s*%/);
+    if(m) p = numero(m[1]);
+    return pct(p);
+  }
+
+  function xpDesde(el){
+    var xp = numero(el.getAttribute("data-xp"));
+    if(xp) return Math.round(xp);
+
+    var x = el.querySelector(".work-task-xp");
+    if(x) return Math.round(numero(x.textContent));
+
+    return 0;
+  }
+
+  function fecha(valor){
+    if(!valor) return null;
+    valor = String(valor).trim();
+    if(!valor || valor.indexOf("[[") !== -1 || valor.toLowerCase() === "null") return null;
+
+    var m1 = valor.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if(m1) return new Date(Number(m1[1]), Number(m1[2]) - 1, Number(m1[3]));
+
+    var m2 = valor.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if(m2) return new Date(Number(m2[3]), Number(m2[2]) - 1, Number(m2[1]));
+
+    return null;
+  }
+
+  function fechaOk(f){
+    return f instanceof Date && !isNaN(f.getTime());
+  }
+
+  function dias(a,b){
+    return Math.round((b.getTime() - a.getTime()) / 86400000);
+  }
+
+  function clamp(n,min,max){
+    return Math.max(min, Math.min(max, n));
+  }
+
+  function limpiarClases(el){
+    el.classList.remove("is-verde","is-azul","is-gris","is-rojo","is-naranja","is-morado");
+  }
+
+  function aplicarClase(el, c){
+    limpiarClases(el);
+    el.classList.add(c.clase);
+  }
+
+  function ponerPorcentaje(el, p){
+    if(el) el.textContent = Math.round(p) + "%";
+  }
+
+  function pintarLista(task){
+    var p = progresoDesde(task);
+    var c = colorPorEstado(estadoDesde(task));
+
+    aplicarClase(task, c);
+
+    setI(task, "border-left", "6px solid " + c.color);
+    setI(task, "background", "linear-gradient(90deg," + c.suave + ",#fff 20%)");
+
+    setI(task.querySelector(".work-task-number"), "background", c.color);
+    setI(task.querySelector(".work-task-number"), "background-color", c.color);
+
+    var dot = task.querySelector(".work-task-status-dot");
+    if(dot){
+      setI(dot, "border-color", c.color);
+      setI(dot, "border-style", c.clase === "is-azul" ? "dashed" : "solid");
+      setI(dot, "background", c.clase === "is-verde" ? "#ecfdf5" : "transparent");
+    }
+
+    var badge = task.querySelector(".work-badge");
+    if(badge){
+      setI(badge, "background", c.fondo);
+      setI(badge, "background-color", c.fondo);
+      setI(badge, "color", c.texto);
+    }
+
+    var xpEl = task.querySelector(".work-task-xp");
+    if(xpEl){
+      var xp = xpDesde(task);
+      if(xp) xpEl.textContent = "+" + xp + " XP";
+      setI(xpEl, "color", c.clase === "is-gris" ? "#7c3aed" : c.color);
+    }
+
+    ponerPorcentaje(task.querySelector(".work-task-state small strong"), p);
+
+    var circle = task.querySelector(".work-circle");
+    if(circle){
+      circle.style.setProperty("--p", p + "%");
+      circle.style.setProperty("--c", c.color);
+      setI(circle, "background", "conic-gradient(" + c.color + " " + p + "%, #e5e7eb 0)");
+      ponerPorcentaje(circle.querySelector("span"), p);
+    }
+  }
+
+  function pintarTimeline(row, idx){
+    var p = progresoDesde(row);
+    var c = colorPorEstado(estadoDesde(row));
+
+    aplicarClase(row, c);
+
+    setI(row.querySelector(".timeline-task-number"), "background", c.color);
+    setI(row.querySelector(".timeline-task-number"), "background-color", c.color);
+    setI(row.querySelector(".timeline-task-cell"), "background", c.suave);
+    setI(row.querySelector(".timeline-task-cell"), "background-color", c.suave);
+
+    ponerPorcentaje(row.querySelector(".timeline-task-cell p strong"), p);
+    ponerPorcentaje(row.querySelector(".timeline-bar b"), p);
+
+    var bar = row.querySelector(".timeline-bar");
+    var fill = row.querySelector(".timeline-bar-progress");
+    if(!bar) return;
+
+    setI(bar, "background", "#cbd5e1");
+    setI(bar, "background-color", "#cbd5e1");
+
+    /*
+      Mantengo la posición que ya se ve bien según el orden y la cabecera
+      septiembre/octubre. La parte de color representa avance real.
+    */
+    var orden = parseInt(row.getAttribute("data-orden") || (idx + 1), 10);
+    var startMap = {1:1, 2:4, 3:8, 4:12, 5:15, 6:18};
+    var spanMap  = {1:4, 2:7, 3:8, 4:8, 5:8, 6:8};
+
+    bar.style.setProperty("--start", startMap[orden] || (1 + Math.max(0, orden - 1) * 3));
+    bar.style.setProperty("--span", spanMap[orden] || 8);
+
+    if(fill){
+      setI(fill, "left", "0%");
+      setI(fill, "width", p + "%");
+      setI(fill, "background", p === 0 ? "transparent" : c.color);
+      setI(fill, "background-color", p === 0 ? "transparent" : c.color);
+    }
+  }
+
+  function pintarNext(next){
+    var c = colorPorEstado(estadoDesde(next));
+    aplicarClase(next, c);
+
+    setI(next.querySelector(".next-task-number"), "background", c.color);
+    setI(next.querySelector(".next-task-number"), "background-color", c.color);
+
+    var em = next.querySelector("em");
+    if(em){
+      setI(em, "background", c.fondo);
+      setI(em, "background-color", c.fondo);
+      setI(em, "color", c.texto);
+    }
+
+    var small = next.querySelector("small");
+    if(small) small.textContent = "Progreso: " + progresoDesde(next) + "%";
+  }
+
+  function actualizarResumenes(){
+    var rows = Array.prototype.slice.call(document.querySelectorAll(".work-task"));
+    if(!rows.length) return;
+
+    var total = rows.length;
+    var completadas = 0;
+    var enCurso = 0;
+    var pendientes = 0;
+    var atrasadas = 0;
+    var suma = 0;
+    var xpTotal = 0;
+    var estadoActual = "Pendiente";
+
+    rows.forEach(function(row){
+      var estado = estadoDesde(row);
+      var norm = normalizar(estado);
+      var p = progresoDesde(row);
+      suma += p;
+
+      var xp = xpDesde(row);
+      xpTotal += Math.round(xp * p / 100);
+
+      if(norm.indexOf("valid") !== -1 || norm.indexOf("complet") !== -1 || norm.indexOf("final") !== -1 || norm.indexOf("cerr") !== -1){
+        completadas++;
+      }else if(norm.indexOf("curso") !== -1 || norm.indexOf("proceso") !== -1){
+        enCurso++;
+      }else if(norm.indexOf("atras") !== -1){
+        atrasadas++;
+      }else{
+        pendientes++;
+      }
+    });
+
+    if(completadas === total) estadoActual = "Validada";
+    else if(enCurso > 0) estadoActual = "En curso";
+    else if(atrasadas > 0) estadoActual = "Atrasada";
+    else estadoActual = "Pendiente";
+
+    var global = Math.round(suma / total);
+
+    document.querySelectorAll(".progress-row strong").forEach(function(el){
+      el.textContent = global + "%";
+    });
+
+    document.querySelectorAll(".progress-row").forEach(function(row){
+      row.style.setProperty("--global-progress", global + "%");
+      var bar = row.querySelector(".progress-bar span, .progress-bar i");
+      if(bar) setI(bar, "width", global + "%");
+    });
+
+    /* Tarjeta resumen alumno: 6 tareas / XP / estado */
+    document.querySelectorAll(".side-card, .summary-card, .student-summary").forEach(function(card){
+      var h = normalizar(card.textContent || "");
+      if(h.indexOf("resumen del alumno") !== -1){
+        var nums = card.querySelectorAll("strong, b");
+        if(nums.length >= 3){
+          nums[0].textContent = total;
+          nums[1].textContent = xpTotal + " XP";
+          nums[2].textContent = estadoActual;
+        }
+      }
+    });
+
+    /* Bloque de progreso global: contadores */
+    document.querySelectorAll(".progress-stats strong, .progress-stats b, .global-stats strong, .global-stats b").forEach(function(el, i){
+      if(i % 4 === 0) el.textContent = completadas;
+      if(i % 4 === 1) el.textContent = enCurso;
+      if(i % 4 === 2) el.textContent = atrasadas;
+      if(i % 4 === 3) el.textContent = pendientes;
+    });
+
+    var notif = document.querySelector(".js-pending-count, .notif-badge");
+    if(notif){
+      notif.textContent = pendientes;
+      notif.style.display = pendientes > 0 ? "" : "none";
+    }
+  }
+
+  function limpiarDecimales(){
+    document.querySelectorAll(".work-circle span, .work-task-state small strong, .timeline-task-cell p strong, .timeline-bar b, .progress-row strong").forEach(function(el){
+      if(el && el.textContent.indexOf("%") !== -1){
+        el.textContent = pct(el.textContent) + "%";
+      }
+    });
+  }
+
+  function aplicarTodo(){
+    document.querySelectorAll(".work-task").forEach(pintarLista);
+    document.querySelectorAll(".timeline-row").forEach(pintarTimeline);
+    document.querySelectorAll(".next-task").forEach(pintarNext);
+    actualizarResumenes();
+    limpiarDecimales();
+  }
+
+  document.addEventListener("DOMContentLoaded", aplicarTodo);
+  setTimeout(aplicarTodo, 100);
+  setTimeout(aplicarTodo, 400);
+  setTimeout(aplicarTodo, 900);
+  setTimeout(aplicarTodo, 1600);
+  setTimeout(aplicarTodo, 3000);
+
+  document.addEventListener("click", function(e){
+    var link = e.target.closest("a.mtm-nav");
+    if(!link) return;
+    e.stopPropagation();
+  }, true);
+})();
+</script>
+
+
+
+
+<script>
+(function(){
+  const DAY = 42;
+
+  function norm(s){
+    return (s || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g,"")
+      .trim();
+  }
+
+  function number(s){
+    const n = parseFloat(String(s || "").replace(",", ".").replace(/[^0-9.-]/g,""));
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function pct(s){
+    return Math.max(0, Math.min(100, Math.round(number(s))));
+  }
+
+  function parseDate(v){
+    if(!v) return null;
+    v = String(v).trim();
+    if(!v || v.includes("[[") || norm(v) === "null") return null;
+
+    let m = v.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/);
+    if(m) return new Date(+m[1], +m[2]-1, +m[3]);
+
+    m = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+    if(m) return new Date(+m[3], +m[2]-1, +m[1]);
+
+    return null;
+  }
+
+  function ok(d){ return d instanceof Date && !isNaN(d.getTime()); }
+
+  function day(d){
+    return new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  }
+
+  function addDays(d,n){
+    const x = day(d);
+    x.setDate(x.getDate()+n);
+    return x;
+  }
+
+  function diffDays(a,b){
+    return Math.round((day(b).getTime()-day(a).getTime())/86400000);
+  }
+
+  function monthName(d){
+    return ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"][d.getMonth()]+" "+d.getFullYear();
+  }
+
+  function today(){
+    const d = new Date();
+    return day(d);
+  }
+
+  function rowDates(row){
+    return {
+      ps: parseDate(row.getAttribute("data-fecha-inicio-prevista")),
+      pe: parseDate(row.getAttribute("data-fecha-fin-prevista")),
+      rs: parseDate(row.getAttribute("data-fecha-inicio-real")),
+      re: parseDate(row.getAttribute("data-fecha-fin-real"))
+    };
+  }
+
+  function rowState(row){
+    let s = row.getAttribute("data-estado") || "";
+    const visible = row.querySelector(".timeline-task-cell p");
+    if(visible && visible.textContent && !visible.textContent.includes("[[")){
+      s = visible.textContent;
+    }
+    s = norm(s);
+
+    if(s.includes("valid") || s.includes("complet") || s.includes("final") || s.includes("cerr")){
+      return "#16a34a";
+    }
+    if(s.includes("curso") || s.includes("proceso") || s.includes("inici")){
+      return "#2563eb";
+    }
+    if(s.includes("atras") || s.includes("rechaz")){
+      return "#dc2626";
+    }
+    if(s.includes("entreg")){
+      return "#f97316";
+    }
+    if(s.includes("correg")){
+      return "#7c3aed";
+    }
+    return "#94a3b8";
+  }
+
+  function progress(row){
+    const raw = row.getAttribute("data-progress");
+    if(raw && !raw.includes("[[")) return pct(raw);
+    const m = (row.textContent || "").match(/(\d+(?:[.,]\d+)?)\s*%/);
+    return m ? pct(m[1]) : 0;
+  }
+
+  function rows(board){
+    return Array.from(board.querySelectorAll(".timeline-row"));
+  }
+
+  function calcRange(board){
+    let min = null;
+    let max = null;
+
+    rows(board).forEach(row=>{
+      const d = rowDates(row);
+      [d.ps, d.pe].forEach(x=>{
+        if(ok(x)){
+          if(!min || x < min) min = x;
+          if(!max || x > max) max = x;
+        }
+      });
+    });
+
+    // Si hay fechas reales anteriores/posteriores, también se incluyen para que no queden fuera.
+    rows(board).forEach(row=>{
+      const d = rowDates(row);
+      [d.rs, d.re].forEach(x=>{
+        if(ok(x)){
+          if(!min || x < min) min = x;
+          if(!max || x > max) max = x;
+        }
+      });
+    });
+
+    // Fallback: usa la cabecera existente 15/09-07/10.
+    if(!min || !max){
+      min = new Date(2026,8,15);
+      max = new Date(2026,9,7);
+    }
+
+    return {start:min, end:max, total:diffDays(min,max)+1};
+  }
+
+  function buildHeader(board, range){
+    const head = board.querySelector(".timeline-head");
+    if(!head) return;
+
+    board.style.setProperty("--mtm-days", range.total);
+
+    const task = document.createElement("div");
+    task.className = "timeline-head-task";
+    task.textContent = "Tarea";
+
+    head.innerHTML = "";
+    head.appendChild(task);
+
+    let cur = day(range.start);
+    const last = day(range.end);
+    const todayTime = today().getTime();
+
+    while(cur <= last){
+      const month = cur.getMonth();
+      const year = cur.getFullYear();
+      let count = 0;
+
+      const monthDiv = document.createElement("div");
+      monthDiv.className = "timeline-month";
+
+      const title = document.createElement("div");
+      title.className = "timeline-month-title";
+      title.textContent = monthName(cur);
+      monthDiv.appendChild(title);
+
+      const daysDiv = document.createElement("div");
+      daysDiv.className = "timeline-days";
+
+      while(cur <= last && cur.getMonth() === month && cur.getFullYear() === year){
+        const sp = document.createElement("span");
+        sp.textContent = cur.getDate();
+        if(cur.getTime() === todayTime) sp.classList.add("timeline-day-today");
+        daysDiv.appendChild(sp);
+        cur = addDays(cur,1);
+        count++;
+      }
+
+      monthDiv.style.width = (count * DAY) + "px";
+      monthDiv.appendChild(daysDiv);
+      head.appendChild(monthDiv);
+    }
+  }
+
+  function ensureBar(row){
+    const grid = row.querySelector(".timeline-grid-cell");
+    if(!grid) return null;
+
+    let bar = grid.querySelector(":scope > .timeline-bar");
+    if(!bar){
+      bar = document.createElement("div");
+      bar.className = "timeline-bar";
+      bar.innerHTML = '<span class="timeline-bar-progress"></span><b></b>';
+      grid.appendChild(bar);
+    }
+
+    let fill = bar.querySelector(".timeline-bar-progress");
+    if(!fill){
+      fill = document.createElement("span");
+      fill.className = "timeline-bar-progress";
+      bar.appendChild(fill);
+    }
+
+    return {grid, bar, fill};
+  }
+
+  function drawToday(grid, range){
+    grid.querySelectorAll(".timeline-today-line").forEach(el=>el.remove());
+    const t = today();
+    if(t < range.start || t > range.end) return;
+    const line = document.createElement("span");
+    line.className = "timeline-today-line";
+    line.style.left = (diffDays(range.start,t) * DAY + DAY/2) + "px";
+    grid.appendChild(line);
+  }
+
+  function paintRow(row, range, idx){
+    const pack = ensureBar(row);
+    if(!pack) return;
+
+    const {grid, bar, fill} = pack;
+    const d = rowDates(row);
+    const p = progress(row);
+    const color = rowState(row);
+
+    let start = d.ps;
+    let end = d.pe;
+
+    // Fallback por orden si falta alguna fecha.
+    if(!ok(start) || !ok(end)){
+      const order = parseInt(row.getAttribute("data-orden") || (idx+1), 10);
+      start = addDays(range.start, Math.max(0, order-1) * 3);
+      end = addDays(start, 2);
+    }
+
+    if(end < start){
+      const tmp = start;
+      start = end;
+      end = tmp;
+    }
+
+    const left = diffDays(range.start, start) * DAY;
+    const width = (diffDays(start,end)+1) * DAY;
+
+    bar.style.setProperty("left", Math.max(0,left)+"px", "important");
+    bar.style.setProperty("width", Math.max(14,width)+"px", "important");
+    bar.style.setProperty("display", "block", "important");
+    bar.style.setProperty("background", "#cbd5e1", "important");
+
+    fill.style.setProperty("width", p+"%", "important");
+    fill.style.setProperty("background", p ? color : "transparent", "important");
+
+    const pctText = row.querySelector(".timeline-task-cell p strong");
+    if(pctText) pctText.textContent = p + "%";
+
+    drawToday(grid, range);
+  }
+
+  function paintTimeline(){
+    document.querySelectorAll(".timeline-board").forEach(board=>{
+      if(!board.querySelector(".timeline-row")) return;
+      const range = calcRange(board);
+      buildHeader(board, range);
+      rows(board).forEach((row,idx)=>paintRow(row, range, idx));
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", paintTimeline);
+  setTimeout(paintTimeline, 100);
+  setTimeout(paintTimeline, 400);
+  setTimeout(paintTimeline, 900);
+  setTimeout(paintTimeline, 1600);
+  setTimeout(paintTimeline, 3000);
+  window.addEventListener("resize", paintTimeline);
+
+  document.addEventListener("click", function(e){
+    if(e.target.closest(".view-btn-timeline, .view-btn-lista")){
+      setTimeout(paintTimeline,80);
+      setTimeout(paintTimeline,300);
+    }
+  }, true);
+})();
+</script>
+<!-- /wp:html --></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"e8f967f6","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-e8f967f6 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="mtm-chat-page">
+
+  <div class="mtm-chat-header">
+    <h2>Seguimiento de contacto</h2>
+    <button type="button" class="mtm-add-chat-btn" onclick="mtmOpenConversationModal()">
+      Añadir conversación
+    </button>
+  </div>
+
+  <div class="mtm-chat-container">
+
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <div class="message-row left email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">M</div>
+          <div>
+            <div class="sender">📧 Empresa</div>
+            <div class="contact">María Pérez García · Responsable RRHH</div>
+          </div>
+        </div>
+        Hemos recibido correctamente el Anexo II firmado por el alumno.
+        <span class="time">09:12</span>
+      </div>
+    </div>
+
+    <div class="message-row right email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">C</div>
+          <div>
+            <div class="sender">📧 Centro educativo</div>
+            <div class="contact">Manuel Climent Donaire · Tutor FCT</div>
+          </div>
+        </div>
+        Gracias. Quedamos pendientes del informe semanal.
+        <span class="time">09:24 ✓✓</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <div class="message-row center video">
+      <div class="message-bubble system">
+        <div class="sender">🎥 Videoconferencia</div>
+        <div class="contact">Empresa · Centro educativo · Alumno</div>
+        Reunión de seguimiento de prácticas.
+        <span class="time">10:00</span>
+      </div>
+    </div>
+
+    <div class="message-row left call">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">J</div>
+          <div>
+            <div class="sender">📞 Empresa</div>
+            <div class="contact">Javier Ruiz · Tutor de empresa</div>
+          </div>
+        </div>
+        El alumno llegará hoy 30 minutos más tarde.
+        <span class="time">12:45</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <div class="message-row center visit">
+      <div class="message-bubble system">
+        <div class="sender">🏢 Visita presencial</div>
+        <div class="contact">Seguimiento en empresa</div>
+        Revisión de actividades y entrevista con el tutor laboral.
+        <span class="time">11:15</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- POP-UP -->
+<div id="mtmConversationModal" class="mtm-modal-overlay" onclick="mtmCloseConversationModal()">
+
+  <div class="mtm-modal-box" onclick="event.stopPropagation()">
+
+    <div class="mtm-modal-header">
+      <h2>Añadir conversación</h2>
+      <button type="button" class="mtm-close-btn" onclick="mtmCloseConversationModal()">×</button>
+    </div>
+
+    <form id="mtmConversationForm" class="mtm-conversation-form">
+
+      <input type="hidden" name="id_contacto" value="25">
+
+      <label>Tipo</label>
+      <select name="tipo_movimiento" required>
+        <option value="">Selecciona</option>
+        <option value="correo">📧 Correo electrónico</option>
+        <option value="llamada">📞 Llamada telefónica</option>
+        <option value="videoconferencia">🎥 Videoconferencia</option>
+        <option value="visita">🏢 Visita presencial</option>
+        <option value="mensaje_empresa">🏭 Mensaje empresa</option>
+        <option value="mensaje_centro">🎓 Mensaje centro educativo</option>
+        <option value="documento">📄 Documento</option>
+        <option value="incidencia">⚠️ Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select name="origen" required>
+        <option value="">Selecciona</option>
+        <option value="empresa">Empresa</option>
+        <option value="centro">Centro educativo</option>
+        <option value="ambos">Ambos / reunión</option>
+      </select>
+
+      <label>Posición</label>
+      <select name="posicion" required>
+        <option value="left">Izquierda</option>
+        <option value="right">Derecha</option>
+        <option value="center">Centro</option>
+      </select>
+
+      <div class="mtm-form-grid">
+        <div>
+          <label>Fecha</label>
+          <input type="date" name="fecha" required>
+        </div>
+
+        <div>
+          <label>Hora</label>
+          <input type="time" name="hora">
+        </div>
+      </div>
+
+      <label>Persona de contacto</label>
+      <input type="text" name="persona_contacto" placeholder="Ej. María Pérez">
+
+      <label>Cargo</label>
+      <input type="text" name="cargo" placeholder="Ej. Tutor empresa">
+
+      <label>Comentario</label>
+      <textarea name="comentario" placeholder="Puede quedar vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" name="email" placeholder="correo@empresa.com">
+
+      <div class="mtm-form-actions">
+        <button type="button" class="mtm-cancel-btn" onclick="mtmCloseConversationModal()">Cancelar</button>
+        <button type="submit" class="mtm-save-btn">Guardar</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<style>
+.mtm-chat-page{
+  max-width:1000px;
+  margin:auto;
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.mtm-chat-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.mtm-chat-header h2{
+  margin:0;
+  color:#111827;
+}
+
+.mtm-add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.mtm-add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.mtm-chat-container{
+  padding:20px;
+  min-height:500px;
+}
+
+.chat-date{
+  width:fit-content;
+  margin:25px auto;
+  padding:6px 14px;
+  background:#202c33;
+  color:#d1d7db;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.message-row{
+  display:flex;
+  margin-bottom:14px;
+}
+
+.message-row.left{ justify-content:flex-start; }
+.message-row.right{ justify-content:flex-end; }
+.message-row.center{ justify-content:center; }
+
+.message-bubble{
+  max-width:70%;
+  padding:12px;
+  border-radius:12px;
+  color:#ffffff;
+  line-height:1.5;
+  box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+  background:#202c33;
+}
+
+.right .message-bubble{
+  background:#005c4b;
+}
+
+.center .message-bubble{
+  background:#1f2c34;
+  text-align:center;
+  max-width:60%;
+}
+
+.sender-wrapper{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+
+.avatar{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#54656f;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  color:white;
+  font-size:15px;
+  flex-shrink:0;
+}
+
+.sender{
+  font-weight:700;
+  font-size:14px;
+}
+
+.contact{
+  font-size:12px;
+  color:#c7d1d6;
+  margin-top:2px;
+}
+
+.time{
+  display:block;
+  text-align:right;
+  margin-top:8px;
+  color:#b9c0c4;
+  font-size:11px;
+}
+
+.system .time{
+  text-align:center;
+}
+
+.email .sender{ color:#66cfff; }
+.call .sender{ color:#ffd54f; }
+.video .sender{ color:#81c784; }
+.visit .sender{ color:#ffb74d; }
+.company .sender{ color:#ce93d8; }
+.school .sender{ color:#64b5f6; }
+.document .sender{ color:#90caf9; }
+.incident .sender{ color:#ff8a80; }
+
+/* POP-UP */
+.mtm-modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  z-index:99999;
+  justify-content:center;
+  align-items:center;
+}
+
+.mtm-modal-box{
+  width:420px;
+  max-width:92vw;
+  background:#ffffff;
+  border-radius:16px;
+  padding:0;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+  overflow:hidden;
+  animation:mtmPopupIn .18s ease-out;
+}
+
+@keyframes mtmPopupIn{
+  from{
+    transform:scale(.94);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.mtm-modal-header{
+  padding:16px 18px;
+  background:#5468e7;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.mtm-modal-header h2{
+  margin:0;
+  font-size:18px;
+  color:white;
+}
+
+.mtm-close-btn{
+  border:none;
+  background:transparent;
+  color:white;
+  font-size:26px;
+  cursor:pointer;
+}
+
+.mtm-conversation-form{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+
+.mtm-conversation-form label{
+  font-size:12px;
+  font-weight:600;
+  color:#374151;
+}
+
+.mtm-conversation-form input,
+.mtm-conversation-form select,
+.mtm-conversation-form textarea{
+  width:100%;
+  padding:9px 10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+  box-sizing:border-box;
+}
+
+.mtm-conversation-form textarea{
+  min-height:75px;
+  resize:vertical;
+}
+
+.mtm-form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.mtm-form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:12px;
+}
+
+.mtm-cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:9px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:9px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn:hover{
+  background:#4056d6;
+}
+
+@media(max-width:600px){
+  .mtm-chat-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .message-bubble,
+  .center .message-bubble{
+    max-width:90%;
+  }
+
+  .mtm-form-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<script>
+function mtmOpenConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "flex";
+}
+
+function mtmCloseConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "none";
+}
+
+document.getElementById("mtmConversationForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const datos = Object.fromEntries(formData);
+
+  console.log(datos);
+
+  alert("Conversación preparada. Más adelante se guardará en la base de datos.");
+
+  mtmCloseConversationModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"3a87e0d8","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-3a87e0d8 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="chat-demo">
+
+    <!-- FECHA -->
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <!-- CORREO EMPRESA -->
+    <div class="message-row left email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Empresa
+                    </div>
+
+                    <div class="contact">
+                        María Pérez García · Responsable RRHH
+                    </div>
+                </div>
+
+            </div>
+
+            Hemos recibido correctamente el Anexo II firmado por el alumno.
+
+            <span class="time">09:12</span>
+
+        </div>
+    </div>
+
+    <!-- CORREO CENTRO -->
+    <div class="message-row right email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Gracias. Quedamos pendientes del informe semanal.
+
+            <span class="time">09:24 ✓✓</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <!-- VIDEOCONFERENCIA -->
+    <div class="message-row center video">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🎥 Videoconferencia
+            </div>
+
+            <div class="contact">
+                Empresa · Centro educativo · Alumno
+            </div>
+
+            Reunión de seguimiento de prácticas.
+
+            <span class="time">10:00</span>
+
+        </div>
+    </div>
+
+    <!-- LLAMADA -->
+    <div class="message-row left call">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">J</div>
+
+                <div>
+                    <div class="sender">
+                        📞 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Javier Ruiz · Tutor de empresa
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno llegará hoy 30 minutos más tarde.
+
+            <span class="time">12:45</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <!-- VISITA -->
+    <div class="message-row center visit">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🏢 Visita presencial
+            </div>
+
+            <div class="contact">
+                Seguimiento en empresa
+            </div>
+
+            Revisión de actividades y entrevista con el tutor laboral.
+
+            <span class="time">11:15</span>
+
+        </div>
+    </div>
+
+    <!-- MENSAJE EMPRESA -->
+    <div class="message-row left company">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">L</div>
+
+                <div>
+                    <div class="sender">
+                        🏭 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Laura Gómez · Responsable de formación
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno ha completado correctamente las tareas asignadas esta semana.
+
+            <span class="time">13:10</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Viernes, 7 de junio de 2026</div>
+
+    <!-- MENSAJE CENTRO -->
+    <div class="message-row right school">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        🎓 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Se validan las horas realizadas y el seguimiento semanal.
+
+            <span class="time">08:55 ✓✓</span>
+
+        </div>
+    </div>
+
+    <!-- DOCUMENTO -->
+    <div class="message-row center document">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                📄 Documento adjunto
+            </div>
+
+            <div class="contact">
+                Anexo III
+            </div>
+
+            Documento firmado por todas las partes.
+
+            <span class="time">09:20</span>
+
+        </div>
+    </div>
+
+    <!-- INCIDENCIA -->
+    <div class="message-row center incident">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                ⚠️ Incidencia
+            </div>
+
+            <div class="contact">
+                Ausencia justificada
+            </div>
+
+            Falta registrada y validada.
+
+            <span class="time">11:40</span>
+
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+
+.chat-demo{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.chat-date{
+    width:fit-content;
+    margin:25px auto;
+    padding:6px 14px;
+    background:#202c33;
+    color:#d1d7db;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.message-row{
+    display:flex;
+    margin-bottom:14px;
+}
+
+.message-row.left{
+    justify-content:flex-start;
+}
+
+.message-row.right{
+    justify-content:flex-end;
+}
+
+.message-row.center{
+    justify-content:center;
+}
+
+.message-bubble{
+    max-width:70%;
+    padding:12px;
+    border-radius:12px;
+    color:#ffffff;
+    line-height:1.5;
+    box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+    background:#202c33;
+}
+
+.right .message-bubble{
+    background:#005c4b;
+}
+
+.center .message-bubble{
+    background:#1f2c34;
+    text-align:center;
+    max-width:60%;
+}
+
+.sender-wrapper{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#54656f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:white;
+    font-size:15px;
+    flex-shrink:0;
+}
+
+.sender{
+    font-weight:700;
+    font-size:14px;
+}
+
+.contact{
+    font-size:12px;
+    color:#c7d1d6;
+    margin-top:2px;
+}
+
+.time{
+    display:block;
+    text-align:right;
+    margin-top:8px;
+    color:#b9c0c4;
+    font-size:11px;
+}
+
+.system .time{
+    text-align:center;
+}
+
+/* Tipos */
+
+.email .sender{
+    color:#66cfff;
+}
+
+.call .sender{
+    color:#ffd54f;
+}
+
+.video .sender{
+    color:#81c784;
+}
+
+.visit .sender{
+    color:#ffb74d;
+}
+
+.company .sender{
+    color:#ce93d8;
+}
+
+.school .sender{
+    color:#64b5f6;
+}
+
+.document .sender{
+    color:#90caf9;
+}
+
+.incident .sender{
+    color:#ff8a80;
+}
+
+</style>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"ab878742","variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-ab878742 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<button class="add-chat-btn" onclick="openModal()">Añadir conversación</button>
+
+<div id="conversationModal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Añadir conversación</h2>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+
+    <form class="conversation-form">
+
+      <label>Tipo de movimiento</label>
+      <select>
+        <option>Correo electrónico</option>
+        <option>Llamada telefónica</option>
+        <option>Videoconferencia</option>
+        <option>Visita presencial</option>
+        <option>Mensaje empresa</option>
+        <option>Mensaje centro educativo</option>
+        <option>Documento</option>
+        <option>Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select>
+        <option>Empresa</option>
+        <option>Centro educativo</option>
+        <option>Ambos / reunión</option>
+      </select>
+
+      <label>Posición en el chat</label>
+      <select>
+        <option>Izquierda</option>
+        <option>Derecha</option>
+        <option>Centro</option>
+      </select>
+
+      <label>Fecha</label>
+      <input type="date">
+
+      <label>Hora</label>
+      <input type="time">
+
+      <label>Persona de contacto</label>
+      <input type="text" placeholder="Ej. María Pérez García">
+
+      <label>Cargo</label>
+      <input type="text" placeholder="Ej. Responsable RRHH">
+
+      <label>Comentario</label>
+      <textarea placeholder="Escribe el texto de la conversación o déjalo vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" placeholder="correo@empresa.com">
+
+      <div class="form-actions">
+        <button type="button" class="cancel-btn" onclick="closeModal()">Cancelar</button>
+        <button type="submit" class="save-btn">Guardar</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<style>
+.add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-box{
+  width:90%;
+  max-width:520px;
+  background:#ffffff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.modal-header h2{
+  margin:0;
+  font-size:22px;
+  color:#111827;
+}
+
+.close-btn{
+  border:none;
+  background:none;
+  font-size:28px;
+  cursor:pointer;
+  color:#6b7280;
+}
+
+.conversation-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.conversation-form label{
+  font-size:13px;
+  font-weight:600;
+  color:#374151;
+}
+
+.conversation-form input,
+.conversation-form select,
+.conversation-form textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+}
+
+.conversation-form textarea{
+  min-height:90px;
+  resize:vertical;
+}
+
+.form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:16px;
+}
+
+.cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn:hover{
+  background:#4056d6;
+}
+</style>
+
+<script>
+function openModal(){
+  document.getElementById("conversationModal").style.display = "flex";
+}
+
+function closeModal(){
+  document.getElementById("conversationModal").style.display = "none";
+}
+
+document.querySelector(".conversation-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  alert("Aquí se grabará más adelante en la base de datos.");
+
+  closeModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
