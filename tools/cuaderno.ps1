@@ -92,7 +92,7 @@ function Add-CuadernoPage {
 
     Write-Info "Buscando pagina WordPress con slug exacto '$PageName'..."
 
-    $remoteJson = Invoke-SSH "wp post list --post_type=page --name='$PageName' --fields=ID,post_title,post_name,post_type,post_status --format=json --path='$WordPressPath' --allow-root"
+    $remoteJson = Invoke-SSH "wp post list --post_type=page --post_status=any --fields=ID,post_title,post_name,post_type,post_status --format=json --path='$WordPressPath' --allow-root"
 
     try {
         $matches = (($remoteJson -join "`n") | ConvertFrom-Json)
@@ -116,11 +116,21 @@ function Add-CuadernoPage {
         Stop-Cuaderno "No existe una pagina WordPress con el slug exacto '$PageName'."
     }
 
-    if ($matches.Count -gt 1) {
-        Stop-Cuaderno "Hay varias paginas WordPress con el slug exacto '$PageName'; se aborta sin crear archivos."
+    $publishedMatches = @($matches | Where-Object { $_.post_status -eq "publish" })
+
+    if ($publishedMatches.Count -gt 1) {
+        Stop-Cuaderno "Hay varias paginas publicadas con el slug exacto '$PageName'; se aborta sin crear archivos."
     }
 
-    $remote = $matches[0]
+    if ($publishedMatches.Count -eq 1) {
+        $remote = $publishedMatches[0]
+    }
+    elseif ($matches.Count -eq 1) {
+        $remote = $matches[0]
+    }
+    else {
+        Stop-Cuaderno "Hay varias paginas no publicadas con el slug exacto '$PageName'; se aborta sin crear archivos."
+    }
     $RemoteTemp = "/tmp/cuaderno-add-$($remote.ID)-$PID.html"
 
     try {

@@ -1,0 +1,1408 @@
+<!-- wp:uagb/container {"block_id":"72a2c0cc","innerContentWidth":"alignfull","minHeightDesktop":800,"justifyContentDesktop":"flex-start","backgroundType":"color","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"backgroundColor":"","variationSelected":true,"isBlockRootParent":true} -->
+<div class="wp-block-uagb-container uagb-block-72a2c0cc alignfull uagb-is-root-container"><!-- wp:html -->
+[[VIEW tarjetas]]
+
+<div class="project-app">
+  <aside class="project-menu">
+    <div class="project-menu-logo">
+      <img src="[[logo]]" alt="[[nombre]]" onerror="this.src='[[foto]]';">
+    </div>
+
+    <a class="project-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>⌂</span><b>Inicio</b></a>
+    <a class="project-nav is-active" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>📁</span><b>Proyectos</b></a>
+    <a class="project-nav" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>✉</span><b>Solicitudes</b></a>
+    <a class="project-nav" href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>📋</span><b>Planes</b></a>
+    <a class="project-nav" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>👥</span><b>Alumnado</b></a>
+
+    <div class="project-menu-bottom">
+      <a class="project-nav" href="/ayuda" onclick="event.stopPropagation();"><span>❔</span><b>Ayuda</b></a>
+      <a class="project-nav" href="/wp-login.php?action=logout" onclick="event.stopPropagation();"><span>↪</span><b>Salir</b></a>
+    </div>
+  </aside>
+
+  <main class="project-page">
+    <header class="project-topbar">
+      <div class="project-breadcrumb">
+        <a href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">Proyectos</a>
+        <span>›</span>
+        <strong>[[nombre]]</strong>
+      </div>
+
+      <div class="project-top-actions">
+        <a class="project-btn project-btn-light" href="/detalle/?tabla=proyecto&amp;id=[[id_proyecto]]" onclick="event.stopPropagation();">✎ Editar proyecto</a>
+      </div>
+    </header>
+
+    <section class="project-hero" style="--project-color:[[color]]">
+      <div class="project-hero-logo">
+        <img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';this.parentNode.innerHTML='🚘';">
+      </div>
+
+      <div class="project-hero-content">
+        <div class="project-kicker">Proyecto profesional</div>
+        <h1>[[nombre]]</h1>
+        <p>[[descripcion]]</p>
+
+        <div class="project-meta">
+          <span>🏷 Código: <strong>[[codigo]]</strong></span>
+          <span>🎨 Color: <strong>[[color]]</strong></span>
+          <span>↕ Orden: <strong>[[orden]]</strong></span>
+          <span>● Estado: <strong>[[IF activo='1']]Activo[[ENDIF]][[IF activo='0']]Inactivo[[ENDIF]]</strong></span>
+        </div>
+      </div>
+
+      <div class="project-hero-brand">
+        <img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';">
+      </div>
+    </section>
+
+    <section class="project-stats">
+      <a class="project-stat" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">✉</span>
+        <div><strong>Solicitudes</strong><small>Necesidades planteadas por el cliente</small></div>
+        <b>›</b>
+      </a>
+
+      <a class="project-stat" href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">📋</span>
+        <div><strong>Planes de trabajo</strong><small>Tareas previstas para cada solicitud</small></div>
+        <b>›</b>
+      </a>
+
+      <a class="project-stat" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">👥</span>
+        <div><strong>Seguimiento del alumnado</strong><small>Progreso, estados, entregas y XP</small></div>
+        <b>›</b>
+      </a>
+    </section>
+
+    <div class="project-layout">
+      <section class="project-main">
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">🏢</span>
+            <div><h2>Descripción del proyecto</h2><p>Información general del proyecto profesional.</p></div>
+          </div>
+          <div class="project-description">[[descripcion]]</div>
+        </section>
+
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">✉</span>
+            <div><h2>Solicitudes del cliente</h2><p>Consulta las solicitudes asociadas a este proyecto.</p></div>
+            <a class="project-section-link" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">Ver todas</a>
+          </div>
+
+          <div class="project-feature-list">
+            <a href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+              <span class="project-feature-icon">📨</span>
+              <div><strong>Solicitudes del cliente</strong><small>Situación actual, necesidad detectada, trabajo solicitado y criterios de aceptación.</small></div>
+              <b>›</b>
+            </a>
+
+            <a href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+              <span class="project-feature-icon">🧩</span>
+              <div><strong>Planificación asociada</strong><small>Tareas, instrucciones, resultados esperados, fechas previstas y XP.</small></div>
+              <b>›</b>
+            </a>
+          </div>
+        </section>
+
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">👤</span>
+            <div><h2>Seguimiento del alumnado</h2><p>Accede al trabajo individual realizado en el proyecto.</p></div>
+            <a class="project-section-link" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">Abrir seguimiento</a>
+          </div>
+
+          <div class="project-student-panel">
+            <div><span>📊</span><strong>Progreso por solicitud</strong><small>Consulta el porcentaje completado y el estado de cada tarea.</small></div>
+            <div><span>🎓</span><strong>Integración con Moodle</strong><small>Revisa entregas, calificaciones y retroalimentación sincronizada.</small></div>
+            <div><span>🏆</span><strong>Experiencia y XP</strong><small>Visualiza la experiencia obtenida por el alumnado en el proyecto.</small></div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="project-sidebar">
+        <section class="project-side-card">
+          <h3>Ficha del proyecto</h3>
+          <div class="project-data-row"><span>Identificador</span><strong>[[id_proyecto]]</strong></div>
+          <div class="project-data-row"><span>Código</span><strong>[[codigo]]</strong></div>
+          <div class="project-data-row"><span>Orden</span><strong>[[orden]]</strong></div>
+          <div class="project-data-row"><span>Estado</span><strong class="project-status">[[IF activo='1']]Activo[[ENDIF]][[IF activo='0']]Inactivo[[ENDIF]]</strong></div>
+        </section>
+
+        <section class="project-side-card">
+          <h3>Imagen corporativa</h3>
+          <div class="project-brand-preview"><img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';"></div>
+          <div class="project-color-line"><span style="background:[[color]]"></span><div><strong>Color principal</strong><small>[[color]]</small></div></div>
+        </section>
+
+        <section class="project-side-card">
+          <h3>Fechas de registro</h3>
+          <div class="project-data-row"><span>Creado</span><strong>[[creado_en]]</strong></div>
+          <div class="project-data-row"><span>Actualizado</span><strong>[[actualizado_en]]</strong></div>
+        </section>
+
+        <section class="project-side-card project-quick-actions">
+          <h3>Accesos rápidos</h3>
+          <a href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">✉ Solicitudes del cliente</a>
+          <a href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">📋 Planes de trabajo</a>
+          <a href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">👥 Seguimiento del alumnado</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+</div>
+
+[[ENDVIEW]]
+
+<style>
+:root{--project-navy:#0e1d4f;--project-blue:#2563eb;--project-blue-dark:#183a8f;--project-blue-soft:#edf3ff;--project-border:#cfdbf1;--project-muted:#64748b;--project-bg:#f7faff}
+*{box-sizing:border-box}
+.project-app{min-height:100vh;display:grid;grid-template-columns:132px minmax(0,1fr);background:var(--project-bg);color:#071733;font-family:Arial,Helvetica,sans-serif}
+.project-menu{position:sticky;top:0;height:100vh;padding:18px 12px;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#0b1b46,#173c85);color:#fff}
+.project-menu-logo{min-height:92px;padding:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center}
+.project-menu-logo img{width:100%;max-height:80px;object-fit:contain}
+.project-nav{min-height:70px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:12px;color:#fff;text-align:center;text-decoration:none}
+.project-nav span{font-size:23px}.project-nav b{font-size:12px}.project-nav:hover,.project-nav.is-active{background:rgba(255,255,255,.14)}.project-menu-bottom{margin-top:auto}
+.project-page{min-width:0;padding:0 28px 34px}
+.project-topbar{min-height:74px;margin:0 -28px 22px;padding:14px 34px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border-bottom:1px solid #dce6f5}
+.project-breadcrumb{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-weight:800;color:var(--project-muted)}.project-breadcrumb a{color:var(--project-blue-dark);text-decoration:none}
+.project-btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border:1px solid #b8c8e8;border-radius:9px;font-weight:900;text-decoration:none}.project-btn-light{background:#fff;color:var(--project-blue-dark)}
+.project-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:160px minmax(0,1fr) 330px;gap:24px;align-items:center;min-height:215px;margin-bottom:18px;padding:28px;background:#fff;border:1px solid var(--project-border);border-top:5px solid var(--project-color,#2563eb);border-radius:15px;box-shadow:0 7px 24px rgba(20,45,95,.07)}
+.project-hero:after{content:"";position:absolute;width:420px;height:260px;right:-70px;top:-90px;border-radius:50%;background:linear-gradient(135deg,rgba(37,99,235,.07),rgba(14,29,79,.015))}
+.project-hero-logo{position:relative;z-index:1;width:150px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#0e1d4f,#173c85);color:#fff;font-size:50px}.project-hero-logo img{width:100%;height:100%;object-fit:contain}
+.project-hero-content{position:relative;z-index:1}.project-kicker{margin-bottom:6px;color:var(--project-blue);font-size:12px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.project-hero h1{margin:0 0 11px;color:#071733;font-size:36px}.project-hero p{max-width:760px;margin:0 0 21px;color:#334155;font-size:16px;line-height:1.55}.project-meta{display:flex;gap:10px 24px;flex-wrap:wrap;color:#42526f;font-size:13px}
+.project-hero-brand{position:relative;z-index:1;height:155px;display:flex;align-items:center;justify-content:center;padding:15px;border-radius:15px;background:linear-gradient(135deg,#f4f7ff,#e9f0ff)}.project-hero-brand img{max-width:100%;max-height:100%;object-fit:contain}
+.project-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-bottom:18px}.project-stat{min-height:106px;padding:17px;display:grid;grid-template-columns:54px 1fr 20px;gap:13px;align-items:center;border:1px solid var(--project-border);border-radius:13px;background:#fff;color:#071733;text-decoration:none;box-shadow:0 4px 15px rgba(20,45,95,.045)}.project-stat:hover{border-color:#9eb5e3;transform:translateY(-1px)}
+.project-stat-icon,.project-card-icon{display:flex;align-items:center;justify-content:center;border-radius:11px;background:var(--project-blue-soft)}.project-stat-icon{width:54px;height:54px;font-size:25px}.project-stat strong{display:block;margin-bottom:4px;color:var(--project-blue-dark);font-size:17px}.project-stat small{display:block;color:var(--project-muted);line-height:1.35}.project-stat>b{color:var(--project-blue);font-size:23px}
+.project-layout{display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:18px;align-items:start}.project-card,.project-side-card{margin-bottom:18px;padding:21px;border:1px solid var(--project-border);border-radius:13px;background:#fff;box-shadow:0 5px 18px rgba(20,45,95,.05)}
+.project-card-title{display:flex;align-items:flex-start;gap:13px;margin-bottom:17px}.project-card-icon{width:39px;height:39px;flex:0 0 39px;font-size:20px}.project-card-title h2{margin:0;color:var(--project-blue-dark);font-size:19px;text-transform:uppercase}.project-card-title p{margin:5px 0 0;color:var(--project-muted);font-size:13px}.project-section-link{margin-left:auto;padding:8px 11px;border:1px solid #bdcdec;border-radius:8px;color:var(--project-blue-dark);font-size:12px;font-weight:900;text-decoration:none;white-space:nowrap}
+.project-description{color:#334155;font-size:15px;line-height:1.65;white-space:pre-line}.project-feature-list{display:flex;flex-direction:column}.project-feature-list>a{display:grid;grid-template-columns:46px 1fr 20px;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid #e2e8f2;color:#071733;text-decoration:none}.project-feature-list>a:last-child{border-bottom:0}.project-feature-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#eff4ff;font-size:21px}.project-feature-list strong{display:block;margin-bottom:4px;color:var(--project-blue-dark)}.project-feature-list small{display:block;color:var(--project-muted);line-height:1.4}.project-feature-list b{color:var(--project-blue);font-size:22px}
+.project-student-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.project-student-panel>div{min-height:155px;padding:16px;border:1px solid #dae4f4;border-radius:11px;background:#f9fbff}.project-student-panel span{display:block;margin-bottom:12px;font-size:27px}.project-student-panel strong{display:block;margin-bottom:7px;color:var(--project-blue-dark)}.project-student-panel small{color:var(--project-muted);line-height:1.45}
+.project-side-card h3{margin:0 0 15px;color:var(--project-blue-dark);font-size:16px;text-transform:uppercase}.project-data-row{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid #e2e8f2}.project-data-row:last-child{border-bottom:0}.project-data-row span{color:var(--project-muted);font-size:12px;font-weight:800}.project-data-row strong{color:#071733;font-size:13px;text-align:right}.project-status{color:#15803d!important}
+.project-brand-preview{min-height:120px;padding:15px;display:flex;align-items:center;justify-content:center;border-radius:11px;background:#f1f5fb}.project-brand-preview img{max-width:100%;max-height:105px;object-fit:contain}.project-color-line{display:flex;align-items:center;gap:12px;margin-top:14px}.project-color-line>span{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(0,0,0,.1);border-radius:10px}.project-color-line strong,.project-color-line small{display:block}.project-color-line small{margin-top:3px;color:var(--project-muted)}
+.project-quick-actions{display:flex;flex-direction:column}.project-quick-actions h3{margin-bottom:7px}.project-quick-actions a{padding:12px 0;border-bottom:1px solid #e2e8f2;color:var(--project-blue-dark);font-size:13px;font-weight:900;text-decoration:none}.project-quick-actions a:last-child{border-bottom:0}
+@media(max-width:1200px){.project-hero{grid-template-columns:140px minmax(0,1fr)}.project-hero-brand{display:none}.project-layout{grid-template-columns:1fr}.project-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project-side-card{margin-bottom:0}}
+@media(max-width:850px){.project-app{grid-template-columns:1fr}.project-menu{position:static;height:auto;flex-direction:row;overflow:auto}.project-menu-logo{min-width:110px;min-height:70px;margin:0}.project-menu-bottom{margin:0;display:flex}.project-page{padding:0 14px 24px}.project-topbar{margin:0 -14px 18px;padding:13px 18px}.project-stats,.project-student-panel,.project-sidebar{grid-template-columns:1fr}}
+@media(max-width:650px){.project-hero{grid-template-columns:1fr}.project-hero-logo{width:110px;height:110px}.project-hero h1{font-size:29px}.project-card-title{flex-wrap:wrap}.project-section-link{margin-left:52px}}
+</style>[[VIEW tarjetas]]
+
+<div class="project-app">
+  <aside class="project-menu">
+    <div class="project-menu-logo">
+      <img src="[[logo]]" alt="[[nombre]]" onerror="this.src='[[foto]]';">
+    </div>
+
+    <a class="project-nav" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>⌂</span><b>Inicio</b></a>
+    <a class="project-nav is-active" href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();"><span>📁</span><b>Proyectos</b></a>
+    <a class="project-nav" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>✉</span><b>Solicitudes</b></a>
+    <a class="project-nav" href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>📋</span><b>Planes</b></a>
+    <a class="project-nav" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();"><span>👥</span><b>Alumnado</b></a>
+
+    <div class="project-menu-bottom">
+      <a class="project-nav" href="/ayuda" onclick="event.stopPropagation();"><span>❔</span><b>Ayuda</b></a>
+      <a class="project-nav" href="/wp-login.php?action=logout" onclick="event.stopPropagation();"><span>↪</span><b>Salir</b></a>
+    </div>
+  </aside>
+
+  <main class="project-page">
+    <header class="project-topbar">
+      <div class="project-breadcrumb">
+        <a href="/tabla/?tabla=proyecto" onclick="event.stopPropagation();">Proyectos</a>
+        <span>›</span>
+        <strong>[[nombre]]</strong>
+      </div>
+
+      <div class="project-top-actions">
+        <a class="project-btn project-btn-light" href="/detalle/?tabla=proyecto&amp;id=[[id_proyecto]]" onclick="event.stopPropagation();">✎ Editar proyecto</a>
+      </div>
+    </header>
+
+    <section class="project-hero" style="--project-color:[[color]]">
+      <div class="project-hero-logo">
+        <img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';this.parentNode.innerHTML='🚘';">
+      </div>
+
+      <div class="project-hero-content">
+        <div class="project-kicker">Proyecto profesional</div>
+        <h1>[[nombre]]</h1>
+        <p>[[descripcion]]</p>
+
+        <div class="project-meta">
+          <span>🏷 Código: <strong>[[codigo]]</strong></span>
+          <span>🎨 Color: <strong>[[color]]</strong></span>
+          <span>↕ Orden: <strong>[[orden]]</strong></span>
+          <span>● Estado: <strong>[[IF activo='1']]Activo[[ENDIF]][[IF activo='0']]Inactivo[[ENDIF]]</strong></span>
+        </div>
+      </div>
+
+      <div class="project-hero-brand">
+        <img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';">
+      </div>
+    </section>
+
+    <section class="project-stats">
+      <a class="project-stat" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">✉</span>
+        <div><strong>Solicitudes</strong><small>Necesidades planteadas por el cliente</small></div>
+        <b>›</b>
+      </a>
+
+      <a class="project-stat" href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">📋</span>
+        <div><strong>Planes de trabajo</strong><small>Tareas previstas para cada solicitud</small></div>
+        <b>›</b>
+      </a>
+
+      <a class="project-stat" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+        <span class="project-stat-icon">👥</span>
+        <div><strong>Seguimiento del alumnado</strong><small>Progreso, estados, entregas y XP</small></div>
+        <b>›</b>
+      </a>
+    </section>
+
+    <div class="project-layout">
+      <section class="project-main">
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">🏢</span>
+            <div><h2>Descripción del proyecto</h2><p>Información general del proyecto profesional.</p></div>
+          </div>
+          <div class="project-description">[[descripcion]]</div>
+        </section>
+
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">✉</span>
+            <div><h2>Solicitudes del cliente</h2><p>Consulta las solicitudes asociadas a este proyecto.</p></div>
+            <a class="project-section-link" href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">Ver todas</a>
+          </div>
+
+          <div class="project-feature-list">
+            <a href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+              <span class="project-feature-icon">📨</span>
+              <div><strong>Solicitudes del cliente</strong><small>Situación actual, necesidad detectada, trabajo solicitado y criterios de aceptación.</small></div>
+              <b>›</b>
+            </a>
+
+            <a href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">
+              <span class="project-feature-icon">🧩</span>
+              <div><strong>Planificación asociada</strong><small>Tareas, instrucciones, resultados esperados, fechas previstas y XP.</small></div>
+              <b>›</b>
+            </a>
+          </div>
+        </section>
+
+        <section class="project-card">
+          <div class="project-card-title">
+            <span class="project-card-icon">👤</span>
+            <div><h2>Seguimiento del alumnado</h2><p>Accede al trabajo individual realizado en el proyecto.</p></div>
+            <a class="project-section-link" href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">Abrir seguimiento</a>
+          </div>
+
+          <div class="project-student-panel">
+            <div><span>📊</span><strong>Progreso por solicitud</strong><small>Consulta el porcentaje completado y el estado de cada tarea.</small></div>
+            <div><span>🎓</span><strong>Integración con Moodle</strong><small>Revisa entregas, calificaciones y retroalimentación sincronizada.</small></div>
+            <div><span>🏆</span><strong>Experiencia y XP</strong><small>Visualiza la experiencia obtenida por el alumnado en el proyecto.</small></div>
+          </div>
+        </section>
+      </section>
+
+      <aside class="project-sidebar">
+        <section class="project-side-card">
+          <h3>Ficha del proyecto</h3>
+          <div class="project-data-row"><span>Identificador</span><strong>[[id_proyecto]]</strong></div>
+          <div class="project-data-row"><span>Código</span><strong>[[codigo]]</strong></div>
+          <div class="project-data-row"><span>Orden</span><strong>[[orden]]</strong></div>
+          <div class="project-data-row"><span>Estado</span><strong class="project-status">[[IF activo='1']]Activo[[ENDIF]][[IF activo='0']]Inactivo[[ENDIF]]</strong></div>
+        </section>
+
+        <section class="project-side-card">
+          <h3>Imagen corporativa</h3>
+          <div class="project-brand-preview"><img src="[[foto]]" alt="[[nombre]]" onerror="this.style.display='none';"></div>
+          <div class="project-color-line"><span style="background:[[color]]"></span><div><strong>Color principal</strong><small>[[color]]</small></div></div>
+        </section>
+
+        <section class="project-side-card">
+          <h3>Fechas de registro</h3>
+          <div class="project-data-row"><span>Creado</span><strong>[[creado_en]]</strong></div>
+          <div class="project-data-row"><span>Actualizado</span><strong>[[actualizado_en]]</strong></div>
+        </section>
+
+        <section class="project-side-card project-quick-actions">
+          <h3>Accesos rápidos</h3>
+          <a href="/tabla/?tabla=solicitud_cliente&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">✉ Solicitudes del cliente</a>
+          <a href="/tabla/?tabla=plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">📋 Planes de trabajo</a>
+          <a href="/tabla/?tabla=alumno_plan_trabajo&amp;f_id_proyecto=[[id_proyecto]]" onclick="event.stopPropagation();">👥 Seguimiento del alumnado</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+</div>
+
+[[ENDVIEW]]
+
+<style>
+:root{--project-navy:#0e1d4f;--project-blue:#2563eb;--project-blue-dark:#183a8f;--project-blue-soft:#edf3ff;--project-border:#cfdbf1;--project-muted:#64748b;--project-bg:#f7faff}
+*{box-sizing:border-box}
+.project-app{min-height:100vh;display:grid;grid-template-columns:132px minmax(0,1fr);background:var(--project-bg);color:#071733;font-family:Arial,Helvetica,sans-serif}
+.project-menu{position:sticky;top:0;height:100vh;padding:18px 12px;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#0b1b46,#173c85);color:#fff}
+.project-menu-logo{min-height:92px;padding:8px;margin-bottom:12px;display:flex;align-items:center;justify-content:center}
+.project-menu-logo img{width:100%;max-height:80px;object-fit:contain}
+.project-nav{min-height:70px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;border-radius:12px;color:#fff;text-align:center;text-decoration:none}
+.project-nav span{font-size:23px}.project-nav b{font-size:12px}.project-nav:hover,.project-nav.is-active{background:rgba(255,255,255,.14)}.project-menu-bottom{margin-top:auto}
+.project-page{min-width:0;padding:0 28px 34px}
+.project-topbar{min-height:74px;margin:0 -28px 22px;padding:14px 34px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:#fff;border-bottom:1px solid #dce6f5}
+.project-breadcrumb{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-weight:800;color:var(--project-muted)}.project-breadcrumb a{color:var(--project-blue-dark);text-decoration:none}
+.project-btn{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;border:1px solid #b8c8e8;border-radius:9px;font-weight:900;text-decoration:none}.project-btn-light{background:#fff;color:var(--project-blue-dark)}
+.project-hero{position:relative;overflow:hidden;display:grid;grid-template-columns:160px minmax(0,1fr) 330px;gap:24px;align-items:center;min-height:215px;margin-bottom:18px;padding:28px;background:#fff;border:1px solid var(--project-border);border-top:5px solid var(--project-color,#2563eb);border-radius:15px;box-shadow:0 7px 24px rgba(20,45,95,.07)}
+.project-hero:after{content:"";position:absolute;width:420px;height:260px;right:-70px;top:-90px;border-radius:50%;background:linear-gradient(135deg,rgba(37,99,235,.07),rgba(14,29,79,.015))}
+.project-hero-logo{position:relative;z-index:1;width:150px;height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:16px;background:linear-gradient(135deg,#0e1d4f,#173c85);color:#fff;font-size:50px}.project-hero-logo img{width:100%;height:100%;object-fit:contain}
+.project-hero-content{position:relative;z-index:1}.project-kicker{margin-bottom:6px;color:var(--project-blue);font-size:12px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.project-hero h1{margin:0 0 11px;color:#071733;font-size:36px}.project-hero p{max-width:760px;margin:0 0 21px;color:#334155;font-size:16px;line-height:1.55}.project-meta{display:flex;gap:10px 24px;flex-wrap:wrap;color:#42526f;font-size:13px}
+.project-hero-brand{position:relative;z-index:1;height:155px;display:flex;align-items:center;justify-content:center;padding:15px;border-radius:15px;background:linear-gradient(135deg,#f4f7ff,#e9f0ff)}.project-hero-brand img{max-width:100%;max-height:100%;object-fit:contain}
+.project-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-bottom:18px}.project-stat{min-height:106px;padding:17px;display:grid;grid-template-columns:54px 1fr 20px;gap:13px;align-items:center;border:1px solid var(--project-border);border-radius:13px;background:#fff;color:#071733;text-decoration:none;box-shadow:0 4px 15px rgba(20,45,95,.045)}.project-stat:hover{border-color:#9eb5e3;transform:translateY(-1px)}
+.project-stat-icon,.project-card-icon{display:flex;align-items:center;justify-content:center;border-radius:11px;background:var(--project-blue-soft)}.project-stat-icon{width:54px;height:54px;font-size:25px}.project-stat strong{display:block;margin-bottom:4px;color:var(--project-blue-dark);font-size:17px}.project-stat small{display:block;color:var(--project-muted);line-height:1.35}.project-stat>b{color:var(--project-blue);font-size:23px}
+.project-layout{display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:18px;align-items:start}.project-card,.project-side-card{margin-bottom:18px;padding:21px;border:1px solid var(--project-border);border-radius:13px;background:#fff;box-shadow:0 5px 18px rgba(20,45,95,.05)}
+.project-card-title{display:flex;align-items:flex-start;gap:13px;margin-bottom:17px}.project-card-icon{width:39px;height:39px;flex:0 0 39px;font-size:20px}.project-card-title h2{margin:0;color:var(--project-blue-dark);font-size:19px;text-transform:uppercase}.project-card-title p{margin:5px 0 0;color:var(--project-muted);font-size:13px}.project-section-link{margin-left:auto;padding:8px 11px;border:1px solid #bdcdec;border-radius:8px;color:var(--project-blue-dark);font-size:12px;font-weight:900;text-decoration:none;white-space:nowrap}
+.project-description{color:#334155;font-size:15px;line-height:1.65;white-space:pre-line}.project-feature-list{display:flex;flex-direction:column}.project-feature-list>a{display:grid;grid-template-columns:46px 1fr 20px;gap:13px;align-items:center;padding:15px 0;border-bottom:1px solid #e2e8f2;color:#071733;text-decoration:none}.project-feature-list>a:last-child{border-bottom:0}.project-feature-icon{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#eff4ff;font-size:21px}.project-feature-list strong{display:block;margin-bottom:4px;color:var(--project-blue-dark)}.project-feature-list small{display:block;color:var(--project-muted);line-height:1.4}.project-feature-list b{color:var(--project-blue);font-size:22px}
+.project-student-panel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.project-student-panel>div{min-height:155px;padding:16px;border:1px solid #dae4f4;border-radius:11px;background:#f9fbff}.project-student-panel span{display:block;margin-bottom:12px;font-size:27px}.project-student-panel strong{display:block;margin-bottom:7px;color:var(--project-blue-dark)}.project-student-panel small{color:var(--project-muted);line-height:1.45}
+.project-side-card h3{margin:0 0 15px;color:var(--project-blue-dark);font-size:16px;text-transform:uppercase}.project-data-row{display:flex;justify-content:space-between;gap:15px;padding:11px 0;border-bottom:1px solid #e2e8f2}.project-data-row:last-child{border-bottom:0}.project-data-row span{color:var(--project-muted);font-size:12px;font-weight:800}.project-data-row strong{color:#071733;font-size:13px;text-align:right}.project-status{color:#15803d!important}
+.project-brand-preview{min-height:120px;padding:15px;display:flex;align-items:center;justify-content:center;border-radius:11px;background:#f1f5fb}.project-brand-preview img{max-width:100%;max-height:105px;object-fit:contain}.project-color-line{display:flex;align-items:center;gap:12px;margin-top:14px}.project-color-line>span{width:42px;height:42px;flex:0 0 42px;border:1px solid rgba(0,0,0,.1);border-radius:10px}.project-color-line strong,.project-color-line small{display:block}.project-color-line small{margin-top:3px;color:var(--project-muted)}
+.project-quick-actions{display:flex;flex-direction:column}.project-quick-actions h3{margin-bottom:7px}.project-quick-actions a{padding:12px 0;border-bottom:1px solid #e2e8f2;color:var(--project-blue-dark);font-size:13px;font-weight:900;text-decoration:none}.project-quick-actions a:last-child{border-bottom:0}
+@media(max-width:1200px){.project-hero{grid-template-columns:140px minmax(0,1fr)}.project-hero-brand{display:none}.project-layout{grid-template-columns:1fr}.project-sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project-side-card{margin-bottom:0}}
+@media(max-width:850px){.project-app{grid-template-columns:1fr}.project-menu{position:static;height:auto;flex-direction:row;overflow:auto}.project-menu-logo{min-width:110px;min-height:70px;margin:0}.project-menu-bottom{margin:0;display:flex}.project-page{padding:0 14px 24px}.project-topbar{margin:0 -14px 18px;padding:13px 18px}.project-stats,.project-student-panel,.project-sidebar{grid-template-columns:1fr}}
+@media(max-width:650px){.project-hero{grid-template-columns:1fr}.project-hero-logo{width:110px;height:110px}.project-hero h1{font-size:29px}.project-card-title{flex-wrap:wrap}.project-section-link{margin-left:52px}}
+</style>
+<!-- /wp:html --></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"e8f967f6","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-e8f967f6 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="mtm-chat-page">
+
+  <div class="mtm-chat-header">
+    <h2>Seguimiento de contacto</h2>
+    <button type="button" class="mtm-add-chat-btn" onclick="mtmOpenConversationModal()">
+      Añadir conversación
+    </button>
+  </div>
+
+  <div class="mtm-chat-container">
+
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <div class="message-row left email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">M</div>
+          <div>
+            <div class="sender">📧 Empresa</div>
+            <div class="contact">María Pérez García · Responsable RRHH</div>
+          </div>
+        </div>
+        Hemos recibido correctamente el Anexo II firmado por el alumno.
+        <span class="time">09:12</span>
+      </div>
+    </div>
+
+    <div class="message-row right email">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">C</div>
+          <div>
+            <div class="sender">📧 Centro educativo</div>
+            <div class="contact">Manuel Climent Donaire · Tutor FCT</div>
+          </div>
+        </div>
+        Gracias. Quedamos pendientes del informe semanal.
+        <span class="time">09:24 ✓✓</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <div class="message-row center video">
+      <div class="message-bubble system">
+        <div class="sender">🎥 Videoconferencia</div>
+        <div class="contact">Empresa · Centro educativo · Alumno</div>
+        Reunión de seguimiento de prácticas.
+        <span class="time">10:00</span>
+      </div>
+    </div>
+
+    <div class="message-row left call">
+      <div class="message-bubble">
+        <div class="sender-wrapper">
+          <div class="avatar">J</div>
+          <div>
+            <div class="sender">📞 Empresa</div>
+            <div class="contact">Javier Ruiz · Tutor de empresa</div>
+          </div>
+        </div>
+        El alumno llegará hoy 30 minutos más tarde.
+        <span class="time">12:45</span>
+      </div>
+    </div>
+
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <div class="message-row center visit">
+      <div class="message-bubble system">
+        <div class="sender">🏢 Visita presencial</div>
+        <div class="contact">Seguimiento en empresa</div>
+        Revisión de actividades y entrevista con el tutor laboral.
+        <span class="time">11:15</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- POP-UP -->
+<div id="mtmConversationModal" class="mtm-modal-overlay" onclick="mtmCloseConversationModal()">
+
+  <div class="mtm-modal-box" onclick="event.stopPropagation()">
+
+    <div class="mtm-modal-header">
+      <h2>Añadir conversación</h2>
+      <button type="button" class="mtm-close-btn" onclick="mtmCloseConversationModal()">×</button>
+    </div>
+
+    <form id="mtmConversationForm" class="mtm-conversation-form">
+
+      <input type="hidden" name="id_contacto" value="25">
+
+      <label>Tipo</label>
+      <select name="tipo_movimiento" required>
+        <option value="">Selecciona</option>
+        <option value="correo">📧 Correo electrónico</option>
+        <option value="llamada">📞 Llamada telefónica</option>
+        <option value="videoconferencia">🎥 Videoconferencia</option>
+        <option value="visita">🏢 Visita presencial</option>
+        <option value="mensaje_empresa">🏭 Mensaje empresa</option>
+        <option value="mensaje_centro">🎓 Mensaje centro educativo</option>
+        <option value="documento">📄 Documento</option>
+        <option value="incidencia">⚠️ Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select name="origen" required>
+        <option value="">Selecciona</option>
+        <option value="empresa">Empresa</option>
+        <option value="centro">Centro educativo</option>
+        <option value="ambos">Ambos / reunión</option>
+      </select>
+
+      <label>Posición</label>
+      <select name="posicion" required>
+        <option value="left">Izquierda</option>
+        <option value="right">Derecha</option>
+        <option value="center">Centro</option>
+      </select>
+
+      <div class="mtm-form-grid">
+        <div>
+          <label>Fecha</label>
+          <input type="date" name="fecha" required>
+        </div>
+
+        <div>
+          <label>Hora</label>
+          <input type="time" name="hora">
+        </div>
+      </div>
+
+      <label>Persona de contacto</label>
+      <input type="text" name="persona_contacto" placeholder="Ej. María Pérez">
+
+      <label>Cargo</label>
+      <input type="text" name="cargo" placeholder="Ej. Tutor empresa">
+
+      <label>Comentario</label>
+      <textarea name="comentario" placeholder="Puede quedar vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" name="email" placeholder="correo@empresa.com">
+
+      <div class="mtm-form-actions">
+        <button type="button" class="mtm-cancel-btn" onclick="mtmCloseConversationModal()">Cancelar</button>
+        <button type="submit" class="mtm-save-btn">Guardar</button>
+      </div>
+
+    </form>
+
+  </div>
+</div>
+
+<style>
+.mtm-chat-page{
+  max-width:1000px;
+  margin:auto;
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.mtm-chat-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.mtm-chat-header h2{
+  margin:0;
+  color:#111827;
+}
+
+.mtm-add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.mtm-add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.mtm-chat-container{
+  padding:20px;
+  min-height:500px;
+}
+
+.chat-date{
+  width:fit-content;
+  margin:25px auto;
+  padding:6px 14px;
+  background:#202c33;
+  color:#d1d7db;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:600;
+}
+
+.message-row{
+  display:flex;
+  margin-bottom:14px;
+}
+
+.message-row.left{ justify-content:flex-start; }
+.message-row.right{ justify-content:flex-end; }
+.message-row.center{ justify-content:center; }
+
+.message-bubble{
+  max-width:70%;
+  padding:12px;
+  border-radius:12px;
+  color:#ffffff;
+  line-height:1.5;
+  box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+  background:#202c33;
+}
+
+.right .message-bubble{
+  background:#005c4b;
+}
+
+.center .message-bubble{
+  background:#1f2c34;
+  text-align:center;
+  max-width:60%;
+}
+
+.sender-wrapper{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+
+.avatar{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:#54656f;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:bold;
+  color:white;
+  font-size:15px;
+  flex-shrink:0;
+}
+
+.sender{
+  font-weight:700;
+  font-size:14px;
+}
+
+.contact{
+  font-size:12px;
+  color:#c7d1d6;
+  margin-top:2px;
+}
+
+.time{
+  display:block;
+  text-align:right;
+  margin-top:8px;
+  color:#b9c0c4;
+  font-size:11px;
+}
+
+.system .time{
+  text-align:center;
+}
+
+.email .sender{ color:#66cfff; }
+.call .sender{ color:#ffd54f; }
+.video .sender{ color:#81c784; }
+.visit .sender{ color:#ffb74d; }
+.company .sender{ color:#ce93d8; }
+.school .sender{ color:#64b5f6; }
+.document .sender{ color:#90caf9; }
+.incident .sender{ color:#ff8a80; }
+
+/* POP-UP */
+.mtm-modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.45);
+  z-index:99999;
+  justify-content:center;
+  align-items:center;
+}
+
+.mtm-modal-box{
+  width:420px;
+  max-width:92vw;
+  background:#ffffff;
+  border-radius:16px;
+  padding:0;
+  box-shadow:0 18px 45px rgba(0,0,0,.35);
+  overflow:hidden;
+  animation:mtmPopupIn .18s ease-out;
+}
+
+@keyframes mtmPopupIn{
+  from{
+    transform:scale(.94);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.mtm-modal-header{
+  padding:16px 18px;
+  background:#5468e7;
+  color:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.mtm-modal-header h2{
+  margin:0;
+  font-size:18px;
+  color:white;
+}
+
+.mtm-close-btn{
+  border:none;
+  background:transparent;
+  color:white;
+  font-size:26px;
+  cursor:pointer;
+}
+
+.mtm-conversation-form{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:9px;
+}
+
+.mtm-conversation-form label{
+  font-size:12px;
+  font-weight:600;
+  color:#374151;
+}
+
+.mtm-conversation-form input,
+.mtm-conversation-form select,
+.mtm-conversation-form textarea{
+  width:100%;
+  padding:9px 10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+  box-sizing:border-box;
+}
+
+.mtm-conversation-form textarea{
+  min-height:75px;
+  resize:vertical;
+}
+
+.mtm-form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.mtm-form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:12px;
+}
+
+.mtm-cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:9px 14px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:9px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.mtm-save-btn:hover{
+  background:#4056d6;
+}
+
+@media(max-width:600px){
+  .mtm-chat-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+  .message-bubble,
+  .center .message-bubble{
+    max-width:90%;
+  }
+
+  .mtm-form-grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<script>
+function mtmOpenConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "flex";
+}
+
+function mtmCloseConversationModal(){
+  document.getElementById("mtmConversationModal").style.display = "none";
+}
+
+document.getElementById("mtmConversationForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const datos = Object.fromEntries(formData);
+
+  console.log(datos);
+
+  alert("Conversación preparada. Más adelante se guardará en la base de datos.");
+
+  mtmCloseConversationModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"3a87e0d8","minHeightDesktop":800,"backgroundType":"image","backgroundImageDesktop":{"uploading":false,"date":1780510639000,"filename":"ChatGPT-Image-3-jun-2026-20_16_53.png","menuOrder":0,"uploadedTo":234,"type":"image","subtype":"png","id":235,"title":"ChatGPT Image 3 jun 2026, 20_16_53","url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","link":"http://cuaderno.mitoledo.com/?attachment_id=235","alt":"","author":"1","description":"","caption":"","name":"chatgpt-image-3-jun-2026-20_16_53","status":"inherit","modified":1780510639000,"mime":"image/png","icon":"http://cuaderno.mitoledo.com/wp-includes/images/media/default.svg","dateFormatted":"3 de junio de 2026","nonces":{"update":"e0fbf42534","delete":"7a4840625e","edit":"0c484e1293"},"editLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=235\u0026action=edit","meta":false,"authorName":"mcliment","authorLink":"http://cuaderno.mitoledo.com/wp-admin/profile.php","uploadedToTitle":"contactomovimiento","uploadedToLink":"http://cuaderno.mitoledo.com/wp-admin/post.php?post=234\u0026action=edit","filesizeInBytes":1316640,"filesizeHumanReadable":"1 MB","context":"","height":1086,"width":1448,"orientation":"landscape","sizes":{"thumbnail":{"height":150,"width":150,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-150x150.png","orientation":"landscape"},"medium":{"height":225,"width":300,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-300x225.png","orientation":"landscape"},"large":{"height":768,"width":1024,"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53-1024x768.png","orientation":"landscape"},"full":{"url":"http://cuaderno.mitoledo.com/wp-content/uploads/2026/06/ChatGPT-Image-3-jun-2026-20_16_53.png","height":1086,"width":1448,"orientation":"landscape"}},"compat":{"item":"","meta":""}},"variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-3a87e0d8 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<div class="chat-demo">
+
+    <!-- FECHA -->
+    <div class="chat-date">Lunes, 3 de junio de 2026</div>
+
+    <!-- CORREO EMPRESA -->
+    <div class="message-row left email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Empresa
+                    </div>
+
+                    <div class="contact">
+                        María Pérez García · Responsable RRHH
+                    </div>
+                </div>
+
+            </div>
+
+            Hemos recibido correctamente el Anexo II firmado por el alumno.
+
+            <span class="time">09:12</span>
+
+        </div>
+    </div>
+
+    <!-- CORREO CENTRO -->
+    <div class="message-row right email">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        📧 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Gracias. Quedamos pendientes del informe semanal.
+
+            <span class="time">09:24 ✓✓</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Martes, 4 de junio de 2026</div>
+
+    <!-- VIDEOCONFERENCIA -->
+    <div class="message-row center video">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🎥 Videoconferencia
+            </div>
+
+            <div class="contact">
+                Empresa · Centro educativo · Alumno
+            </div>
+
+            Reunión de seguimiento de prácticas.
+
+            <span class="time">10:00</span>
+
+        </div>
+    </div>
+
+    <!-- LLAMADA -->
+    <div class="message-row left call">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">J</div>
+
+                <div>
+                    <div class="sender">
+                        📞 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Javier Ruiz · Tutor de empresa
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno llegará hoy 30 minutos más tarde.
+
+            <span class="time">12:45</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Miércoles, 5 de junio de 2026</div>
+
+    <!-- VISITA -->
+    <div class="message-row center visit">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                🏢 Visita presencial
+            </div>
+
+            <div class="contact">
+                Seguimiento en empresa
+            </div>
+
+            Revisión de actividades y entrevista con el tutor laboral.
+
+            <span class="time">11:15</span>
+
+        </div>
+    </div>
+
+    <!-- MENSAJE EMPRESA -->
+    <div class="message-row left company">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">L</div>
+
+                <div>
+                    <div class="sender">
+                        🏭 Empresa
+                    </div>
+
+                    <div class="contact">
+                        Laura Gómez · Responsable de formación
+                    </div>
+                </div>
+
+            </div>
+
+            El alumno ha completado correctamente las tareas asignadas esta semana.
+
+            <span class="time">13:10</span>
+
+        </div>
+    </div>
+
+
+    <!-- FECHA -->
+    <div class="chat-date">Viernes, 7 de junio de 2026</div>
+
+    <!-- MENSAJE CENTRO -->
+    <div class="message-row right school">
+        <div class="message-bubble">
+
+            <div class="sender-wrapper">
+
+                <div class="avatar">M</div>
+
+                <div>
+                    <div class="sender">
+                        🎓 Centro educativo
+                    </div>
+
+                    <div class="contact">
+                        Manuel Climent Donaire · Tutor FCT
+                    </div>
+                </div>
+
+            </div>
+
+            Se validan las horas realizadas y el seguimiento semanal.
+
+            <span class="time">08:55 ✓✓</span>
+
+        </div>
+    </div>
+
+    <!-- DOCUMENTO -->
+    <div class="message-row center document">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                📄 Documento adjunto
+            </div>
+
+            <div class="contact">
+                Anexo III
+            </div>
+
+            Documento firmado por todas las partes.
+
+            <span class="time">09:20</span>
+
+        </div>
+    </div>
+
+    <!-- INCIDENCIA -->
+    <div class="message-row center incident">
+        <div class="message-bubble system">
+
+            <div class="sender">
+                ⚠️ Incidencia
+            </div>
+
+            <div class="contact">
+                Ausencia justificada
+            </div>
+
+            Falta registrada y validada.
+
+            <span class="time">11:40</span>
+
+        </div>
+    </div>
+
+</div>
+
+
+<style>
+
+.chat-demo{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+    font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.chat-date{
+    width:fit-content;
+    margin:25px auto;
+    padding:6px 14px;
+    background:#202c33;
+    color:#d1d7db;
+    border-radius:8px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.message-row{
+    display:flex;
+    margin-bottom:14px;
+}
+
+.message-row.left{
+    justify-content:flex-start;
+}
+
+.message-row.right{
+    justify-content:flex-end;
+}
+
+.message-row.center{
+    justify-content:center;
+}
+
+.message-bubble{
+    max-width:70%;
+    padding:12px;
+    border-radius:12px;
+    color:#ffffff;
+    line-height:1.5;
+    box-shadow:0 2px 5px rgba(0,0,0,.25);
+}
+
+.left .message-bubble{
+    background:#202c33;
+}
+
+.right .message-bubble{
+    background:#005c4b;
+}
+
+.center .message-bubble{
+    background:#1f2c34;
+    text-align:center;
+    max-width:60%;
+}
+
+.sender-wrapper{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:8px;
+}
+
+.avatar{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#54656f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:white;
+    font-size:15px;
+    flex-shrink:0;
+}
+
+.sender{
+    font-weight:700;
+    font-size:14px;
+}
+
+.contact{
+    font-size:12px;
+    color:#c7d1d6;
+    margin-top:2px;
+}
+
+.time{
+    display:block;
+    text-align:right;
+    margin-top:8px;
+    color:#b9c0c4;
+    font-size:11px;
+}
+
+.system .time{
+    text-align:center;
+}
+
+/* Tipos */
+
+.email .sender{
+    color:#66cfff;
+}
+
+.call .sender{
+    color:#ffd54f;
+}
+
+.video .sender{
+    color:#81c784;
+}
+
+.visit .sender{
+    color:#ffb74d;
+}
+
+.company .sender{
+    color:#ce93d8;
+}
+
+.school .sender{
+    color:#64b5f6;
+}
+
+.document .sender{
+    color:#90caf9;
+}
+
+.incident .sender{
+    color:#ff8a80;
+}
+
+</style>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
+
+<!-- wp:uagb/container {"block_id":"ab878742","variationSelected":true,"isBlockRootParent":true,"metadata":{"name":"","blockVisibility":false}} -->
+<div class="wp-block-uagb-container uagb-block-ab878742 alignfull uagb-is-root-container"><div class="uagb-container-inner-blocks-wrap"><!-- wp:html -->
+<button class="add-chat-btn" onclick="openModal()">Añadir conversación</button>
+
+<div id="conversationModal" class="modal-overlay">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2>Añadir conversación</h2>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+
+    <form class="conversation-form">
+
+      <label>Tipo de movimiento</label>
+      <select>
+        <option>Correo electrónico</option>
+        <option>Llamada telefónica</option>
+        <option>Videoconferencia</option>
+        <option>Visita presencial</option>
+        <option>Mensaje empresa</option>
+        <option>Mensaje centro educativo</option>
+        <option>Documento</option>
+        <option>Incidencia</option>
+      </select>
+
+      <label>Origen</label>
+      <select>
+        <option>Empresa</option>
+        <option>Centro educativo</option>
+        <option>Ambos / reunión</option>
+      </select>
+
+      <label>Posición en el chat</label>
+      <select>
+        <option>Izquierda</option>
+        <option>Derecha</option>
+        <option>Centro</option>
+      </select>
+
+      <label>Fecha</label>
+      <input type="date">
+
+      <label>Hora</label>
+      <input type="time">
+
+      <label>Persona de contacto</label>
+      <input type="text" placeholder="Ej. María Pérez García">
+
+      <label>Cargo</label>
+      <input type="text" placeholder="Ej. Responsable RRHH">
+
+      <label>Comentario</label>
+      <textarea placeholder="Escribe el texto de la conversación o déjalo vacío"></textarea>
+
+      <label>Email asociado</label>
+      <input type="email" placeholder="correo@empresa.com">
+
+      <div class="form-actions">
+        <button type="button" class="cancel-btn" onclick="closeModal()">Cancelar</button>
+        <button type="submit" class="save-btn">Guardar</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
+<style>
+.add-chat-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.add-chat-btn:hover{
+  background:#4056d6;
+}
+
+.modal-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.55);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-box{
+  width:90%;
+  max-width:520px;
+  background:#ffffff;
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  font-family:'Segoe UI',Arial,sans-serif;
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.modal-header h2{
+  margin:0;
+  font-size:22px;
+  color:#111827;
+}
+
+.close-btn{
+  border:none;
+  background:none;
+  font-size:28px;
+  cursor:pointer;
+  color:#6b7280;
+}
+
+.conversation-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.conversation-form label{
+  font-size:13px;
+  font-weight:600;
+  color:#374151;
+}
+
+.conversation-form input,
+.conversation-form select,
+.conversation-form textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:14px;
+}
+
+.conversation-form textarea{
+  min-height:90px;
+  resize:vertical;
+}
+
+.form-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-top:16px;
+}
+
+.cancel-btn{
+  background:#e5e7eb;
+  color:#111827;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn{
+  background:#5468e7;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.save-btn:hover{
+  background:#4056d6;
+}
+</style>
+
+<script>
+function openModal(){
+  document.getElementById("conversationModal").style.display = "flex";
+}
+
+function closeModal(){
+  document.getElementById("conversationModal").style.display = "none";
+}
+
+document.querySelector(".conversation-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  alert("Aquí se grabará más adelante en la base de datos.");
+
+  closeModal();
+});
+</script>
+<!-- /wp:html --></div></div>
+<!-- /wp:uagb/container -->
