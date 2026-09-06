@@ -230,11 +230,6 @@ if ($PostType -ne "page") {
     Stop-Cuaderno "El post $PostId no esta definido como post_type=page."
 }
 
-if ($PostSlug -ne $PageName) {
-    Stop-Cuaderno "El nombre solicitado '$PageName' no coincide con post_name '$PostSlug'."
-}
-
-
 # ============================================================
 # VALIDACION DEL POST REMOTO
 # ============================================================
