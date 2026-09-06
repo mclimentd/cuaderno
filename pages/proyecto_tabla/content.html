@@ -83,6 +83,23 @@
       </div>
     </section>
 
+    <section class="projects-kpis" aria-label="Resumen de proyectos">
+      <div class="projects-kpi projects-kpi-total"><span>📁</span><strong>[[TOTAL]]</strong><small>Proyectos totales</small></div>
+      <div class="projects-kpi projects-kpi-active"><span>●</span><strong>—</strong><small>Activos</small></div>
+      <div class="projects-kpi projects-kpi-planning"><span>●</span><strong>—</strong><small>En planificación</small></div>
+      <div class="projects-kpi projects-kpi-finished"><span>●</span><strong>—</strong><small>Finalizados</small></div>
+      <div class="projects-kpi projects-kpi-clients"><span>👥</span><strong>—</strong><small>Clientes</small></div>
+    </section>
+
+    <div class="projects-toolbar" aria-hidden="true">
+      <div>⌕ <span>Buscar por nombre, cliente o descripción...</span></div>
+      <button type="button" disabled>Todos los estados⌄</button>
+      <button type="button" disabled>Todos los clientes⌄</button>
+      <button type="button" disabled>Orden: más reciente⌄</button>
+      <button type="button" class="projects-view-button is-active" disabled>▦</button>
+      <button type="button" class="projects-view-button" disabled>☷</button>
+    </div>
+
     <section class="projects-summary">
       <div class="projects-summary-icon">📂</div>
 
@@ -410,6 +427,15 @@
 }
 
 .projects-summary{min-height:96px;margin-bottom:18px;padding:15px 20px;border-radius:10px}
+.projects-kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:15px}
+.projects-kpi{min-height:72px;padding:12px 13px;display:grid;grid-template-columns:34px 1fr;grid-template-rows:1fr auto;column-gap:10px;align-items:center;border:1px solid var(--projects-border);border-radius:9px;background:#fff;box-shadow:0 4px 14px rgba(17,45,95,.045)}
+.projects-kpi>span{grid-row:1 / 3;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#eef3ff;color:#1d4ed8;font-size:17px}
+.projects-kpi strong{color:#173b86;font-size:24px;line-height:1}
+.projects-kpi small{color:#64748b;font-size:11px;font-weight:800}
+.projects-kpi-active>span{background:#e8f8ed;color:#16a34a}.projects-kpi-planning>span{background:#fff5df;color:#f59e0b}.projects-kpi-finished>span{background:#ffebeb;color:#dc2626}.projects-kpi-clients>span{background:#eef3ff;color:#173b86}
+.projects-toolbar{display:grid;grid-template-columns:minmax(190px,1.6fr) repeat(3,minmax(120px,1fr)) 40px 40px;gap:9px;margin-bottom:15px}
+.projects-toolbar>div,.projects-toolbar button{min-height:36px;padding:8px 10px;border:1px solid #d5dfed;border-radius:7px;background:#fff;color:#173b86;font:inherit;font-size:11px;text-align:left}
+.projects-toolbar>div{color:#70809a}.projects-toolbar>div span{margin-left:5px}.projects-toolbar button{text-align:center;font-weight:800}.projects-toolbar button:disabled{opacity:1}.projects-toolbar .projects-view-button{padding:5px;font-size:18px}.projects-toolbar .is-active{background:#173b86;color:#fff}
 
 .projects-summary-icon{
   width:56px;
@@ -672,6 +698,8 @@
   .projects-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
+  .projects-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .projects-toolbar{grid-template-columns:1fr 1fr 1fr 1fr 40px 40px}
 }
 
 @media(max-width:850px){
@@ -712,6 +740,11 @@
     grid-template-columns:58px 1fr;
   }
 
+  .projects-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .projects-toolbar{grid-template-columns:1fr 1fr}
+  .projects-toolbar>div{grid-column:1 / -1}
+  .projects-toolbar .projects-view-button{display:none}
+
   .projects-summary-text{
     grid-column:1 / -1;
     padding:13px 0 0;
@@ -732,6 +765,8 @@
   .projects-heading h1{
     font-size:26px;
   }
+
+  .projects-kpis{grid-template-columns:1fr 1fr}
 
   .projects-card-links{
     grid-template-columns:1fr;
