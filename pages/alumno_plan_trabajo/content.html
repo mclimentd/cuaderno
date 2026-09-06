@@ -16,7 +16,7 @@ El selector de vista está dentro de la propia plantilla.
 
 <header class="work-global-header">
   <div class="work-global-brand"><img src="/wp-content/fotos/infoaza.png" alt="Infoaza"></div>
-  <div class="work-global-title"><strong>Cuaderno de Trabajo</strong><small>Infoaza</small></div>
+  <div class="work-global-title"><strong>Cuaderno de Trabajo</strong><small>InnovaTech</small></div>
   <div class="work-global-search">⌕ <span>Buscar proyectos, solicitudes, tareas...</span></div>
   <div class="work-global-user"><span>♧</span><strong>Alumno</strong><b>⌄</b></div>
 </header>
@@ -86,8 +86,10 @@ El selector de vista está dentro de la propia plantilla.
 
             <div class="work-meta-line">
               <span>📁 Proyecto: <strong>[[PARENT id_solicitud_cliente.id_proyecto.nombre]]</strong></span>
+              <span>▣ Cliente: <strong>[[PARENT id_solicitud_cliente.id_cliente.nombre]]</strong></span>
               <span>🎯 Hito: <strong>[[PARENT id_solicitud_cliente.unidad_titulo]]</strong></span>
-              <span>👤 Alumno: <strong>[[PARENT id_alumno]]</strong></span>
+              <span>📅 Inicio: <strong>[[PARENT id_solicitud_cliente.fecha]]</strong></span>
+              <span>🚩 Prioridad: <strong>[[PARENT id_solicitud_cliente.prioridad]]</strong></span>
             </div>
           </div>
 
@@ -102,9 +104,26 @@ El selector de vista está dentro de la propia plantilla.
             <h2>Plan de trabajo</h2>
 
             <div class="view-switch view-switch-top">
-              <label class="view-btn view-btn-lista" for="mtm-plan-lista">☷ Plan de trabajo</label>
+              <label class="view-btn view-btn-lista" for="mtm-plan-lista">⚙ Configuración del plan</label>
               <label class="view-btn view-btn-timeline" for="mtm-plan-timeline">♙ Seguimiento del alumnado</label>
             </div>
+          </div>
+
+          <div class="work-plan-intro">
+            <div class="work-plan-intro-icon">▣</div>
+            <div><strong>Plan de trabajo</strong><span>Define, organiza y planifica las tareas del proyecto. Esta planificación es común para todo el alumnado asignado.</span></div>
+            <a class="work-plan-action mtm-nav" href="/tabla/?tabla=plan_trabajo&amp;f_id_solicitud_cliente=[[PARENT id_solicitud_cliente]]" onclick="event.stopPropagation();">✎ Editar plan</a>
+            <a class="work-plan-action mtm-nav" href="/tabla/?tabla=plan_trabajo&amp;f_id_solicitud_cliente=[[PARENT id_solicitud_cliente]]" onclick="event.stopPropagation();">⇩ Exportar</a>
+          </div>
+
+          <div class="work-plan-metrics">
+            <div><b>☷</b><strong>[[TOTAL]]</strong><span>Tareas</span></div>
+            <div><b>▣</b><strong>[[PARENT id_solicitud_cliente.fecha]]</strong><span>Inicio del plan</span></div>
+            <div><b>▣</b><strong>[[PARENT id_solicitud_cliente.fecha_fin]]</strong><span>Fin del plan</span></div>
+            <div><b>◷</b><strong>[[PARENT id_solicitud_cliente.duracion]]</strong><span>Duración total</span></div>
+            <div><b>🏆</b><strong class="js-plan-xp">0 XP</strong><span>XP máximo</span></div>
+            <div><b>◉</b><strong>Sí</strong><span>Visible</span></div>
+            <div><b>♟</b><strong>[[PARENT id_solicitud_cliente.alumnos_asignados]]</strong><span>Alumnos/as asignados</span></div>
           </div>
 
           <!-- VISTA 1: LISTA / DASHBOARD ANTERIOR -->
@@ -2770,6 +2789,8 @@ El selector de vista está dentro de la propia plantilla.
 .timeline-board{border:1px solid #d5e2f2;border-radius:9px;background:#fff}.timeline-head{background:#eef4ff;color:#174791}.timeline-task-cell{background:#f8fbff}.timeline-task-cell h3{color:#174791}.timeline-task-cell p{color:#607594}.timeline-bar{background:#e5edf8}.timeline-legend{color:#607594}
 .side-card h3{color:#174791}.side-stats strong{color:#173b86}.progress-bar{background:#e5edf8}.progress-bar span{background:#1677e8}.next-task{border-color:#e2e9f3}.next-task strong{color:#174791}.next-task small{color:#607594}.priority-card>strong{color:#e30613}
 @media(max-width:850px){.work-global-header{grid-template-columns:94px 1fr auto}.work-global-title{padding:0 12px}.work-global-title strong{font-size:14px}.work-global-title small{font-size:10px}.work-global-search{display:none}.work-global-user{padding:0 12px}.work-global-user strong{display:none}.work-app{grid-template-columns:1fr}.work-menu{height:auto;padding-top:10px}}
+
+.work-plan-intro{display:flex;align-items:center;gap:12px;margin:10px 6px 0;padding:12px;border:1px solid #d5e2f2;border-radius:8px;background:#fff;color:#174791}.work-plan-intro-icon{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:7px;background:#e8f1ff;color:#1677e8;font-size:18px}.work-plan-intro strong,.work-plan-intro span{display:block}.work-plan-intro strong{font-size:13px}.work-plan-intro span{margin-top:3px;color:#607594;font-size:11px}.work-plan-action{margin-left:auto;padding:8px 10px;border:1px solid #c8d8ee;border-radius:7px;color:#1559b7;text-decoration:none;font-size:11px;font-weight:900;white-space:nowrap}.work-plan-action+.work-plan-action{margin-left:0}.work-plan-metrics{display:grid;grid-template-columns:repeat(7,minmax(90px,1fr));gap:8px;margin:10px 6px 0;padding:8px;border:1px solid #d5e2f2;border-radius:8px;background:#fff}.work-plan-metrics>div{min-width:0;padding:10px 8px;border-right:1px solid #e2e9f3}.work-plan-metrics>div:last-child{border-right:0}.work-plan-metrics b{float:left;width:27px;height:27px;margin-right:7px;display:flex;align-items:center;justify-content:center;border-radius:7px;background:#e8f1ff;color:#1677e8;font-size:14px}.work-plan-metrics strong,.work-plan-metrics span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.work-plan-metrics strong{color:#173b86;font-size:13px;line-height:1.3}.work-plan-metrics span{margin-top:3px;color:#607594;font-size:9px}.work-plan-metrics .js-plan-xp{color:#173b86}@media(max-width:1100px){.work-plan-metrics{grid-template-columns:repeat(4,1fr)}.work-plan-intro{flex-wrap:wrap}.work-plan-action{margin-left:auto}}@media(max-width:650px){.work-plan-metrics{grid-template-columns:repeat(2,1fr)}.work-plan-metrics>div:nth-child(even){border-right:0}.work-plan-intro span{width:100%}.work-plan-action{margin-left:0}.work-meta-line{gap:10px;font-size:11px}}
 </style>
 
 <script>
@@ -3037,6 +3058,12 @@ El selector de vista está dentro de la propia plantilla.
 
     document.querySelectorAll(".progress-row strong").forEach(function(el){
       el.textContent = global + "%";
+    });
+
+    document.querySelectorAll(".js-plan-xp").forEach(function(el){
+      var xpMaximo = 0;
+      rows.forEach(function(row){ xpMaximo += xpDesde(row); });
+      el.textContent = xpMaximo + " XP";
     });
 
     document.querySelectorAll(".progress-row").forEach(function(row){
