@@ -14,6 +14,13 @@ Incluye dos vistas:
 El selector de vista está dentro de la propia plantilla.
 -->
 
+<header class="work-global-header">
+  <div class="work-global-brand"><img src="/wp-content/fotos/infoaza.png" alt="Infoaza"></div>
+  <div class="work-global-title"><strong>Cuaderno de Trabajo</strong><small>Infoaza</small></div>
+  <div class="work-global-search">⌕ <span>Buscar proyectos, solicitudes, tareas...</span></div>
+  <div class="work-global-user"><span>♧</span><strong>Alumno</strong><b>⌄</b></div>
+</header>
+
 <div class="work-app">
 
   <aside class="work-menu">
@@ -2714,6 +2721,24 @@ El selector de vista está dentro de la propia plantilla.
   z-index:4 !important;
 }
 
+.work-global-header{min-height:60px;display:grid;grid-template-columns:196px minmax(220px,1fr) minmax(260px,420px) auto;align-items:center;background:#fff;border-bottom:1px solid #dce5f4;color:#10234f}
+.work-global-brand{height:60px;display:flex;align-items:center;justify-content:center;background:#fff;border-right:1px solid #e1e8f2;overflow:hidden}.work-global-brand img{width:100%;height:100%;padding:7px 14px;object-fit:contain}
+.work-global-title{padding:0 20px}.work-global-title strong,.work-global-title small{display:block}.work-global-title strong{font-size:17px;line-height:1.1}.work-global-title small{margin-top:3px;color:#64748b;font-size:12px}
+.work-global-search{margin:0 22px;padding:10px 14px;border:1px solid #d8e1ef;border-radius:9px;background:#f8faff;color:#71809b;font-size:13px}.work-global-search span{margin-left:7px}
+.work-global-user{display:flex;align-items:center;gap:10px;padding:0 22px;font-size:13px}.work-global-user span{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#10234f;color:#fff;font-size:18px}.work-global-user b{font-size:17px}
+.work-app{grid-template-columns:148px minmax(0,1fr);background:#f6f9fe}
+.work-menu{height:calc(100vh - 60px);padding-top:18px;background:linear-gradient(180deg,#102b52,#173f78)}
+.work-menu a:hover,.work-menu a:nth-child(4){background:#1677e8;box-shadow:inset 3px 0 0 #8bd3ff}
+.work-page{background:#f6f9fe}.work-topbar{background:#fff;box-shadow:0 1px 0 rgba(19,55,105,.04)}
+.work-breadcrumb a{color:#174790}.work-user-icon{background:#1677e8}.work-hero{padding:20px;border:1px solid #d5e2f2;border-top:0;border-radius:9px;background:#fff;box-shadow:0 5px 18px rgba(20,45,95,.08)}
+.work-hero-icon{background:#e30613;border-radius:9px}.work-code{color:#e30613}.work-hero h1{color:#10234f}.work-meta-line{color:#607594}.work-meta-line strong{color:#174791}
+.work-plan-card,.side-card,.work-info-note{border:1px solid #d5e2f2;border-radius:9px;box-shadow:0 4px 14px rgba(20,45,95,.05);background:#fff}
+.work-section-title{padding:14px 18px}.work-section-title h2{color:#174791}.view-btn{border-color:#c8d8ee;color:#174791}.work-view{background:#fff}
+.work-task{background:#fff;border-color:#e2e9f3}.work-task-main h3 a{color:#174791}.work-task-main p{color:#607594}.work-task-links{border-color:#e2e9f3}.work-task-links a{color:#174791}.work-badge{background:#eef4ff;color:#174791}.work-task-xp{color:#e30613}
+.work-circle{background:conic-gradient(var(--c,#1677e8) calc(var(--p,0) * 1%),#e5edf8 0)}
+.timeline-board{border:1px solid #d5e2f2;border-radius:9px;background:#fff}.timeline-head{background:#eef4ff;color:#174791}.timeline-task-cell{background:#f8fbff}.timeline-task-cell h3{color:#174791}.timeline-task-cell p{color:#607594}.timeline-bar{background:#e5edf8}.timeline-legend{color:#607594}
+.side-card h3{color:#174791}.side-stats strong{color:#173b86}.progress-bar{background:#e5edf8}.progress-bar span{background:#1677e8}.next-task{border-color:#e2e9f3}.next-task strong{color:#174791}.next-task small{color:#607594}.priority-card>strong{color:#e30613}
+@media(max-width:850px){.work-global-header{grid-template-columns:94px 1fr auto}.work-global-title{padding:0 12px}.work-global-title strong{font-size:14px}.work-global-title small{font-size:10px}.work-global-search{display:none}.work-global-user{padding:0 12px}.work-global-user strong{display:none}.work-app{grid-template-columns:1fr}.work-menu{height:auto;padding-top:10px}}
 </style>
 
 <script>
